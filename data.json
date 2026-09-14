@@ -1,0 +1,1283 @@
+{
+  "asOf": "2026-09-14",
+  "austinRecent": {
+    "description": "Seattle 2–1, Philadelphia 1–1, Portland 2–1, San Jose 1–1, Colorado 1–1, Vancouver 2–1",
+    "ga": 6,
+    "gf": 9,
+    "gp": 6
+  },
+  "fixtures": [
+    {
+      "away": "SEA",
+      "date": "2026-09-19",
+      "home": "COL",
+      "id": "2026-09-19:COL:SEA",
+      "listedBy": [
+        "COL",
+        "SEA"
+      ]
+    },
+    {
+      "away": "ATX",
+      "date": "2026-09-19",
+      "home": "DAL",
+      "id": "2026-09-19:DAL:ATX",
+      "listedBy": [
+        "ATX",
+        "DAL"
+      ]
+    },
+    {
+      "away": "CIN",
+      "date": "2026-09-19",
+      "home": "HOU",
+      "id": "2026-09-19:HOU:CIN",
+      "listedBy": [
+        "HOU"
+      ]
+    },
+    {
+      "away": "LAG",
+      "date": "2026-09-19",
+      "home": "MIN",
+      "id": "2026-09-19:MIN:LAG",
+      "listedBy": [
+        "LAG",
+        "MIN"
+      ]
+    },
+    {
+      "away": "ATL",
+      "date": "2026-09-19",
+      "home": "POR",
+      "id": "2026-09-19:POR:ATL",
+      "listedBy": [
+        "POR"
+      ]
+    },
+    {
+      "away": "VAN",
+      "date": "2026-09-19",
+      "home": "RSL",
+      "id": "2026-09-19:RSL:VAN",
+      "listedBy": [
+        "VAN",
+        "RSL"
+      ]
+    },
+    {
+      "away": "LAFC",
+      "date": "2026-09-19",
+      "home": "SJ",
+      "id": "2026-09-19:SJ:LAFC",
+      "listedBy": [
+        "SJ",
+        "LAFC"
+      ]
+    },
+    {
+      "away": "PHI",
+      "date": "2026-09-19",
+      "home": "SKC",
+      "id": "2026-09-19:SKC:PHI",
+      "listedBy": [
+        "SKC"
+      ]
+    },
+    {
+      "away": "TOR",
+      "date": "2026-09-19",
+      "home": "STL",
+      "id": "2026-09-19:STL:TOR",
+      "listedBy": [
+        "STL"
+      ]
+    },
+    {
+      "away": "SD",
+      "date": "2026-09-20",
+      "home": "MIA",
+      "id": "2026-09-20:MIA:SD",
+      "listedBy": [
+        "SD"
+      ]
+    },
+    {
+      "away": "RSL",
+      "date": "2026-09-23",
+      "home": "SEA",
+      "id": "2026-09-23:SEA:RSL",
+      "listedBy": [
+        "RSL",
+        "SEA"
+      ]
+    },
+    {
+      "away": "SD",
+      "date": "2026-09-26",
+      "home": "ATX",
+      "id": "2026-09-26:ATX:SD",
+      "listedBy": [
+        "ATX",
+        "SD"
+      ]
+    },
+    {
+      "away": "LAFC",
+      "date": "2026-09-26",
+      "home": "DAL",
+      "id": "2026-09-26:DAL:LAFC",
+      "listedBy": [
+        "DAL",
+        "LAFC"
+      ]
+    },
+    {
+      "away": "SKC",
+      "date": "2026-09-26",
+      "home": "HOU",
+      "id": "2026-09-26:HOU:SKC",
+      "listedBy": [
+        "HOU",
+        "SKC"
+      ]
+    },
+    {
+      "away": "COL",
+      "date": "2026-09-26",
+      "home": "LAG",
+      "id": "2026-09-26:LAG:COL",
+      "listedBy": [
+        "COL",
+        "LAG"
+      ]
+    },
+    {
+      "away": "STL",
+      "date": "2026-09-26",
+      "home": "RBNY",
+      "id": "2026-09-26:RBNY:STL",
+      "listedBy": [
+        "STL"
+      ]
+    },
+    {
+      "away": "NE",
+      "date": "2026-09-26",
+      "home": "RSL",
+      "id": "2026-09-26:RSL:NE",
+      "listedBy": [
+        "RSL"
+      ]
+    },
+    {
+      "away": "MIN",
+      "date": "2026-09-26",
+      "home": "SEA",
+      "id": "2026-09-26:SEA:MIN",
+      "listedBy": [
+        "MIN",
+        "SEA"
+      ]
+    },
+    {
+      "away": "POR",
+      "date": "2026-09-26",
+      "home": "SJ",
+      "id": "2026-09-26:SJ:POR",
+      "listedBy": [
+        "SJ",
+        "POR"
+      ]
+    },
+    {
+      "away": "DC",
+      "date": "2026-09-26",
+      "home": "VAN",
+      "id": "2026-09-26:VAN:DC",
+      "listedBy": [
+        "VAN"
+      ]
+    },
+    {
+      "away": "SKC",
+      "date": "2026-10-01",
+      "home": "SEA",
+      "id": "2026-10-01:SEA:SKC",
+      "listedBy": [
+        "SEA",
+        "SKC"
+      ]
+    },
+    {
+      "away": "VAN",
+      "date": "2026-10-06",
+      "home": "CHI",
+      "id": "2026-10-06:CHI:VAN",
+      "listedBy": [
+        "VAN"
+      ]
+    },
+    {
+      "away": "NSH",
+      "date": "2026-10-10",
+      "home": "ATX",
+      "id": "2026-10-10:ATX:NSH",
+      "listedBy": [
+        "ATX"
+      ]
+    },
+    {
+      "away": "DAL",
+      "date": "2026-10-10",
+      "home": "CLT",
+      "id": "2026-10-10:CLT:DAL",
+      "listedBy": [
+        "DAL"
+      ]
+    },
+    {
+      "away": "SJ",
+      "date": "2026-10-10",
+      "home": "COL",
+      "id": "2026-10-10:COL:SJ",
+      "listedBy": [
+        "SJ",
+        "COL"
+      ]
+    },
+    {
+      "away": "VAN",
+      "date": "2026-10-10",
+      "home": "LAFC",
+      "id": "2026-10-10:LAFC:VAN",
+      "listedBy": [
+        "VAN",
+        "LAFC"
+      ]
+    },
+    {
+      "away": "HOU",
+      "date": "2026-10-10",
+      "home": "MIN",
+      "id": "2026-10-10:MIN:HOU",
+      "listedBy": [
+        "HOU",
+        "MIN"
+      ]
+    },
+    {
+      "away": "SEA",
+      "date": "2026-10-10",
+      "home": "NE",
+      "id": "2026-10-10:NE:SEA",
+      "listedBy": [
+        "SEA"
+      ]
+    },
+    {
+      "away": "RSL",
+      "date": "2026-10-10",
+      "home": "PHI",
+      "id": "2026-10-10:PHI:RSL",
+      "listedBy": [
+        "RSL"
+      ]
+    },
+    {
+      "away": "SD",
+      "date": "2026-10-10",
+      "home": "RBNY",
+      "id": "2026-10-10:RBNY:SD",
+      "listedBy": [
+        "SD"
+      ]
+    },
+    {
+      "away": "POR",
+      "date": "2026-10-10",
+      "home": "SKC",
+      "id": "2026-10-10:SKC:POR",
+      "listedBy": [
+        "POR",
+        "SKC"
+      ]
+    },
+    {
+      "away": "LAG",
+      "date": "2026-10-11",
+      "home": "STL",
+      "id": "2026-10-11:STL:LAG",
+      "listedBy": [
+        "STL",
+        "LAG"
+      ]
+    },
+    {
+      "away": "MIN",
+      "date": "2026-10-14",
+      "home": "COL",
+      "id": "2026-10-14:COL:MIN",
+      "listedBy": [
+        "COL",
+        "MIN"
+      ]
+    },
+    {
+      "away": "SEA",
+      "date": "2026-10-14",
+      "home": "DAL",
+      "id": "2026-10-14:DAL:SEA",
+      "listedBy": [
+        "DAL",
+        "SEA"
+      ]
+    },
+    {
+      "away": "ATX",
+      "date": "2026-10-14",
+      "home": "LAFC",
+      "id": "2026-10-14:LAFC:ATX",
+      "listedBy": [
+        "ATX",
+        "LAFC"
+      ]
+    },
+    {
+      "away": "POR",
+      "date": "2026-10-14",
+      "home": "LAG",
+      "id": "2026-10-14:LAG:POR",
+      "listedBy": [
+        "POR",
+        "LAG"
+      ]
+    },
+    {
+      "away": "SKC",
+      "date": "2026-10-14",
+      "home": "NSH",
+      "id": "2026-10-14:NSH:SKC",
+      "listedBy": [
+        "SKC"
+      ]
+    },
+    {
+      "away": "SJ",
+      "date": "2026-10-14",
+      "home": "RSL",
+      "id": "2026-10-14:RSL:SJ",
+      "listedBy": [
+        "SJ",
+        "RSL"
+      ]
+    },
+    {
+      "away": "HOU",
+      "date": "2026-10-14",
+      "home": "SD",
+      "id": "2026-10-14:SD:HOU",
+      "listedBy": [
+        "HOU",
+        "SD"
+      ]
+    },
+    {
+      "away": "VAN",
+      "date": "2026-10-14",
+      "home": "STL",
+      "id": "2026-10-14:STL:VAN",
+      "listedBy": [
+        "VAN",
+        "STL"
+      ]
+    },
+    {
+      "away": "VAN",
+      "date": "2026-10-17",
+      "home": "ATX",
+      "id": "2026-10-17:ATX:VAN",
+      "listedBy": [
+        "ATX",
+        "VAN"
+      ]
+    },
+    {
+      "away": "DAL",
+      "date": "2026-10-17",
+      "home": "HOU",
+      "id": "2026-10-17:HOU:DAL",
+      "listedBy": [
+        "HOU",
+        "DAL"
+      ]
+    },
+    {
+      "away": "SD",
+      "date": "2026-10-17",
+      "home": "LAG",
+      "id": "2026-10-17:LAG:SD",
+      "listedBy": [
+        "SD",
+        "LAG"
+      ]
+    },
+    {
+      "away": "STL",
+      "date": "2026-10-17",
+      "home": "MIN",
+      "id": "2026-10-17:MIN:STL",
+      "listedBy": [
+        "STL",
+        "MIN"
+      ]
+    },
+    {
+      "away": "COL",
+      "date": "2026-10-17",
+      "home": "POR",
+      "id": "2026-10-17:POR:COL",
+      "listedBy": [
+        "COL",
+        "POR"
+      ]
+    },
+    {
+      "away": "MTL",
+      "date": "2026-10-17",
+      "home": "SEA",
+      "id": "2026-10-17:SEA:MTL",
+      "listedBy": [
+        "SEA"
+      ]
+    },
+    {
+      "away": "NSH",
+      "date": "2026-10-17",
+      "home": "SJ",
+      "id": "2026-10-17:SJ:NSH",
+      "listedBy": [
+        "SJ"
+      ]
+    },
+    {
+      "away": "RSL",
+      "date": "2026-10-17",
+      "home": "SKC",
+      "id": "2026-10-17:SKC:RSL",
+      "listedBy": [
+        "RSL",
+        "SKC"
+      ]
+    },
+    {
+      "away": "VAN",
+      "date": "2026-10-24",
+      "home": "COL",
+      "id": "2026-10-24:COL:VAN",
+      "listedBy": [
+        "VAN",
+        "COL"
+      ]
+    },
+    {
+      "away": "SJ",
+      "date": "2026-10-24",
+      "home": "DAL",
+      "id": "2026-10-24:DAL:SJ",
+      "listedBy": [
+        "DAL",
+        "SJ"
+      ]
+    },
+    {
+      "away": "MIN",
+      "date": "2026-10-24",
+      "home": "HOU",
+      "id": "2026-10-24:HOU:MIN",
+      "listedBy": [
+        "HOU",
+        "MIN"
+      ]
+    },
+    {
+      "away": "CLT",
+      "date": "2026-10-24",
+      "home": "POR",
+      "id": "2026-10-24:POR:CLT",
+      "listedBy": [
+        "POR"
+      ]
+    },
+    {
+      "away": "STL",
+      "date": "2026-10-24",
+      "home": "RSL",
+      "id": "2026-10-24:RSL:STL",
+      "listedBy": [
+        "STL",
+        "RSL"
+      ]
+    },
+    {
+      "away": "SEA",
+      "date": "2026-10-24",
+      "home": "SD",
+      "id": "2026-10-24:SD:SEA",
+      "listedBy": [
+        "SD",
+        "SEA"
+      ]
+    },
+    {
+      "away": "ATX",
+      "date": "2026-10-24",
+      "home": "SKC",
+      "id": "2026-10-24:SKC:ATX",
+      "listedBy": [
+        "ATX",
+        "SKC"
+      ]
+    },
+    {
+      "away": "LAG",
+      "date": "2026-10-25",
+      "home": "LAFC",
+      "id": "2026-10-25:LAFC:LAG",
+      "listedBy": [
+        "LAFC",
+        "LAG"
+      ]
+    },
+    {
+      "away": "RSL",
+      "date": "2026-10-28",
+      "home": "ATX",
+      "id": "2026-10-28:ATX:RSL",
+      "listedBy": [
+        "ATX",
+        "RSL"
+      ]
+    },
+    {
+      "away": "CLB",
+      "date": "2026-10-28",
+      "home": "DAL",
+      "id": "2026-10-28:DAL:CLB",
+      "listedBy": [
+        "DAL"
+      ]
+    },
+    {
+      "away": "SKC",
+      "date": "2026-10-28",
+      "home": "MIN",
+      "id": "2026-10-28:MIN:SKC",
+      "listedBy": [
+        "MIN",
+        "SKC"
+      ]
+    },
+    {
+      "away": "HOU",
+      "date": "2026-10-28",
+      "home": "SEA",
+      "id": "2026-10-28:SEA:HOU",
+      "listedBy": [
+        "HOU",
+        "SEA"
+      ]
+    },
+    {
+      "away": "COL",
+      "date": "2026-10-28",
+      "home": "SJ",
+      "id": "2026-10-28:SJ:COL",
+      "listedBy": [
+        "SJ",
+        "COL"
+      ]
+    },
+    {
+      "away": "POR",
+      "date": "2026-10-28",
+      "home": "STL",
+      "id": "2026-10-28:STL:POR",
+      "listedBy": [
+        "STL",
+        "POR"
+      ]
+    },
+    {
+      "away": "SD",
+      "date": "2026-10-28",
+      "home": "VAN",
+      "id": "2026-10-28:VAN:SD",
+      "listedBy": [
+        "VAN",
+        "SD"
+      ]
+    },
+    {
+      "away": "CHI",
+      "date": "2026-10-31",
+      "home": "COL",
+      "id": "2026-10-31:COL:CHI",
+      "listedBy": [
+        "COL"
+      ]
+    },
+    {
+      "away": "ATX",
+      "date": "2026-10-31",
+      "home": "LAG",
+      "id": "2026-10-31:LAG:ATX",
+      "listedBy": [
+        "ATX",
+        "LAG"
+      ]
+    },
+    {
+      "away": "DAL",
+      "date": "2026-10-31",
+      "home": "SKC",
+      "id": "2026-10-31:SKC:DAL",
+      "listedBy": [
+        "DAL",
+        "SKC"
+      ]
+    },
+    {
+      "away": "MIN",
+      "date": "2026-11-01",
+      "home": "LAFC",
+      "id": "2026-11-01:LAFC:MIN",
+      "listedBy": [
+        "LAFC",
+        "MIN"
+      ]
+    },
+    {
+      "away": "HOU",
+      "date": "2026-11-01",
+      "home": "POR",
+      "id": "2026-11-01:POR:HOU",
+      "listedBy": [
+        "HOU",
+        "POR"
+      ]
+    },
+    {
+      "away": "RSL",
+      "date": "2026-11-01",
+      "home": "SJ",
+      "id": "2026-11-01:SJ:RSL",
+      "listedBy": [
+        "SJ",
+        "RSL"
+      ]
+    },
+    {
+      "away": "SD",
+      "date": "2026-11-01",
+      "home": "STL",
+      "id": "2026-11-01:STL:SD",
+      "listedBy": [
+        "STL",
+        "SD"
+      ]
+    },
+    {
+      "away": "SEA",
+      "date": "2026-11-01",
+      "home": "VAN",
+      "id": "2026-11-01:VAN:SEA",
+      "listedBy": [
+        "VAN",
+        "SEA"
+      ]
+    },
+    {
+      "away": "LAFC",
+      "date": "2026-11-04",
+      "home": "NYC",
+      "id": "2026-11-04:NYC:LAFC",
+      "listedBy": [
+        "LAFC"
+      ]
+    },
+    {
+      "away": "POR",
+      "date": "2026-11-07",
+      "home": "ATX",
+      "id": "2026-11-07:ATX:POR",
+      "listedBy": [
+        "ATX",
+        "POR"
+      ]
+    },
+    {
+      "away": "COL",
+      "date": "2026-11-07",
+      "home": "DAL",
+      "id": "2026-11-07:DAL:COL",
+      "listedBy": [
+        "DAL",
+        "COL"
+      ]
+    },
+    {
+      "away": "STL",
+      "date": "2026-11-07",
+      "home": "HOU",
+      "id": "2026-11-07:HOU:STL",
+      "listedBy": [
+        "HOU",
+        "STL"
+      ]
+    },
+    {
+      "away": "SJ",
+      "date": "2026-11-07",
+      "home": "MIN",
+      "id": "2026-11-07:MIN:SJ",
+      "listedBy": [
+        "SJ",
+        "MIN"
+      ]
+    },
+    {
+      "away": "VAN",
+      "date": "2026-11-07",
+      "home": "MTL",
+      "id": "2026-11-07:MTL:VAN",
+      "listedBy": [
+        "VAN"
+      ]
+    },
+    {
+      "away": "LAG",
+      "date": "2026-11-07",
+      "home": "RSL",
+      "id": "2026-11-07:RSL:LAG",
+      "listedBy": [
+        "LAG",
+        "RSL"
+      ]
+    },
+    {
+      "away": "SKC",
+      "date": "2026-11-07",
+      "home": "SD",
+      "id": "2026-11-07:SD:SKC",
+      "listedBy": [
+        "SD",
+        "SKC"
+      ]
+    },
+    {
+      "away": "LAFC",
+      "date": "2026-11-07",
+      "home": "SEA",
+      "id": "2026-11-07:SEA:LAFC",
+      "listedBy": [
+        "LAFC",
+        "SEA"
+      ]
+    }
+  ],
+  "notes": [
+    "Snapshot as of September 14, 2026. Goals for/against and wins/losses reconcile across all 30 clubs.",
+    "All 80 remaining MLS fixtures involving a Western club are included. East-vs-East fixtures are not required because team strengths are held fixed throughout each forecast.",
+    "Vancouver has 24 completed games and 10 remaining. Seattle has 23 and 11; RSL 24 and 10.",
+    "LAFC at NYCFC is listed for November 4 in the current schedule, superseding the October 17 launch schedule.",
+    "Seattle vs RSL September 23 and Seattle vs Sporting KC October 1 are included.",
+    "Dates are match-local calendar dates, with no kickoff-time assumptions.",
+    "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome."
+  ],
+  "sources": {
+    "austinResult": {
+      "label": "Austin FC Vancouver match report",
+      "url": "https://www.austinfc.com/news/austin-fc-moves-within-one-game-of-playoff-line-with-win-at-vancouver"
+    },
+    "rules": {
+      "label": "MLS 2026 competition guidelines",
+      "url": "https://www.mlssoccer.com/about/competition-guidelines"
+    },
+    "schedules": [
+      {
+        "espnId": 20906,
+        "id": "ATX",
+        "url": "https://www.espn.com.mx/futbol/equipo/calendario/_/id/20906/austin_fc"
+      },
+      {
+        "espnId": 9727,
+        "id": "VAN",
+        "url": "https://www.espn.com/soccer/team/fixtures/_/id/9727/vancouver-whitecaps"
+      },
+      {
+        "espnId": 6077,
+        "id": "HOU",
+        "url": "https://www.espn.com/soccer/team/fixtures/_/id/6077/houston-dynamo-fc"
+      },
+      {
+        "espnId": 185,
+        "id": "DAL",
+        "url": "https://www.espn.com/football/team/fixtures/_/id/185/fc-dallas"
+      },
+      {
+        "espnId": 191,
+        "id": "SJ",
+        "url": "https://www.espn.com/football/team/fixtures/_/id/191/san-jose-earthquakes"
+      },
+      {
+        "espnId": 21812,
+        "id": "STL",
+        "url": "https://www.espn.com.mx/futbol/equipo/calendario/_/id/21812/st-louis-city-sc"
+      },
+      {
+        "espnId": 18966,
+        "id": "LAFC",
+        "url": "https://www.espn.com.mx/futbol/equipo/calendario/_/id/18966/lafc"
+      },
+      {
+        "espnId": 184,
+        "id": "COL",
+        "url": "https://www.coloradorapids.com/news/colorado-rapids-to-celebrate-30th-anniversary-of-inaugural-home-match-on-april-18"
+      },
+      {
+        "espnId": 9723,
+        "id": "POR",
+        "url": "https://www.espn.com.mx/futbol/equipo/calendario/_/id/9723/usa.portland"
+      },
+      {
+        "espnId": 22529,
+        "id": "SD",
+        "url": "https://www.espn.com/football/team/fixtures/_/id/22529/san-diego-fc"
+      },
+      {
+        "espnId": 187,
+        "id": "LAG",
+        "url": "https://www.espn.com/soccer/team/fixtures/_/id/187/la-galaxy"
+      },
+      {
+        "espnId": 4771,
+        "id": "RSL",
+        "url": "https://www.espn.com/football/team/fixtures/_/id/4771/real-salt-lake"
+      },
+      {
+        "espnId": 17362,
+        "id": "MIN",
+        "url": "https://www.espn.com/football/team/fixtures/_/id/17362/usa.minnesota_united_fc"
+      },
+      {
+        "espnId": 9726,
+        "id": "SEA",
+        "url": "https://www.espn.com.mx/futbol/equipo/calendario/_/id/9726/usa.seattle"
+      },
+      {
+        "espnId": 186,
+        "id": "SKC",
+        "url": "https://www.espn.com/soccer/team/fixtures/_/id/186/sporting-kansas-city"
+      }
+    ],
+    "standings": {
+      "label": "ESPN standings (both conferences)",
+      "retrieved": "2026-09-14",
+      "url": "https://www.espn.com.mx/futbol/posiciones/_/liga/usa.1"
+    }
+  },
+  "teams": [
+    {
+      "conference": "West",
+      "currentRank": 1,
+      "draws": 4,
+      "ga": 23,
+      "gf": 53,
+      "gp": 24,
+      "id": "VAN",
+      "losses": 6,
+      "name": "Vancouver",
+      "pts": 46,
+      "wins": 14
+    },
+    {
+      "conference": "West",
+      "currentRank": 2,
+      "draws": 4,
+      "ga": 28,
+      "gf": 32,
+      "gp": 25,
+      "id": "HOU",
+      "losses": 8,
+      "name": "Houston",
+      "pts": 43,
+      "wins": 13
+    },
+    {
+      "conference": "West",
+      "currentRank": 3,
+      "draws": 7,
+      "ga": 42,
+      "gf": 49,
+      "gp": 25,
+      "id": "DAL",
+      "losses": 6,
+      "name": "FC Dallas",
+      "pts": 43,
+      "wins": 12
+    },
+    {
+      "conference": "West",
+      "currentRank": 4,
+      "draws": 5,
+      "ga": 36,
+      "gf": 44,
+      "gp": 25,
+      "id": "SJ",
+      "losses": 8,
+      "name": "San Jose",
+      "pts": 41,
+      "wins": 12
+    },
+    {
+      "conference": "West",
+      "currentRank": 5,
+      "draws": 8,
+      "ga": 35,
+      "gf": 42,
+      "gp": 25,
+      "id": "STL",
+      "losses": 6,
+      "name": "St. Louis",
+      "pts": 41,
+      "wins": 11
+    },
+    {
+      "conference": "West",
+      "currentRank": 6,
+      "draws": 7,
+      "ga": 27,
+      "gf": 41,
+      "gp": 26,
+      "id": "LAFC",
+      "losses": 8,
+      "name": "LAFC",
+      "pts": 40,
+      "wins": 11
+    },
+    {
+      "conference": "West",
+      "currentRank": 7,
+      "draws": 2,
+      "ga": 32,
+      "gf": 33,
+      "gp": 25,
+      "id": "COL",
+      "losses": 12,
+      "name": "Colorado",
+      "pts": 35,
+      "wins": 11
+    },
+    {
+      "conference": "West",
+      "currentRank": 8,
+      "draws": 5,
+      "ga": 47,
+      "gf": 47,
+      "gp": 25,
+      "id": "POR",
+      "losses": 11,
+      "name": "Portland",
+      "pts": 32,
+      "wins": 9
+    },
+    {
+      "conference": "West",
+      "currentRank": 9,
+      "draws": 6,
+      "ga": 42,
+      "gf": 42,
+      "gp": 25,
+      "id": "SD",
+      "losses": 11,
+      "name": "San Diego",
+      "pts": 30,
+      "wins": 8
+    },
+    {
+      "conference": "West",
+      "currentRank": 10,
+      "draws": 9,
+      "ga": 40,
+      "gf": 31,
+      "gp": 26,
+      "id": "LAG",
+      "losses": 10,
+      "name": "LA Galaxy",
+      "pts": 30,
+      "wins": 7
+    },
+    {
+      "conference": "West",
+      "currentRank": 11,
+      "draws": 5,
+      "ga": 39,
+      "gf": 37,
+      "gp": 24,
+      "id": "RSL",
+      "losses": 11,
+      "name": "Real Salt Lake",
+      "pts": 29,
+      "wins": 8
+    },
+    {
+      "conference": "West",
+      "currentRank": 12,
+      "draws": 8,
+      "ga": 43,
+      "gf": 37,
+      "gp": 25,
+      "id": "MIN",
+      "losses": 10,
+      "name": "Minnesota",
+      "pts": 29,
+      "wins": 7
+    },
+    {
+      "conference": "West",
+      "currentRank": 13,
+      "draws": 8,
+      "ga": 44,
+      "gf": 32,
+      "gp": 25,
+      "id": "ATX",
+      "losses": 10,
+      "name": "Austin FC",
+      "pts": 29,
+      "wins": 7
+    },
+    {
+      "conference": "West",
+      "currentRank": 14,
+      "draws": 7,
+      "ga": 30,
+      "gf": 25,
+      "gp": 23,
+      "id": "SEA",
+      "losses": 9,
+      "name": "Seattle",
+      "pts": 28,
+      "wins": 7
+    },
+    {
+      "conference": "West",
+      "currentRank": 15,
+      "draws": 3,
+      "ga": 59,
+      "gf": 26,
+      "gp": 24,
+      "id": "SKC",
+      "losses": 16,
+      "name": "Sporting KC",
+      "pts": 18,
+      "wins": 5
+    },
+    {
+      "conference": "East",
+      "currentRank": 1,
+      "draws": 6,
+      "ga": 21,
+      "gf": 50,
+      "gp": 25,
+      "id": "NSH",
+      "losses": 3,
+      "name": "Nashville",
+      "pts": 54,
+      "wins": 16
+    },
+    {
+      "conference": "East",
+      "currentRank": 2,
+      "draws": 9,
+      "ga": 46,
+      "gf": 61,
+      "gp": 25,
+      "id": "MIA",
+      "losses": 4,
+      "name": "Inter Miami",
+      "pts": 45,
+      "wins": 12
+    },
+    {
+      "conference": "East",
+      "currentRank": 3,
+      "draws": 4,
+      "ga": 31,
+      "gf": 41,
+      "gp": 25,
+      "id": "NE",
+      "losses": 8,
+      "name": "New England",
+      "pts": 43,
+      "wins": 13
+    },
+    {
+      "conference": "East",
+      "currentRank": 4,
+      "draws": 7,
+      "ga": 36,
+      "gf": 45,
+      "gp": 25,
+      "id": "CLT",
+      "losses": 7,
+      "name": "Charlotte",
+      "pts": 40,
+      "wins": 11
+    },
+    {
+      "conference": "East",
+      "currentRank": 5,
+      "draws": 6,
+      "ga": 35,
+      "gf": 45,
+      "gp": 24,
+      "id": "CHI",
+      "losses": 7,
+      "name": "Chicago",
+      "pts": 39,
+      "wins": 11
+    },
+    {
+      "conference": "East",
+      "currentRank": 6,
+      "draws": 4,
+      "ga": 56,
+      "gf": 44,
+      "gp": 25,
+      "id": "ORL",
+      "losses": 11,
+      "name": "Orlando",
+      "pts": 34,
+      "wins": 10
+    },
+    {
+      "conference": "East",
+      "currentRank": 7,
+      "draws": 6,
+      "ga": 39,
+      "gf": 46,
+      "gp": 25,
+      "id": "PHI",
+      "losses": 10,
+      "name": "Philadelphia",
+      "pts": 33,
+      "wins": 9
+    },
+    {
+      "conference": "East",
+      "currentRank": 8,
+      "draws": 8,
+      "ga": 33,
+      "gf": 39,
+      "gp": 25,
+      "id": "NYC",
+      "losses": 9,
+      "name": "New York City",
+      "pts": 32,
+      "wins": 8
+    },
+    {
+      "conference": "East",
+      "currentRank": 9,
+      "draws": 8,
+      "ga": 59,
+      "gf": 52,
+      "gp": 24,
+      "id": "CIN",
+      "losses": 8,
+      "name": "Cincinnati",
+      "pts": 32,
+      "wins": 8
+    },
+    {
+      "conference": "East",
+      "currentRank": 10,
+      "draws": 6,
+      "ga": 48,
+      "gf": 33,
+      "gp": 25,
+      "id": "RBNY",
+      "losses": 11,
+      "name": "Red Bull New York",
+      "pts": 30,
+      "wins": 8
+    },
+    {
+      "conference": "East",
+      "currentRank": 11,
+      "draws": 11,
+      "ga": 37,
+      "gf": 30,
+      "gp": 24,
+      "id": "DC",
+      "losses": 7,
+      "name": "D.C. United",
+      "pts": 29,
+      "wins": 6
+    },
+    {
+      "conference": "East",
+      "currentRank": 12,
+      "draws": 11,
+      "ga": 46,
+      "gf": 38,
+      "gp": 25,
+      "id": "TOR",
+      "losses": 8,
+      "name": "Toronto",
+      "pts": 29,
+      "wins": 6
+    },
+    {
+      "conference": "East",
+      "currentRank": 13,
+      "draws": 5,
+      "ga": 42,
+      "gf": 35,
+      "gp": 25,
+      "id": "CLB",
+      "losses": 14,
+      "name": "Columbus",
+      "pts": 23,
+      "wins": 6
+    },
+    {
+      "conference": "East",
+      "currentRank": 14,
+      "draws": 5,
+      "ga": 43,
+      "gf": 29,
+      "gp": 25,
+      "id": "ATL",
+      "losses": 14,
+      "name": "Atlanta",
+      "pts": 23,
+      "wins": 6
+    },
+    {
+      "conference": "East",
+      "currentRank": 15,
+      "draws": 6,
+      "ga": 51,
+      "gf": 31,
+      "gp": 25,
+      "id": "MTL",
+      "losses": 14,
+      "name": "Montréal",
+      "pts": 21,
+      "wins": 5
+    }
+  ],
+  "version": "2.0.0"
+}

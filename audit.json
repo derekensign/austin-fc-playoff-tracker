@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-14",
+  "explanation": "This forecast uses current MLS standings, each team’s season-long scoring and defending record, the remaining schedule, and an assumed home-field advantage. It simulates every remaining match involving a Western Conference team 50,000 times, then counts how often Austin finishes in each position. Teams share the same result when they play each other. The percentages are estimates from a simple statistical model—not guarantees or calibrated betting odds.",
+  "fixes": [
+    "Replaced 29 independent placeholder team appearances with the complete 80-match Western run-in.",
+    "Corrected Vancouver's GP and restored its tenth remaining fixture.",
+    "Used seed 20260914 and published executable code and input data for reproducibility.",
+    "Removed subjective club strength overrides; baseline derives attack/defense rates from season goals.",
+    "Replaced fixed 25% draws with draws arising from simulated scorelines.",
+    "Replaced strength-based tiebreaking with points, wins, GD, GF in official priority order; explicitly bounded remaining ties.",
+    "Placed playoff cutoff below 9th and labeled top-9 probability correctly.",
+    "Headline gives median points and median Western position; identifies them as separate marginal medians.",
+    "Removed unsupported form and home-game claims; computes remaining home counts directly from fixtures.",
+    "Shows model sensitivity and identifies selected parameter choices as uncalibrated.",
+    "Preserved model.js, data.json, report.json and update instructions as deployable public source.",
+    "Corrected reach-42/45 versus qualifying probability distinction."
+  ],
+  "limitations": [
+    "Not backtested or calibrated. Not a trained AI predictor, bookmaker model, or xG model.",
+    "Eight pseudo-games of league-average scoring shrink extreme rates; this and the log home effect 0.13 are assumed parameters.",
+    "Independent Poisson goal counts omit correlation, lineups, injuries, travel, schedule-adjusted historical strength, and roster changes.",
+    "Strengths stay fixed during simulations. East-vs-East fixtures cannot alter them.",
+    "After ties on points, wins, GD and GF, the model uses a seeded random order instead of historical head-to-head, disciplinary and venue tiebreakers. Austin boundary bounds are published.",
+    "Sensitivity runs change one assumption at a time and are not confidence intervals.",
+    "Data is an explicitly dated snapshot, not a live feed.",
+    "Scheduled site updates are configured separately; unattended publishing has not yet been demonstrated."
+  ],
+  "tests": [
+    "Identical seeds reproduce every result",
+    "All tables obey probability totals",
+    "One shared score conserves goals and points",
+    "Wins outrank GD; GD outranks GF",
+    "Missing and duplicate fixtures fail validation",
+    "42/45-point records sum correctly",
+    "All Austin wins/losses and home-away conditional result mapping",
+    "All 15 position distributions sum to 100%"
+  ],
+  "tieAudit": {
+    "austinAnyTiePct": 0.034,
+    "top9LowerPct": 10.58,
+    "top9UpperPct": 10.58
+  },
+  "version": "2.0.0"
+}

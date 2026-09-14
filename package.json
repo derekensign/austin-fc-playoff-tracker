@@ -1,0 +1,18 @@
+{
+  "name": "austin-fc-playoff-tracker",
+  "version": "2.1.0",
+  "private": true,
+  "description": "Verde Run-In — Austin FC Western Conference playoff forecast, with hourly automated result ingestion",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node tests.js",
+    "ingest": "node ingest",
+    "ingest:dry": "node ingest --dry-run",
+    "refresh": "node refresh.js",
+    "publish:local": "node lambda/handler.js",
+    "deploy": "sam build && sam deploy"
+  }
+}

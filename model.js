@@ -28,12 +28,15 @@ const VerdeModel = (function createModel(){
   }
   function rates(data,config={}){
     const avg=data.teams.reduce((s,t)=>s+t.gf,0)/data.teams.reduce((s,t)=>s+t.gp,0);
-    const prior=config.priorGames??8, home=config.homeLog??0.13;
+    const prior=config.priorGames??8, home=config.homeLog??0.13, weight=config.recentWeight??0;
     const strengths={};
     for(const t of data.teams){let gf=t.gf/t.gp,ga=t.ga/t.gp;
-      if(t.id==="ATX"&&config.austinRecentWeight){
-        const r=data.austinRecent; gf=(1-config.austinRecentWeight)*gf+config.austinRecentWeight*r.gf/r.gp;
-        ga=(1-config.austinRecentWeight)*ga+config.austinRecentWeight*r.ga/r.gp;
+      // Recent form applies to every club that has it; clubs without a form
+      // sample fall back to season-long rates rather than being guessed at.
+      const recent=weight&&data.recentForm?data.recentForm[t.id]:null;
+      if(recent&&recent.gp>0){
+        gf=(1-weight)*gf+weight*recent.gf/recent.gp;
+        ga=(1-weight)*ga+weight*recent.ga/recent.gp;
       }
       strengths[t.id]={attack:(gf*t.gp+prior*avg)/(t.gp+prior),concede:(ga*t.gp+prior*avg)/(t.gp+prior)};
     }
@@ -82,7 +85,7 @@ const VerdeModel = (function createModel(){
     const quantile=(counts,p)=>{let sum=0;for(const [k,v]of Object.entries(counts).sort((a,b)=>+a[0]-b[0])){sum+=v;if(sum>=N*p)return +k;}};
     const results=west.map(t=>{const z=tally[t.id];return{id:t.id,meanPoints:z.sum/N,meanPlace:z.rankSum/N,medianPoints:quantile(z.points,.5),medianPlace:quantile(Object.fromEntries(z.positions.map((n,i)=>[i+1,n])),.5),p10:quantile(z.points,.1),p90:quantile(z.points,.9),positionPct:z.positions.map(n=>n/N*100),top9Pct:z.positions.slice(0,9).reduce((a,b)=>a+b,0)/N*100,top7Pct:z.positions.slice(0,7).reduce((a,b)=>a+b,0)/N*100};});
     const atx=results.find(t=>t.id==="ATX");
-    return {version:"2.0.0",iterations:N,seed,config:{priorGames:config.priorGames??8,homeLog:config.homeLog??.13,austinRecentWeight:config.austinRecentWeight??0},teams:results,
+    return {version:"2.1.0",iterations:N,seed,config:{priorGames:config.priorGames??8,homeLog:config.homeLog??.13,recentWeight:config.recentWeight??0},teams:results,
       atx,cutoff:{median:quantile(cutoffs,.5),p10:quantile(cutoffs,.1),p90:quantile(cutoffs,.9)},
       targets:Object.fromEntries([42,45].map(k=>[k,{reachPct:thresholds[k].n/N*100,top9GivenAtLeastTargetPct:thresholds[k].n?thresholds[k].qual/thresholds[k].n*100:null}])),
       unresolved:{austinAnyTiePct:unresolvedAustin/N*100,top9LowerPct:top9Lower/N*100,top9UpperPct:top9Upper/N*100},

@@ -9,7 +9,7 @@ module.exports = function render(template,data,report){
  const record=path.length?["W","D","L"].map(p=>path.filter(x=>x===p).length).join("–"):"Open";
  const slots={
  lede: Math.max(0,line.pts-atx.pts)+" points below the current ninth-place total. "+n+" matches remain. Explore Austin’s paths and every Western rival’s schedule.",
- stamp:"Standings snapshot: "+esc(data.asOf)+" · model v2.0 · top nine qualify",
+ stamp:"Standings snapshot: "+esc(data.asOf)+" · model v2.1 · top nine qualify",
  metrics:metric("Austin now",atx.pts+" pts",ord(atx.currentRank)+" in the West · "+atx.gp+" matches played")+metric("Gap to 9th",Math.max(0,line.pts-atx.pts)+" pts",esc(line.name)+": "+line.pts+" pts · "+line.gp+" played")+metric("Playoff chance · top 9",Math.round(a.top9Pct)+"%","Top 7: "+pct(a.top7Pct)+" · 8th/9th: "+pct(a.top9Pct-a.top7Pct))+metric("Projected finish · medians",a.medianPoints+" pts · "+ord(a.medianPlace),"Western Conference · points range "+a.p10+"–"+a.p90+" (middle 80% of simulations)"),
  standings:west.map((t,i)=>{const r=b.teams.find(x=>x.id===t.id);return '<tr class="'+(t.id==="ATX"?"atx ":"")+(i===8?"cutoff":"")+'"><td>'+(i+1)+'</td><td>'+esc(t.name)+(i===8?' <span class="badge">Last berth</span>':"")+'</td><td>'+t.gp+'</td><td>'+t.pts+'</td><td>'+(t.pts/t.gp).toFixed(2)+'</td><td>'+r.meanPoints.toFixed(1)+'</td><td>'+r.meanPlace.toFixed(1)+'</td></tr>';}).join(""),
  odds:a.positionPct.map((p,i)=>'<div class="oddrow '+(i>8?"out ":"")+(i===8?"cut":"")+'"><span>'+ord(i+1)+'</span><div class="bar" role="img" aria-label="'+ord(i+1)+': '+pct(p)+'"><div class="fill" style="width:'+p+'%"></div></div><span class="pct">'+pct(p)+'</span></div>').join(""),
@@ -20,7 +20,7 @@ module.exports = function render(template,data,report){
  teamOptions:west.map(t=>'<option value="'+esc(t.id)+'" '+(t.id==="ATX"?"selected":"")+'>'+esc(t.name)+'</option>').join(""),
  sensitivity:[{label:"Baseline · season goals, eight-game regression, assumed home advantage",atx:a},...report.sensitivity].map(r=>"<tr><td>"+esc(r.label)+"</td><td>"+pct(r.atx.top9Pct)+"</td><td>"+r.atx.meanPoints.toFixed(1)+"</td></tr>").join(""),
  fixtureCount:data.fixtures.length,tiePct:b.unresolved.austinAnyTiePct.toFixed(3),tieBounds:b.unresolved.top9LowerPct.toFixed(2)+"–"+b.unresolved.top9UpperPct.toFixed(2),
- recentGF:data.austinRecent.gf,recentGA:data.austinRecent.ga,medianPoints:a.medianPoints,medianPlace:ord(a.medianPlace),explanation:esc(report.explanation),date:esc(data.asOf)
+ recentGF:data.recentForm.ATX.gf,recentGA:data.recentForm.ATX.ga,recentClubs:Object.keys(data.recentForm).length,medianPoints:a.medianPoints,medianPlace:ord(a.medianPlace),explanation:esc(report.explanation),date:esc(data.asOf)
  };
  return template.replace(/\{\{(\w+)\}\}/g,(_,k)=>{if(!(k in slots))throw Error("Missing slot "+k);return slots[k];});
 };

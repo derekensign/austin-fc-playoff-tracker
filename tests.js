@@ -15,4 +15,16 @@ const atx=data.teams.find(t=>t.id==="ATX"),remaining=34-atx.gp;
 for(const goal of [42,45])for(const r of model.records(goal-atx.pts,remaining)){assert.equal(r.w+r.d+r.l,remaining);assert.equal(3*r.w+r.d,goal-atx.pts);}
 for(const r of ["W","D","L"]){const fixed=Object.fromEntries(data.fixtures.filter(f=>[f.home,f.away].includes("ATX")).map(f=>[f.id,r]));const out=model.simulate(data,{iterations:100,fixed});assert.equal(out.atx.meanPoints,atx.pts+remaining*({W:3,D:1,L:0}[r]));}
 for(const t of model.simulate(data,{iterations:200}).teams)assert.ok(Math.abs(t.positionPct.reduce((s,v)=>s+v,0)-100)<1e-9);
-console.log("PASS: schedule, conservation, determinism, ranking, probability and scenario checks.");
+// Recent form: present for every club, internally consistent, and league-wide in effect.
+const form=data.recentForm;assert.equal(Object.keys(form).length,data.teams.length,"Missing recent form for some clubs");
+for(const t of data.teams){const r=form[t.id];
+ assert.ok(r&&Number.isInteger(r.gf)&&Number.isInteger(r.ga)&&Number.isInteger(r.gp),"Bad recent form "+t.id);
+ assert.ok(r.gp>0&&r.gp<=6&&r.gp<=t.gp,"Recent form sample out of range "+t.id);
+ assert.ok(r.gf<=t.gf&&r.ga<=t.ga,"Recent form exceeds season totals "+t.id);}
+const plainRates=model.rates(data),weightedRates=model.rates(data,{recentWeight:.2});
+assert.deepEqual(model.rates(data,{recentWeight:0}).map(f=>f.lambdaHome),plainRates.map(f=>f.lambdaHome),"recentWeight 0 must be a no-op");
+const movedFixtures=plainRates.filter((f,i)=>Math.abs(f.lambdaHome-weightedRates[i].lambdaHome)>1e-12).length;
+// Austin plays only 34-gp of the remaining fixtures, so an Austin-only weighting
+// could never move this many. This is the test that pins the league-wide behaviour.
+assert.ok(movedFixtures>2*(34-data.teams.find(t=>t.id==="ATX").gp),"recentWeight is not applying league-wide: only "+movedFixtures+" fixtures moved");
+console.log("PASS: schedule, conservation, determinism, ranking, probability, recent-form and scenario checks.");

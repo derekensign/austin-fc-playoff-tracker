@@ -22,12 +22,6 @@ Parameters:
   GithubBranch:
     Type: String
     Default: main
-  ScheduleExpression:
-    Type: String
-    Description: >
-      How often to check for new results. The function is a cheap no-op when
-      nothing has finished since the last run.
-    Default: rate(1 hour)
 
 Globals:
   Function:
@@ -64,7 +58,9 @@ Resources:
           Properties:
             Name: verde-run-in-hourly
             Description: Check for newly completed MLS matches
-            Schedule: !Ref ScheduleExpression
+            # Hardcoded, not a parameter: `sam deploy --parameter-overrides`
+            # splits values on spaces, so "rate(1 hour)" cannot survive as one.
+            Schedule: rate(1 hour)
       # Only the site payload and the code the function actually runs.
       # Everything else in the repo stays out of the deployment package.
       Tags:

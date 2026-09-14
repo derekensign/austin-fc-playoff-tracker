@@ -13,6 +13,6 @@
     "ingest:dry": "node ingest --dry-run",
     "refresh": "node refresh.js",
     "publish:local": "node lambda/handler.js",
-    "deploy": "sam build && sam deploy"
+    "deploy": "./deploy.sh"
   }
 }

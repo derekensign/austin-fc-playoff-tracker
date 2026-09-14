@@ -27,7 +27,7 @@ Use `node refresh.js` after updating the input snapshot to regenerate report.jso
 - template.html: server-rendered page template.
 - refresh.js: recompute the forecast and render the page.
 - ingest/: automated result ingestion (see Automated refresh below).
-- lambda/ and template.yaml: the hourly AWS refresh job.
+- lambda/, template.yaml and deploy.sh: the hourly AWS refresh job.
 
 ## Model
 League-average goals per team-game = total GF / total GP. For each team, season GF/GP and GA/GP are shrunk toward that league average with 8 pseudo-games.
@@ -78,9 +78,15 @@ clubs have free and disclosed in `data.notes`.
 Needs a GitHub fine-grained PAT with `contents:write` on this repository, stored in Secrets Manager:
 
 ```shell
-aws secretsmanager create-secret --name verde-run-in/github-token --secret-string 'ghp_...'
-sam build && sam deploy --guided
+AWS_PROFILE=personal aws secretsmanager create-secret \
+  --name verde-run-in/github-token --secret-string 'github_pat_...'
+AWS_PROFILE=personal ./deploy.sh
 ```
+
+`deploy.sh` refuses to run against any account but the personal one, and fails before building if
+the token secret is missing — an hourly job whose only output is a commit is worthless without it.
+The schedule is hardcoded in `template.yaml` rather than parameterised, because `sam deploy
+--parameter-overrides` splits values on spaces and `rate(1 hour)` cannot survive that.
 
 Force a publish even when nothing has changed:
 

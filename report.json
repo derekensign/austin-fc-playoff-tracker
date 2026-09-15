@@ -1,7 +1,7 @@
 {
   "asOf": "2026-09-13",
   "baseline": {
-    "version": "2.2.0",
+    "version": "2.3.0",
     "iterations": 50000,
     "seed": 20260913,
     "config": {
@@ -475,6 +475,170 @@
         "top9GivenAtLeastTargetPct": 85.1482242442031
       }
     },
+    "pointsCurve": [
+      {
+        "pts": 29,
+        "sharePct": 0.058,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 30,
+        "sharePct": 0.424,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 31,
+        "sharePct": 0.922,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 32,
+        "sharePct": 1.864,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 33,
+        "sharePct": 3.186,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 34,
+        "sharePct": 5.1,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 35,
+        "sharePct": 6.41,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 36,
+        "sharePct": 8.613999999999999,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 37,
+        "sharePct": 10.213999999999999,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 38,
+        "sharePct": 10.378,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 39,
+        "sharePct": 10.888,
+        "top9Pct": 0.1469507714915503,
+        "top7Pct": 0
+      },
+      {
+        "pts": 40,
+        "sharePct": 10.24,
+        "top9Pct": 0.5859375,
+        "top7Pct": 0
+      },
+      {
+        "pts": 41,
+        "sharePct": 8.288,
+        "top9Pct": 2.9440154440154442,
+        "top7Pct": 0
+      },
+      {
+        "pts": 42,
+        "sharePct": 7.35,
+        "top9Pct": 11.292517006802722,
+        "top7Pct": 0
+      },
+      {
+        "pts": 43,
+        "sharePct": 5.4879999999999995,
+        "top9Pct": 26.02040816326531,
+        "top7Pct": 0.10932944606413994
+      },
+      {
+        "pts": 44,
+        "sharePct": 3.762,
+        "top9Pct": 50.34556087187666,
+        "top7Pct": 1.1695906432748537
+      },
+      {
+        "pts": 45,
+        "sharePct": 2.78,
+        "top9Pct": 71.51079136690647,
+        "top7Pct": 6.258992805755395
+      },
+      {
+        "pts": 46,
+        "sharePct": 1.836,
+        "top9Pct": 89.54248366013073,
+        "top7Pct": 13.616557734204793
+      },
+      {
+        "pts": 47,
+        "sharePct": 0.946,
+        "top9Pct": 97.25158562367865,
+        "top7Pct": 29.809725158562365
+      },
+      {
+        "pts": 48,
+        "sharePct": 0.6459999999999999,
+        "top9Pct": 99.69040247678018,
+        "top7Pct": 48.60681114551084
+      },
+      {
+        "pts": 49,
+        "sharePct": 0.33,
+        "top9Pct": 100,
+        "top7Pct": 65.45454545454545
+      },
+      {
+        "pts": 50,
+        "sharePct": 0.148,
+        "top9Pct": 100,
+        "top7Pct": 74.32432432432432
+      },
+      {
+        "pts": 51,
+        "sharePct": 0.092,
+        "top9Pct": 100,
+        "top7Pct": 89.13043478260869
+      },
+      {
+        "pts": 52,
+        "sharePct": 0.02,
+        "top9Pct": 100,
+        "top7Pct": 100
+      },
+      {
+        "pts": 53,
+        "sharePct": 0.01,
+        "top9Pct": 100,
+        "top7Pct": 100
+      },
+      {
+        "pts": 54,
+        "sharePct": 0.004,
+        "top9Pct": 100,
+        "top7Pct": 100
+      },
+      {
+        "pts": 56,
+        "sharePct": 0.002,
+        "top9Pct": 100,
+        "top7Pct": 100
+      }
+    ],
     "unresolved": {
       "austinAnyTiePct": 0.022000000000000002,
       "top9LowerPct": 10.274,
@@ -853,6 +1017,228 @@
       "W",
       "W"
     ]
+  },
+  "nextMatch": {
+    "id": "2026-09-19:DAL:ATX",
+    "date": "2026-09-19",
+    "home": "DAL",
+    "away": "ATX",
+    "probs": {
+      "W": 0.18135146789500517,
+      "D": 0.2218401810724299,
+      "L": 0.596808351032565
+    },
+    "ifWin": 21.407999999999998,
+    "ifDraw": 10.190000000000001,
+    "ifLoss": 6.8500000000000005
+  },
+  "rootingGuide": {
+    "window": {
+      "from": "2026-09-19",
+      "to": "2026-09-25"
+    },
+    "iterations": 20000,
+    "baselineTop9Pct": 10.36,
+    "fixtures": [
+      {
+        "id": "2026-09-19:DAL:ATX",
+        "date": "2026-09-19",
+        "home": "DAL",
+        "away": "ATX",
+        "ifHome": 6.885,
+        "ifDraw": 10.205,
+        "ifAway": 21.425,
+        "swing": 14.540000000000001,
+        "rootFor": "A"
+      },
+      {
+        "id": "2026-09-19:POR:ATL",
+        "date": "2026-09-19",
+        "home": "POR",
+        "away": "ATL",
+        "ifHome": 9.53,
+        "ifDraw": 11.08,
+        "ifAway": 11.91,
+        "swing": 2.380000000000001,
+        "rootFor": "A"
+      },
+      {
+        "id": "2026-09-20:MIA:SD",
+        "date": "2026-09-20",
+        "home": "MIA",
+        "away": "SD",
+        "ifHome": 10.86,
+        "ifDraw": 10.184999999999999,
+        "ifAway": 8.705,
+        "swing": 2.1549999999999994,
+        "rootFor": "H"
+      },
+      {
+        "id": "2026-09-19:RSL:VAN",
+        "date": "2026-09-19",
+        "home": "RSL",
+        "away": "VAN",
+        "ifHome": 9.035,
+        "ifDraw": 10.42,
+        "ifAway": 11.045,
+        "swing": 2.01,
+        "rootFor": "A"
+      },
+      {
+        "id": "2026-09-19:MIN:LAG",
+        "date": "2026-09-19",
+        "home": "MIN",
+        "away": "LAG",
+        "ifHome": 9.99,
+        "ifDraw": 11.03,
+        "ifAway": 10.31,
+        "swing": 1.0399999999999991,
+        "rootFor": "D"
+      },
+      {
+        "id": "2026-09-23:SEA:RSL",
+        "date": "2026-09-23",
+        "home": "SEA",
+        "away": "RSL",
+        "ifHome": 10.01,
+        "ifDraw": 10.955,
+        "ifAway": 10.025,
+        "swing": 0.9450000000000003,
+        "rootFor": "D"
+      },
+      {
+        "id": "2026-09-19:COL:SEA",
+        "date": "2026-09-19",
+        "home": "COL",
+        "away": "SEA",
+        "ifHome": 10.445,
+        "ifDraw": 10.645,
+        "ifAway": 9.74,
+        "swing": 0.9049999999999994,
+        "rootFor": "D"
+      },
+      {
+        "id": "2026-09-19:SJ:LAFC",
+        "date": "2026-09-19",
+        "home": "SJ",
+        "away": "LAFC",
+        "ifHome": 10.395,
+        "ifDraw": 10.37,
+        "ifAway": 10.334999999999999,
+        "swing": 0.0600000000000005,
+        "rootFor": "H"
+      },
+      {
+        "id": "2026-09-19:SKC:PHI",
+        "date": "2026-09-19",
+        "home": "SKC",
+        "away": "PHI",
+        "ifHome": 10.355,
+        "ifDraw": 10.36,
+        "ifAway": 10.36,
+        "swing": 0.004999999999999005,
+        "rootFor": "D"
+      },
+      {
+        "id": "2026-09-19:STL:TOR",
+        "date": "2026-09-19",
+        "home": "STL",
+        "away": "TOR",
+        "ifHome": 10.355,
+        "ifDraw": 10.36,
+        "ifAway": 10.36,
+        "swing": 0.004999999999999005,
+        "rootFor": "D"
+      },
+      {
+        "id": "2026-09-19:HOU:CIN",
+        "date": "2026-09-19",
+        "home": "HOU",
+        "away": "CIN",
+        "ifHome": 10.36,
+        "ifDraw": 10.36,
+        "ifAway": 10.36,
+        "swing": 0,
+        "rootFor": "H"
+      }
+    ]
+  },
+  "schedule": {
+    "ATX": {
+      "remaining": 9,
+      "home": 5,
+      "expectedPoints": 9.860165887945264
+    },
+    "COL": {
+      "remaining": 9,
+      "home": 5,
+      "expectedPoints": 11.810595202386663
+    },
+    "DAL": {
+      "remaining": 9,
+      "home": 6,
+      "expectedPoints": 14.627621958232222
+    },
+    "HOU": {
+      "remaining": 9,
+      "home": 5,
+      "expectedPoints": 13.957666997112348
+    },
+    "LAFC": {
+      "remaining": 8,
+      "home": 4,
+      "expectedPoints": 12.613354228408552
+    },
+    "LAG": {
+      "remaining": 8,
+      "home": 4,
+      "expectedPoints": 9.49353423804925
+    },
+    "MIN": {
+      "remaining": 9,
+      "home": 5,
+      "expectedPoints": 11.758343795360334
+    },
+    "POR": {
+      "remaining": 9,
+      "home": 4,
+      "expectedPoints": 12.85884976574745
+    },
+    "RSL": {
+      "remaining": 10,
+      "home": 5,
+      "expectedPoints": 13.035644156979814
+    },
+    "SD": {
+      "remaining": 9,
+      "home": 3,
+      "expectedPoints": 11.898114029952646
+    },
+    "SEA": {
+      "remaining": 11,
+      "home": 6,
+      "expectedPoints": 13.819878910112697
+    },
+    "SJ": {
+      "remaining": 9,
+      "home": 5,
+      "expectedPoints": 13.00986312596813
+    },
+    "SKC": {
+      "remaining": 10,
+      "home": 5,
+      "expectedPoints": 7.791910847173655
+    },
+    "STL": {
+      "remaining": 9,
+      "home": 5,
+      "expectedPoints": 13.858110561526287
+    },
+    "VAN": {
+      "remaining": 10,
+      "home": 3,
+      "expectedPoints": 18.551605360051557
+    }
   },
   "explanation": "This forecast uses current MLS standings, each team’s season-long scoring and defending record, the remaining schedule, and an assumed home-field advantage. It simulates every remaining match involving a Western Conference team 50,000 times, then counts how often Austin finishes in each position. Teams share the same result when they play each other. The percentages are estimates from a simple statistical model—not guarantees or calibrated betting odds."
 }

@@ -1,5 +1,5 @@
 const VerdeModel = (function createModel(){
-  const VERSION="2.2.0";
+  const VERSION="2.3.0";
   // Dixon-Coles rho is bounded so every low-score adjustment factor stays positive
   // for any plausible goal rate (1+lambda*rho > 0 needs rho > -1/lambda).
   const RHO_MIN=-0.25, RHO_MAX=0.1;
@@ -100,11 +100,17 @@ const VerdeModel = (function createModel(){
     const tally=Object.fromEntries(west.map(t=>[t.id,{id:t.id,sum:0,rankSum:0,positions:Array(15).fill(0),points:{}}]));
     const thresholds={42:{n:0,qual:0},45:{n:0,qual:0}},cutoffs={};
     let unresolvedAustin=0,top9Lower=0,top9Upper=0;
+    // Fixed results: "H"/"D"/"A" are from the home side's view and work for any
+    // fixture; "W"/"L" are Austin's view and only make sense for Austin's own matches.
     const fixed=config.fixed||{};
-    for(const [id,result] of Object.entries(fixed))assert(data.fixtures.some(f=>f.id===id&&[f.home,f.away].includes("ATX"))&&["W","D","L"].includes(result),"Invalid fixed result");
+    for(const [id,result] of Object.entries(fixed)){const f=data.fixtures.find(x=>x.id===id);
+      assert(f&&["H","D","A","W","L"].includes(result),"Invalid fixed result "+id);
+      assert(!["W","L"].includes(result)||[f.home,f.away].includes("ATX"),"Austin-relative result on a non-Austin fixture "+id);}
+    const byPoints={};
     for(let iter=0;iter<N;iter++){
       const states=start.map(t=>({...t,lot:random()}));
-      for(const f of tables){let key="all";if(fixed[f.id]){const r=fixed[f.id];key=f.home==="ATX"?r:r==="W"?"L":r==="L"?"W":"D";}
+      for(const f of tables){let key="all";const r=fixed[f.id];
+        if(r)key=r==="H"?"W":r==="A"?"L":r==="D"?"D":(f.home==="ATX")===(r==="W")?"W":"L";
         const s=sample(f[key],random());applyScore(states[by[f.home]],states[by[f.away]],s.hg,s.ag);}
       const ranked=west.map(t=>states[by[t.id]]).sort((a,b)=>compare(a,b)||a.lot-b.lot);
       const atx=states[by.ATX];const better=ranked.filter(t=>compare(t,atx)<0).length,tied=ranked.filter(t=>compare(t,atx)===0).length;
@@ -115,6 +121,8 @@ const VerdeModel = (function createModel(){
       for(let i=0;i<ranked.length;i++){const t=ranked[i],z=tally[t.id];z.sum+=t.pts;z.rankSum+=i+1;z.positions[i]++;z.points[t.pts]=(z.points[t.pts]||0)+1;if(t.id==="ATX")place=i+1;}
       cutoffs[ranked[8].pts]=(cutoffs[ranked[8].pts]||0)+1;
       for(const target of [42,45])if(atx.pts>=target){thresholds[target].n++;if(place<=9)thresholds[target].qual++;}
+      // Exact final total -> how often that total was enough. Answers "what does X points buy?"
+      const bp=byPoints[atx.pts]||(byPoints[atx.pts]={n:0,top9:0,top7:0});bp.n++;if(place<=9)bp.top9++;if(place<=7)bp.top7++;
     }
     const quantile=(counts,p)=>{let sum=0;for(const [k,v]of Object.entries(counts).sort((a,b)=>+a[0]-b[0])){sum+=v;if(sum>=N*p)return +k;}};
     const results=west.map(t=>{const z=tally[t.id];return{id:t.id,meanPoints:z.sum/N,meanPlace:z.rankSum/N,medianPoints:quantile(z.points,.5),medianPlace:quantile(Object.fromEntries(z.positions.map((n,i)=>[i+1,n])),.5),p10:quantile(z.points,.1),p90:quantile(z.points,.9),positionPct:z.positions.map(n=>n/N*100),top9Pct:z.positions.slice(0,9).reduce((a,b)=>a+b,0)/N*100,top7Pct:z.positions.slice(0,7).reduce((a,b)=>a+b,0)/N*100};});
@@ -122,6 +130,7 @@ const VerdeModel = (function createModel(){
     return {version:VERSION,iterations:N,seed,config:{priorGames:config.priorGames??8,homeLog:config.homeLog??.13,recentWeight:config.recentWeight??0,drawRho:tables[0]?.rho??0},teams:results,
       atx,cutoff:{median:quantile(cutoffs,.5),p10:quantile(cutoffs,.1),p90:quantile(cutoffs,.9)},
       targets:Object.fromEntries([42,45].map(k=>[k,{reachPct:thresholds[k].n/N*100,top9GivenAtLeastTargetPct:thresholds[k].n?thresholds[k].qual/thresholds[k].n*100:null}])),
+      pointsCurve:Object.keys(byPoints).map(Number).sort((x,y)=>x-y).map(p=>{const v=byPoints[p];return{pts:p,sharePct:v.n/N*100,top9Pct:v.top9/v.n*100,top7Pct:v.top7/v.n*100};}),
       unresolved:{austinAnyTiePct:unresolvedAustin/N*100,top9LowerPct:top9Lower/N*100,top9UpperPct:top9Upper/N*100},
       matches:tables.filter(f=>[f.home,f.away].includes("ATX")).map(f=>({id:f.id,date:f.date,home:f.home,away:f.away,lambdaHome:f.lambdaHome,lambdaAway:f.lambdaAway,probs:f.home==="ATX"?f.probs:{W:f.probs.L,D:f.probs.D,L:f.probs.W}}))};
   }

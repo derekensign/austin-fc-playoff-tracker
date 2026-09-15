@@ -46,4 +46,19 @@ const fit=model.calibrateDrawRho(synthetic,forty.map((f,i)=>({home:f.home,away:f
 assert.ok(fit.drawRho<0&&fit.drawRho>rhoMin&&Math.abs(fit.modelDrawsCorrected-10)<0.05,"solver failed to hit 10 draws: "+JSON.stringify(fit));
 assert.equal(model.calibrateDrawRho(synthetic,forty.map(f=>({home:f.home,away:f.away,draw:true}))).drawRho,rhoMin,"all-draws target must clamp to RHO_MIN");
 assert.equal(model.calibrateDrawRho(synthetic,forty.map(f=>({home:f.home,away:f.away,draw:false}))).drawRho,rhoMax,"no-draws target must clamp to RHO_MAX");
-console.log("PASS: schedule, conservation, determinism, ranking, probability, recent-form, draw-calibration and scenario checks.");
+// Fixed results generalise to any fixture from the home side's view; Austin-relative codes stay Austin-only.
+const van=data.teams.find(t=>t.id==="VAN"),vanFixtures=data.fixtures.filter(f=>f.home==="VAN"||f.away==="VAN");
+const vanWinsOut=Object.fromEntries(vanFixtures.map(f=>[f.id,f.home==="VAN"?"H":"A"]));
+assert.equal(model.simulate(data,{iterations:100,fixed:vanWinsOut}).teams.find(t=>t.id==="VAN").meanPoints,van.pts+3*vanFixtures.length,"H/A fixed results must decide non-Austin fixtures");
+const nonAustin=data.fixtures.find(f=>f.home!=="ATX"&&f.away!=="ATX");
+assert.throws(()=>model.simulate(data,{iterations:10,fixed:{[nonAustin.id]:"W"}}),"Austin-relative result must be rejected on a non-Austin fixture");
+const austinHome=data.fixtures.find(f=>f.home==="ATX"),austinAway=data.fixtures.find(f=>f.away==="ATX");
+assert.equal(model.simulate(data,{iterations:100,fixed:{[austinHome.id]:"H"}}).atx.meanPoints,model.simulate(data,{iterations:100,fixed:{[austinHome.id]:"W"}}).atx.meanPoints,"H on an Austin home fixture must equal W");
+assert.equal(model.simulate(data,{iterations:100,fixed:{[austinAway.id]:"A"}}).atx.meanPoints,model.simulate(data,{iterations:100,fixed:{[austinAway.id]:"W"}}).atx.meanPoints,"A on an Austin away fixture must equal W");
+// Points curve partitions the simulations and agrees with the other summaries of the same run.
+const run=model.simulate(data,{iterations:2000});
+assert.ok(Math.abs(run.pointsCurve.reduce((s,p)=>s+p.sharePct,0)-100)<1e-9,"points curve shares must sum to 100");
+assert.ok(Math.abs(run.pointsCurve.filter(p=>p.pts>=42).reduce((s,p)=>s+p.sharePct,0)-run.targets[42].reachPct)<1e-9,"points curve disagrees with the 42-point target");
+assert.ok(Math.abs(run.pointsCurve.reduce((s,p)=>s+p.sharePct*p.top9Pct/100,0)-run.atx.top9Pct)<1e-6,"points curve disagrees with headline top-nine odds");
+for(const p of run.pointsCurve)assert.ok(p.pts>=atx.pts&&p.pts<=atx.pts+3*remaining&&p.top7Pct<=p.top9Pct,"points curve row out of bounds "+JSON.stringify(p));
+console.log("PASS: schedule, conservation, determinism, ranking, probability, recent-form, draw-calibration, fixed-result, points-curve and scenario checks.");

@@ -1,4 +1,4 @@
-# Verde Run-In, model v2.2
+# Verde Run-In, model v2.3
 Austin FC Western Conference playoff forecast. All figures are experimental model estimates.
 
 The snapshot date lives in `data.json` (`asOf`) and the page renders it; this README no longer
@@ -20,7 +20,10 @@ Use `node refresh.js` after updating the input snapshot to regenerate report.jso
 ## Published files
 - model.js: actual executable score and season simulation.
 - data.json: all 30 teams' season records, all 80 remaining MLS fixtures involving Western teams, dated sources.
-- report.json: baseline and five sensitivity runs.
+- report.json: baseline and six sensitivity runs, plus `nextMatch` (Austin's odds after each result
+  of its next match), `rootingGuide` (every fixture in the first week of remaining play × home win /
+  draw / away win → Austin's odds, ranked by swing), `schedule` (each Western club's remaining
+  matches and expected points), and `baseline.pointsCurve` (P(top 9 | exact final total)).
 - audit.json: review corrections, validation summary and explicit limitations.
 - index.html, styles.css, app.js, worker.js: public dashboard and interactive conditional simulation.
 - render.js and paths.js: page rendering and maximum-likelihood exact-target paths.
@@ -36,8 +39,19 @@ With `recentWeight` set, every club's rates are first blended with its last six 
 Ranking priority: points, wins, GD, GF. Remaining ties are randomly ordered with the fixed seed, with an explicit Austin best/worst tie bound. Historical H2H, discipline and venue tiebreakers are not implemented. This is disclosed; do not describe all tiebreakers as exact.
 The headline presents marginal medians of Austin points and Western place. These do not assert that the median point total necessarily yields the median rank in the same season.
 
+## What the page shows
+Beyond the headline odds: every club's finishing-position heatmap; standings with GD, GF, matches
+left and expected points from them; a weekly rooting guide (which results this week move Austin's
+odds, and which way); the points curve (how often each exact final total was enough); and Austin's
+magic and tragic numbers, which are arithmetic rather than simulation. Conditional cells in the
+rooting guide use 20,000 iterations under the same seed as everything else, so they are comparable
+with each other; the headline stays at 50,000.
+
+`simulate()` accepts `fixed` results for any fixture: `"H"`, `"D"`, `"A"` from the home side's view
+on any match, or `"W"`, `"D"`, `"L"` from Austin's view on Austin's own matches.
+
 ## Scenarios
-Baseline: 50,000 iterations, seed 20260914, priorGames 8, homeLog .13, no form override.
+Baseline: 50,000 iterations, seed from `asOf`, priorGames 8, homeLog .13, calibrated drawRho, no form override.
 Sensitivity: low-score correction off (ρ = 0); recent weight .2; priorGames 4 and 16; homeLog .08 and .18. Change one at a time.
 Recent scenario blends every club's last six completed MLS matches, computed from the results feed rather than hand-entered.
 User scenarios: 20,000 iterations with selected Austin W/D/L results. Scorelines are sampled conditional on each chosen result; rivals receive the same fixture outcome.

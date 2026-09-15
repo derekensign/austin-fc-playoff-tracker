@@ -29,9 +29,10 @@ Globals:
     Architectures: [arm64]
     # The AWS SDK v3 that handler.js uses for Secrets Manager ships with the
     # nodejs22.x runtime, so this function needs no bundled dependencies.
-    Timeout: 300
-    # Single-threaded simulation: ~6s per 50,000-iteration run and refresh.js
-    # does six of them, so buy a full vCPU rather than extra parallelism.
+    # refresh.js runs ten full-size simulations plus ~35 smaller ones for the
+    # rooting guide: about 140s on a laptop. Headroom for a busy midweek.
+    Timeout: 600
+    # Single-threaded simulation, so buy a full vCPU rather than extra parallelism.
     MemorySize: 1769
 
 Resources:

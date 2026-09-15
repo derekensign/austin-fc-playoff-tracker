@@ -14,7 +14,8 @@
     "Shows model sensitivity and identifies selected parameter choices as uncalibrated.",
     "Preserved model.js, data.json, report.json and update instructions as deployable public source.",
     "Corrected reach-42/45 versus qualifying probability distinction.",
-    "v2.2: added a Dixon-Coles low-score correction calibrated to the season draw rate; independent Poissons produced ~85 draws where the 2026 season had 95 in 372 matches."
+    "v2.2: added a Dixon-Coles low-score correction calibrated to the season draw rate; independent Poissons produced ~85 draws where the 2026 season had 95 in 372 matches.",
+    "v2.3: added every club’s finishing-position heatmap, GD/GF and remaining expected points in the standings, a weekly rooting guide (conditional odds for every fixture in the first week of remaining play), the points curve, and deterministic magic/tragic numbers. fixed results now accept any fixture from the home side’s view."
   ],
   "limitations": [
     "Not backtested or calibrated. Not a trained AI predictor, bookmaker model, or xG model.",
@@ -41,7 +42,7 @@
     "top9LowerPct": 10.58,
     "top9UpperPct": 10.58
   },
-  "version": "2.2.0",
+  "version": "2.3.0",
   "latestRefresh": {
     "asOf": "2026-09-13",
     "iterations": 50000,

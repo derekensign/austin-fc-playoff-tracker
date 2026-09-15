@@ -1,5 +1,12 @@
 {
   "asOf": "2026-09-13",
+  "calibration": {
+    "drawRho": -0.1705,
+    "modelDrawsCorrected": 95,
+    "modelDrawsUncorrected": 82.58,
+    "observedDraws": 95,
+    "observedGames": 372
+  },
   "fixtures": [
     {
       "away": "SEA",
@@ -785,7 +792,8 @@
     "All remaining MLS fixtures involving a Western club are included. East-vs-East fixtures are not required because team strengths are held fixed throughout each forecast.",
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
-    "Recent form is each club's last 6 completed league matches, computed from the results feed."
+    "Recent form is each club's last 6 completed league matches, computed from the results feed.",
+    "Low-score correction rho = -0.1705, fitted so the model reproduces the season's 95 draws in 372 matches (uncorrected Poisson would produce 82.58)."
   ],
   "recentForm": {
     "ATL": {
@@ -1457,5 +1465,5 @@
       "wins": 14
     }
   ],
-  "version": "2.1.0"
+  "version": "2.2.0"
 }

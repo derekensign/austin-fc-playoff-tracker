@@ -8,6 +8,7 @@ const data=JSON.parse(read("data.json"));model.validate(data);
 const seed=Number(data.asOf.replaceAll("-","")),iterations=50000;
 const baseline=model.simulate(data,{iterations,seed});
 const variants=[
+{id:"noDrawFix",label:"No low-score correction (plain independent Poisson)",config:{drawRho:0}},
 {id:"recent",label:"20% weight on every club’s last six",config:{recentWeight:.2}},
 {id:"shrink4",label:"Less regression to league average",config:{priorGames:4}},
 {id:"shrink16",label:"More regression to league average",config:{priorGames:16}},

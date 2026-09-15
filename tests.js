@@ -27,4 +27,23 @@ const movedFixtures=plainRates.filter((f,i)=>Math.abs(f.lambdaHome-weightedRates
 // Austin plays only 34-gp of the remaining fixtures, so an Austin-only weighting
 // could never move this many. This is the test that pins the league-wide behaviour.
 assert.ok(movedFixtures>2*(34-data.teams.find(t=>t.id==="ATX").gp),"recentWeight is not applying league-wide: only "+movedFixtures+" fixtures moved");
-console.log("PASS: schedule, conservation, determinism, ranking, probability, recent-form and scenario checks.");
+// Low-score correction: present and in range, monotone in the right direction, a no-op at zero,
+// and the calibration solver actually hits its target.
+assert.equal(data.version,model.VERSION,"data.json was built by a different model version");
+const cal=data.calibration;assert.ok(cal&&Number.isFinite(cal.drawRho),"Missing draw calibration");
+assert.ok(Math.abs(cal.modelDrawsCorrected-cal.observedDraws)<0.05,"Calibrated model does not reproduce observed draws: "+cal.modelDrawsCorrected+" vs "+cal.observedDraws);
+assert.ok(cal.observedDraws>cal.modelDrawsUncorrected?cal.drawRho<0:cal.drawRho>=0,"drawRho sign disagrees with the draw shortfall");
+const f0=model.rates(data,{drawRho:0})[0],fNeg=model.rates(data,{drawRho:-.1})[0],fPos=model.rates(data,{drawRho:.05})[0];
+assert.equal(f0.rho,0);assert.equal(model.rates(data)[0].rho,cal.drawRho,"default rho must come from data.calibration");
+const [d0,dNeg,dPos]=[f0,fNeg,fPos].map(f=>model.scoreTable(f).probs.D);
+assert.ok(dNeg>d0&&d0>dPos,"negative rho must raise P(draw), positive must lower it");
+for(const [hg,ag] of [[0,0],[1,1],[2,0],[0,2],[3,1]])assert.equal(model.lowScoreFactor(hg,ag,1.5,1.2,0),1,"rho 0 must leave every score untouched");
+assert.equal(model.lowScoreFactor(2,2,1.5,1.2,-.2),1,"correction must only touch scores with both sides <= 1");
+// Solver: synthetic leagues. A reachable target is hit exactly; unreachable ones clamp to the
+// bound on the correct side (too many observed draws -> RHO_MIN, too few -> RHO_MAX).
+const synthetic={teams:data.teams},forty=data.fixtures.slice(0,40),rhoMin=model.rates(data,{drawRho:-9})[0].rho,rhoMax=model.rates(data,{drawRho:9})[0].rho;
+const fit=model.calibrateDrawRho(synthetic,forty.map((f,i)=>({home:f.home,away:f.away,draw:i%4===0})));
+assert.ok(fit.drawRho<0&&fit.drawRho>rhoMin&&Math.abs(fit.modelDrawsCorrected-10)<0.05,"solver failed to hit 10 draws: "+JSON.stringify(fit));
+assert.equal(model.calibrateDrawRho(synthetic,forty.map(f=>({home:f.home,away:f.away,draw:true}))).drawRho,rhoMin,"all-draws target must clamp to RHO_MIN");
+assert.equal(model.calibrateDrawRho(synthetic,forty.map(f=>({home:f.home,away:f.away,draw:false}))).drawRho,rhoMax,"no-draws target must clamp to RHO_MAX");
+console.log("PASS: schedule, conservation, determinism, ranking, probability, recent-form, draw-calibration and scenario checks.");

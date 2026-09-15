@@ -19,6 +19,8 @@
  *     forecast, which is the behaviour we want from an unattended job.
  */
 
+const model = require("../model.js");
+
 const RUN_IN_FINAL_DATE = "2026-11-07"; // model.validate() rejects fixtures past this
 const RECENT_FORM_MATCH_COUNT = 6;
 const MATCHES_PER_TEAM_PER_SEASON = 34;
@@ -215,12 +217,25 @@ function rebuildData(previousData, completedGames) {
 
   const recentFormByTeamId = computeRecentForm(recordsByTeamId, completedGames);
 
+  // Re-fit the low-score correction against this season's own results, so the
+  // draw rate the model produces tracks the draw rate the league is actually
+  // producing. Uses the same strengths the forecast will use.
+  const calibration = model.calibrateDrawRho(
+    { teams: rankedTeams },
+    completedGames.map((game) => ({
+      home: game.home,
+      away: game.away,
+      draw: game.homeGoals === game.awayGoals,
+    }))
+  );
+
   const notes = [
     `Snapshot as of ${asOfDate}, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.`,
     "All remaining MLS fixtures involving a Western club are included. East-vs-East fixtures are not required because team strengths are held fixed throughout each forecast.",
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     `Recent form is each club's last ${RECENT_FORM_MATCH_COUNT} completed league matches, computed from the results feed.`,
+    `Low-score correction rho = ${calibration.drawRho}, fitted so the model reproduces the season's ${calibration.observedDraws} draws in ${calibration.observedGames} matches (uncorrected Poisson would produce ${calibration.modelDrawsUncorrected}).`,
   ];
   if (rescheduledFixtures.length > 0) {
     notes.push(
@@ -231,10 +246,13 @@ function rebuildData(previousData, completedGames) {
 
   const data = {
     asOf: asOfDate,
-    version: previousData.version,
+    // Stamped from the model that will consume it, so data.json can never carry
+    // a version the shipped model.js does not recognise.
+    version: model.VERSION,
     teams: rankedTeams,
     fixtures: remainingFixtures,
     recentForm: recentFormByTeamId,
+    calibration,
     notes,
     sources: {
       ...previousData.sources,

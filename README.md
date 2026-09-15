@@ -1,4 +1,4 @@
-# Verde Run-In, model v2.1
+# Verde Run-In, model v2.2
 Austin FC Western Conference playoff forecast. All figures are experimental model estimates.
 
 The snapshot date lives in `data.json` (`asOf`) and the page renders it; this README no longer
@@ -32,13 +32,13 @@ Use `node refresh.js` after updating the input snapshot to regenerate report.jso
 ## Model
 League-average goals per team-game = total GF / total GP. For each team, season GF/GP and GA/GP are shrunk toward that league average with 8 pseudo-games.
 With `recentWeight` set, every club's rates are first blended with its last six completed matches
-(`data.recentForm`); clubs without a form sample fall back to season rates. Expected home goals = home attack × away concession / league average × exp(0.13). Expected away goals use exp(-0.13). Scores follow independent Poisson distributions. One shared score per fixture updates both teams' points, wins and goals. Strengths are fixed. East-only matches therefore cannot affect Western results and are omitted.
+(`data.recentForm`); clubs without a form sample fall back to season rates. Expected home goals = home attack × away concession / league average × exp(0.13). Expected away goals use exp(-0.13). Scores follow two Poisson distributions with a Dixon–Coles low-score correction: the joint probabilities of 0–0, 1–0, 0–1 and 1–1 are scaled by `1−λμρ`, `1+μρ`, `1+λρ` and `1−ρ` and the table is renormalised. Independent Poissons under-produce draws (this season: 95 real draws in 372 matches vs ~85 modelled), and a negative ρ repairs exactly that. ρ is **fitted at every ingest** so the model reproduces the season's observed draw count on the season's actual fixtures, and stored in `data.calibration`; the model reads it from there, so snapshots without the block fall back to ρ = 0. One shared score per fixture updates both teams' points, wins and goals. Strengths are fixed. East-only matches therefore cannot affect Western results and are omitted.
 Ranking priority: points, wins, GD, GF. Remaining ties are randomly ordered with the fixed seed, with an explicit Austin best/worst tie bound. Historical H2H, discipline and venue tiebreakers are not implemented. This is disclosed; do not describe all tiebreakers as exact.
 The headline presents marginal medians of Austin points and Western place. These do not assert that the median point total necessarily yields the median rank in the same season.
 
 ## Scenarios
 Baseline: 50,000 iterations, seed 20260914, priorGames 8, homeLog .13, no form override.
-Sensitivity: Austin recent weight .2; priorGames 4 and 16; homeLog .08 and .18. Change one at a time.
+Sensitivity: low-score correction off (ρ = 0); recent weight .2; priorGames 4 and 16; homeLog .08 and .18. Change one at a time.
 Recent scenario blends every club's last six completed MLS matches, computed from the results feed rather than hand-entered.
 User scenarios: 20,000 iterations with selected Austin W/D/L results. Scorelines are sampled conditional on each chosen result; rivals receive the same fixture outcome.
 No validation against held-out seasons has been performed. These are not calibrated betting odds.
@@ -85,6 +85,10 @@ AWS_PROFILE=personal ./deploy.sh
 
 `deploy.sh` refuses to run against any account but the personal one, and fails before building if
 the token secret is missing — an hourly job whose only output is a commit is worthless without it.
+
+**Redeploy after any change to the model, template, or hand-edited fixtures.** The function runs
+the copy of this repository that was packaged at deploy time, not the current `main`. Left stale,
+the next result would republish the site from the old model and overwrite whatever was pushed.
 The schedule is hardcoded in `template.yaml` rather than parameterised, because `sam deploy
 --parameter-overrides` splits values on spaces and `rate(1 hour)` cannot survive that.
 

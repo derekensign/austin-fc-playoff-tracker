@@ -13,12 +13,13 @@
     "Removed unsupported form and home-game claims; computes remaining home counts directly from fixtures.",
     "Shows model sensitivity and identifies selected parameter choices as uncalibrated.",
     "Preserved model.js, data.json, report.json and update instructions as deployable public source.",
-    "Corrected reach-42/45 versus qualifying probability distinction."
+    "Corrected reach-42/45 versus qualifying probability distinction.",
+    "v2.2: added a Dixon-Coles low-score correction calibrated to the season draw rate; independent Poissons produced ~85 draws where the 2026 season had 95 in 372 matches."
   ],
   "limitations": [
     "Not backtested or calibrated. Not a trained AI predictor, bookmaker model, or xG model.",
     "Eight pseudo-games of league-average scoring shrink extreme rates; this and the log home effect 0.13 are assumed parameters.",
-    "Independent Poisson goal counts omit correlation, lineups, injuries, travel, schedule-adjusted historical strength, and roster changes.",
+    "Poisson goal counts are corrected only for the low-score draw deficit (Dixon-Coles rho, refitted each ingest); they still omit within-match correlation beyond that, lineups, injuries, travel, schedule-adjusted historical strength, and roster changes.",
     "Strengths stay fixed during simulations. East-vs-East fixtures cannot alter them.",
     "After ties on points, wins, GD and GF, the model uses a seeded random order instead of historical head-to-head, disciplinary and venue tiebreakers. Austin boundary bounds are published.",
     "Sensitivity runs change one assumption at a time and are not confidence intervals.",
@@ -40,16 +41,16 @@
     "top9LowerPct": 10.58,
     "top9UpperPct": 10.58
   },
-  "version": "2.0.0",
+  "version": "2.2.0",
   "latestRefresh": {
     "asOf": "2026-09-13",
     "iterations": 50000,
     "seed": 20260913,
     "validation": "passed",
     "tieAudit": {
-      "austinAnyTiePct": 0.026,
-      "top9LowerPct": 10.586,
-      "top9UpperPct": 10.586
+      "austinAnyTiePct": 0.022000000000000002,
+      "top9LowerPct": 10.274,
+      "top9UpperPct": 10.274
     }
   }
 }

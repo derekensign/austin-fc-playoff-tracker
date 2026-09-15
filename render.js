@@ -39,12 +39,14 @@ module.exports = function render(template,data,report){
  curveSentence:(()=>{const even=b.pointsCurve.find(p=>p.top9Pct>=50&&p.sharePct>=.1),safe=b.pointsCurve.find(p=>p.top9Pct>=90&&p.sharePct>=.1);
   return "Austin’s first total with better-than-even playoff odds is <strong>"+(even?even.pts+" points ("+pct(even.top9Pct)+")":"out of reach")+"</strong>"+(safe?"; the first that gets in nine times out of ten is <strong>"+safe.pts+"</strong>":"")+". Gold line: the median ninth-place total, "+b.cutoff.median+".";})(),
  nextMatch:(()=>{const home=m.home==="ATX",opp=name(home?m.away:m.home);
-  return "Next up: "+(home?"vs ":"@ ")+esc(opp)+", "+date(m.date)+". Win and Austin’s top-nine chance goes to <strong>"+pct(m.ifWin)+"</strong>; draw, <strong>"+pct(m.ifDraw)+"</strong>; lose, <strong>"+pct(m.ifLoss)+"</strong> (baseline "+pct(a.top9Pct)+"). The model rates that match "+pct(m.probs.W*100)+" / "+pct(m.probs.D*100)+" / "+pct(m.probs.L*100)+" win / draw / loss.";})(),
+  return "Next up: "+(home?"vs ":"@ ")+esc(opp)+", "+date(m.date)+". Austin’s top-nine chance is "+pct(a.top9Pct)+" today. If Austin wins it becomes <strong>"+pct(m.ifWin)+"</strong>; if it draws, <strong>"+pct(m.ifDraw)+"</strong>; if it loses, <strong>"+pct(m.ifLoss)+"</strong>. The model thinks a win is "+Math.round(m.probs.W*100)+"% likely, a draw "+Math.round(m.probs.D*100)+"%, a loss "+Math.round(m.probs.L*100)+"%.";})(),
  // Below half a point of swing the three cells are within run-to-run noise at 20k iterations,
  // so naming a side to root for would be reading tea leaves.
  rootingGuide:g.fixtures.map(f=>{const hn=name(f.home),an=name(f.away),matters=f.swing>=.5,root=!matters?"No effect":f.rootFor==="D"?"A draw":f.rootFor==="H"?hn:an;
-  const cell=(v,k)=>'<td'+(matters&&k===f.rootFor?' class="root"':"")+'>'+pct(v)+'</td>';
-  return '<tr'+([f.home,f.away].includes("ATX")?' class="atx"':"")+'><td>'+date(f.date)+'</td><td>'+esc(hn)+' v '+esc(an)+'</td>'+cell(f.ifHome,"H")+cell(f.ifDraw,"D")+cell(f.ifAway,"A")+'<td>'+f.swing.toFixed(1)+' pp</td><td><strong>'+esc(root)+'</strong></td></tr>';}).join(""),
+  // Big number: Austin's top-nine chance if this result happens. Small number: how likely the
+  // result is. The three small numbers sum to 100%; the three big ones are alternatives and do not.
+  const cell=(v,k)=>'<td'+(matters&&k===f.rootFor?' class="root"':"")+'><span class="cond">'+pct(v)+'</span><span class="likely">'+Math.round(f.probs[k]*100)+'% likely</span></td>';
+  return '<tr'+([f.home,f.away].includes("ATX")?' class="atx"':"")+'><td>'+date(f.date)+'</td><td>'+esc(hn)+' v '+esc(an)+'</td>'+cell(f.ifHome,"H")+cell(f.ifDraw,"D")+cell(f.ifAway,"A")+'<td>'+(matters?f.swing.toFixed(1)+"%":"–")+'</td><td><strong>'+esc(root)+'</strong></td></tr>';}).join(""),
  guideWindow:date(g.window.from)+"–"+date(g.window.to),guideBaseline:pct(g.baselineTop9Pct),guideIterations:g.iterations.toLocaleString("en-US"),guideCount:g.fixtures.length,
  magic,
  path:b.matches.map((f,i)=>'<div class="game"><div class="date">'+date(f.date)+'</div><div class="opp">'+(f.home==="ATX"?"vs ":"@ ")+esc(data.teams.find(t=>t.id===(f.home==="ATX"?f.away:f.home)).name)+'</div><div class="pick">'+["W","D","L","?"].map(p=>'<button type="button" data-id="'+esc(f.id)+'" data-result="'+p+'" aria-pressed="'+(p===(path[i]||"?"))+'" aria-label="'+date(f.date)+' '+({W:"Austin win",D:"Draw",L:"Austin loss","?":"Let model decide"}[p])+'">'+p+'</button>').join("")+'</div></div>').join(""),

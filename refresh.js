@@ -25,16 +25,18 @@ const nextMatch={id:next.id,date:next.date,home:next.home,away:next.away,probs:n
 // 20,000 iterations each: the guide ranks fixtures against one another under one seed, and a
 // dozen fixtures at full size would push the hourly job past its budget.
 const addDays=(d,n)=>{const t=new Date(d+"T00:00:00Z");t.setUTCDate(t.getUTCDate()+n);return t.toISOString().slice(0,10);};
+const tables=model.rates(data).map(model.scoreTable),tableById=Object.fromEntries(tables.map(f=>[f.id,f]));
 const guideIterations=20000,upcoming=[...data.fixtures].sort((a,b)=>a.date.localeCompare(b.date));
 const windowFrom=upcoming[0].date,windowTo=addDays(windowFrom,6);
 const rootingGuide={window:{from:windowFrom,to:windowTo},iterations:guideIterations,baselineTop9Pct:conditional({},guideIterations),
  fixtures:upcoming.filter(f=>f.date<=windowTo).map(f=>{
   const r={H:conditional({[f.id]:"H"},guideIterations),D:conditional({[f.id]:"D"},guideIterations),A:conditional({[f.id]:"A"},guideIterations)};
-  const rootFor=["H","D","A"].sort((x,y)=>r[y]-r[x])[0];
-  return {id:f.id,date:f.date,home:f.home,away:f.away,ifHome:r.H,ifDraw:r.D,ifAway:r.A,swing:Math.max(r.H,r.D,r.A)-Math.min(r.H,r.D,r.A),rootFor};
+  const rootFor=["H","D","A"].sort((x,y)=>r[y]-r[x])[0],p=tableById[f.id].probs;
+  // probs are how likely each result is (they sum to 1); ifHome/ifDraw/ifAway are Austin's
+  // top-nine chance conditional on that result, and do not sum to anything.
+  return {id:f.id,date:f.date,home:f.home,away:f.away,probs:{H:p.W,D:p.D,A:p.L},ifHome:r.H,ifDraw:r.D,ifAway:r.A,swing:Math.max(r.H,r.D,r.A)-Math.min(r.H,r.D,r.A),rootFor};
  }).sort((a,b)=>b.swing-a.swing)};
 // Remaining-schedule difficulty for every Western club, from the same baseline score tables.
-const tables=model.rates(data).map(model.scoreTable);
 const schedule=Object.fromEntries(data.teams.filter(t=>t.conference==="West").map(t=>{
  const list=tables.filter(f=>f.home===t.id||f.away===t.id);
  const expectedPoints=list.reduce((s,f)=>{const p=f.home===t.id?f.probs:{W:f.probs.L,D:f.probs.D,L:f.probs.W};return s+3*p.W+p.D;},0);

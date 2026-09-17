@@ -14,12 +14,7 @@
  *      this provider can refresh results but never the remaining schedule.
  */
 
-/**
- * ASA serves one API per league under the same root. The playoff forecast only
- * ever reads "mls"; the Copa Tejas Shield (ingest/shield.js) reads the others.
- */
-const ASA_API_ROOT = "https://app.americansocceranalysis.com/api/v1";
-const DEFAULT_LEAGUE = "mls";
+const ASA_BASE_URL = "https://app.americansocceranalysis.com/api/v1/mls";
 
 /** ASA is slow — a full-season games query routinely takes ~30 seconds. */
 const REQUEST_TIMEOUT_MS = 90000;
@@ -67,11 +62,10 @@ function matchLocalDate(asaTimestamp) {
 
 /**
  * @param {string} endpointPath e.g. "/teams"
- * @param {string} [league] ASA league slug: mls, nwsl, uslc, usl1, usls, mlsnp
  * @returns {Promise<unknown>} parsed JSON body
  */
-async function fetchAsaJson(endpointPath, league = DEFAULT_LEAGUE) {
-  const requestUrl = `${ASA_API_ROOT}/${league}${endpointPath}`;
+async function fetchAsaJson(endpointPath) {
+  const requestUrl = `${ASA_BASE_URL}${endpointPath}`;
   let lastFailure;
   for (let attemptNumber = 1; attemptNumber <= REQUEST_RETRY_ATTEMPTS; attemptNumber++) {
     try {
@@ -184,7 +178,6 @@ async function fetchCompletedGames(seasonName, knownTeamIds) {
 }
 
 module.exports = {
-  fetchAsaJson,
   fetchCompletedGames,
   fetchTeamIdMap,
   matchLocalDate,

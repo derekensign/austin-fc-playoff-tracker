@@ -30,9 +30,7 @@ Use `node refresh.js` after updating the input snapshot to regenerate report.jso
 - template.html: server-rendered page template.
 - refresh.js: recompute the forecast and render the page.
 - ingest/: automated result ingestion (see Automated refresh below).
-- shield.json, shield.html, render-shield.js, shield-template.html: the Copa Tejas Shield page.
 - lambda/, template.yaml and deploy.sh: the hourly AWS refresh job.
-- vercel.json: `cleanUrls`, so the Shield lives at `/shield`.
 
 ## Model
 League-average goals per team-game = total GF / total GP. For each team, season GF/GP and GA/GP are shrunk toward that league average with 8 pseudo-games.
@@ -58,33 +56,6 @@ Sensitivity: low-score correction off (ρ = 0); recent weight .2; priorGames 4 a
 Recent scenario blends every club's last six completed MLS matches, computed from the results feed rather than hand-entered.
 User scenarios: 20,000 iterations with selected Austin W/D/L results. Scorelines are sampled conditional on each chosen result; rivals receive the same fixture outcome.
 No validation against held-out seasons has been performed. These are not calibrated betting odds.
-
-## Copa Tejas Shield (`/shield`)
-A second page ranks every professional club in Texas, men's and women's, by points per game in
-league play; the top club holds the Shield. It mirrors the supporter-run
-[Copa Tejas](https://www.copatejas.com/) Shield, computed from the results feed rather than by hand,
-and adds the USL League One clubs the official table omits.
-
-- `ingest/shield.js`: fetches MLS, NWSL, USL Championship, USL Super League, USL League One and MLS
-  Next Pro from ASA, picks each league's current season (the one holding its latest completed game,
-  so the autumn–spring Super League is handled), rebuilds every Texas club's record from the full
-  game log, and writes `shield.json` + `shield.html`. Clubs are configured by ASA `team_id`; a
-  Texas-named club that plays without being configured raises a warning in the data, never a failure.
-- Scoring is a uniform 3/1/0 on the 90-minute result of completed league matches; cups, playoffs
-  and Next Pro shootout bonuses are excluded. Tiebreakers: PPG, GD per game, GF per game, name.
-- MLS Next Pro sides (Austin FC II, Houston Dynamo FC 2, North Texas SC) are ranked in a separate
-  reserve table and can never hold the Shield.
-- `render-shield.js` + `shield-template.html` render the page; `tests-shield.js` checks the maths
-  and that `shield.html` matches `shield.json`.
-
-```shell
-node ingest/shield.js --dry-run   # print the table, write nothing
-node ingest/shield.js             # rebuild shield.json and shield.html
-node ingest/shield.js --force     # rebuild even if nothing changed (after a template edit)
-```
-
-The hourly Lambda refreshes the Shield after the forecast. A Shield failure is logged and the
-previous Shield stays published; it never blocks the forecast.
 
 ## Automated refresh
 The forecast re-runs whenever any club we are competing with finishes a match, not just Austin.

@@ -100,6 +100,13 @@ if (fs.existsSync(snapshotPath)) {
   assert.ok(html.includes("Shield holder"), "rendered page must badge the holder");
   const published = fs.readFileSync(path.join(__dirname, "shield.html"), "utf8");
   assert.equal(published, html, "shield.html is stale relative to shield.json; run `npm run shield -- --force`");
+  // Embed: self-contained (no site stylesheet), filled, names the holder, and matches disk.
+  const embedTemplate = fs.readFileSync(path.join(__dirname, "shield-embed-template.html"), "utf8");
+  const embedHtml = renderShield.renderEmbed(embedTemplate, shield);
+  assert.ok(!embedHtml.includes("{{"), "embed has unfilled slots");
+  assert.ok(!embedHtml.includes("styles.css"), "embed must not depend on the site stylesheet");
+  assert.ok(embedHtml.includes(shield.standings[0].name) && embedHtml.includes("holderrow"), "embed must mark the holder");
+  assert.equal(fs.readFileSync(path.join(__dirname, "shield-embed.html"), "utf8"), embedHtml, "shield-embed.html is stale; run `npm run shield -- --force`");
 }
 
 console.log("PASS: shield configuration, record accumulation, exclusions, ranking, snapshot and render checks.");

@@ -20,7 +20,7 @@ const { commitFiles } = require("./github.js");
  * Files the refresh regenerates, and therefore the files worth committing.
  * The first four are the playoff forecast; the last two are the Copa Tejas Shield.
  */
-const PUBLISHED_FILES = ["data.json", "report.json", "index.html", "audit.json", "shield.json", "shield.html"];
+const PUBLISHED_FILES = ["data.json", "report.json", "index.html", "audit.json", "shield.json", "shield.html", "shield-embed.html"];
 
 /** Everything ingest + refresh need in order to run. */
 const RUNTIME_FILES = [
@@ -38,6 +38,7 @@ const RUNTIME_FILES = [
   // Copa Tejas Shield page, refreshed by the same hourly run.
   "shield.json",
   "shield-template.html",
+  "shield-embed-template.html",
   "render-shield.js",
   "ingest/shield.js",
 ];

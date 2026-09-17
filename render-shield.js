@@ -140,8 +140,65 @@ module.exports = function renderShield(template, shield) {
     date: escapeHtml(shield.asOf),
   };
 
+  return fillTemplate(template, slots);
+};
+
+/** @param {string} template @param {Record<string,string>} slots */
+function fillTemplate(template, slots) {
   return template.replace(/\{\{(\w+)\}\}/g, (_, key) => {
     if (!(key in slots)) throw new Error("Missing slot " + key);
     return slots[key];
+  });
+}
+
+/** @param {string} isoDate e.g. "2026-09-16" -> "Sep 16, 2026" */
+const longDate = (isoDate) =>
+  new Date(isoDate + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+
+/**
+ * Render the compact, light-themed table meant to be iframed into copatejas.com.
+ * Self-contained: no site chrome, no external stylesheet.
+ *
+ * @param {string} template shield-embed-template.html
+ * @param {object} shield parsed shield.json
+ * @returns {string} HTML
+ */
+module.exports.renderEmbed = function renderShieldEmbed(template, shield) {
+  const standings = shield.standings;
+  const holder = standings[0];
+  const leagueShort = (club) => escapeHtml((shield.leagues[club.league] || LEAGUES[club.league]).shortName);
+  const leagueLong = (club) => escapeHtml((shield.leagues[club.league] || LEAGUES[club.league]).name);
+
+  const row = (club) =>
+    '<tr class="' + (club.rank === 1 ? "holderrow" : "") + '"><td class="rank">' + club.rank + '</td><td class="club">' + escapeHtml(club.name) +
+    '<span class="league" title="' + leagueLong(club) + '">' + leagueShort(club) + "</span></td>" +
+    '<td class="num">' + club.gp + '</td><td class="num opt2">' + club.w + '</td><td class="num opt2">' + club.d + '</td><td class="num opt2">' + club.l + "</td>" +
+    '<td class="num opt">' + club.gf + '</td><td class="num opt">' + club.ga + '</td><td class="num opt2">' + signed(club.gd) + "</td>" +
+    '<td class="num">' + club.pts + '</td><td class="num ppg">' + formatPpg(club.ppg) + "</td></tr>";
+
+  const reserveRow = (club) =>
+    '<tr><td class="club">' + escapeHtml(club.name) + '<span class="league">' + leagueShort(club) + "</span></td>" +
+    '<td class="num">' + club.gp + '</td><td class="num">' + club.w + '</td><td class="num">' + club.d + '</td><td class="num">' + club.l + "</td>" +
+    '<td class="num">' + signed(club.gd) + '</td><td class="num">' + club.pts + '</td><td class="num ppg">' + formatPpg(club.ppg) + "</td></tr>";
+
+  const eligibleLeagues = Object.values(shield.leagues).filter((league) => league.eligible)
+    .sort((a, b) => a.division - b.division || a.shortName.localeCompare(b.shortName));
+
+  return fillTemplate(template, {
+    holderName: escapeHtml(holder.name),
+    holderPpg: formatPpg(holder.ppg),
+    holderRecord: holder.w + "–" + holder.d + "–" + holder.l + " in " + leagueShort(holder),
+    rows: standings.map(row).join(""),
+    reserveRows: shield.reserveStandings.length
+      ? shield.reserveStandings.map(reserveRow).join("")
+      : '<tr><td colspan="8">No reserve side has played this season.</td></tr>',
+    notRanked: shield.inactiveClubs.length
+      ? '<p class="note">Not ranked, no league match this season: ' +
+        shield.inactiveClubs.map((club) => escapeHtml(club.name) + " (" + escapeHtml((LEAGUES[club.league] || {}).shortName || club.league) + ")").join(", ") + ".</p>"
+      : "",
+    scoring: escapeHtml(shield.scoring),
+    tiebreakers: shield.tiebreakers.map(escapeHtml).join(", then "),
+    leagueList: eligibleLeagues.map((league) => escapeHtml(league.shortName) + " " + escapeHtml(league.season)).join(", "),
+    asOfLong: longDate(shield.asOf),
   });
 };

@@ -35,9 +35,6 @@ const PROJECT_ROOT = process.env.VERDE_PROJECT_ROOT || path.join(__dirname, ".."
 const SHIELD_DATA_FILE = "shield.json";
 const SHIELD_PAGE_FILE = "shield.html";
 const SHIELD_TEMPLATE_FILE = "shield-template.html";
-/** Compact light-themed table for iframing into copatejas.com. */
-const SHIELD_EMBED_PAGE_FILE = "shield-embed.html";
-const SHIELD_EMBED_TEMPLATE_FILE = "shield-embed-template.html";
 const RECENT_RESULTS_SHOWN = 5;
 
 /**
@@ -346,12 +343,9 @@ async function ingestShield(options = {}) {
   const renderShield = require(path.join(PROJECT_ROOT, "render-shield.js"));
   const html = renderShield(readProjectFile(SHIELD_TEMPLATE_FILE), nextShield);
   if (html.includes("{{")) throw new Error("Unfilled Shield page template");
-  const embedHtml = renderShield.renderEmbed(readProjectFile(SHIELD_EMBED_TEMPLATE_FILE), nextShield);
-  if (embedHtml.includes("{{")) throw new Error("Unfilled Shield embed template");
 
   fs.writeFileSync(path.join(PROJECT_ROOT, SHIELD_DATA_FILE), JSON.stringify(sortKeysDeep(nextShield), null, 2) + "\n");
   fs.writeFileSync(path.join(PROJECT_ROOT, SHIELD_PAGE_FILE), html);
-  fs.writeFileSync(path.join(PROJECT_ROOT, SHIELD_EMBED_PAGE_FILE), embedHtml);
   return { changed: true, shield: nextShield };
 }
 
@@ -367,8 +361,6 @@ module.exports = {
   SHIELD_DATA_FILE,
   SHIELD_PAGE_FILE,
   SHIELD_TEMPLATE_FILE,
-  SHIELD_EMBED_PAGE_FILE,
-  SHIELD_EMBED_TEMPLATE_FILE,
 };
 
 if (require.main === module) {
@@ -396,7 +388,7 @@ if (require.main === module) {
       for (const warning of shield.warnings) console.log(`  WARNING: ${warning}`);
       if (!changed) console.log("No change since the published snapshot.");
       else if (commandLineArguments.has("--dry-run")) console.log("Dry run — no files written.");
-      else console.log(`Wrote ${SHIELD_DATA_FILE}, ${SHIELD_PAGE_FILE} and ${SHIELD_EMBED_PAGE_FILE}.`);
+      else console.log(`Wrote ${SHIELD_DATA_FILE} and ${SHIELD_PAGE_FILE}.`);
     })
     .catch((failure) => {
       console.error("Shield ingest failed:", failure.message);

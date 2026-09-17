@@ -86,27 +86,6 @@ node ingest/shield.js --force     # rebuild even if nothing changed (after a tem
 The hourly Lambda refreshes the Shield after the forecast. A Shield failure is logged and the
 previous Shield stays published; it never blocks the forecast.
 
-### Embedding the table on copatejas.com
-`shield-embed.html` (served at `/shield-embed`) is a self-contained, light-themed table with no site
-chrome, rendered from `shield-embed-template.html` by `renderShield.renderEmbed`. Paste this into a
-GoDaddy HTML section; the page posts its height to the parent so the iframe fits without scrollbars:
-
-```html
-<iframe id="copa-tejas-shield" src="https://austin-fc-playoff-tracker.vercel.app/shield-embed"
-  title="Copa Tejas Shield standings" loading="lazy" scrolling="no"
-  style="width:100%;height:760px;border:0;display:block"></iframe>
-<script>
-addEventListener("message", function (e) {
-  if (e.origin !== "https://austin-fc-playoff-tracker.vercel.app") return;
-  if (!e.data || e.data.source !== "copa-tejas-shield") return;
-  document.getElementById("copa-tejas-shield").style.height = e.data.height + "px";
-});
-</script>
-```
-
-If the host strips `<script>`, keep just the `<iframe>` and set `height` by hand (about 760px
-for eight clubs with the rules panel closed).
-
 ## Automated refresh
 The forecast re-runs whenever any club we are competing with finishes a match, not just Austin.
 A rival dropping points moves Austin's odds as much as Austin winning does.

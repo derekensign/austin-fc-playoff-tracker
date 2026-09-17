@@ -8,9 +8,11 @@
     "node": ">=18"
   },
   "scripts": {
-    "test": "node tests.js",
+    "test": "node tests.js && node tests-shield.js",
     "ingest": "node ingest",
     "ingest:dry": "node ingest --dry-run",
+    "shield": "node ingest/shield.js",
+    "shield:dry": "node ingest/shield.js --dry-run",
     "refresh": "node refresh.js",
     "publish:local": "node lambda/handler.js",
     "deploy": "./deploy.sh"

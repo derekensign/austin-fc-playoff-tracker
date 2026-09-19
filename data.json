@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-09-13",
+  "asOf": "2026-09-18",
   "calibration": {
-    "drawRho": -0.1705,
+    "drawRho": -0.1652,
     "modelDrawsCorrected": 95,
-    "modelDrawsUncorrected": 82.58,
+    "modelDrawsUncorrected": 82.91,
     "observedDraws": 95,
-    "observedGames": 372
+    "observedGames": 373
   },
   "fixtures": [
     {
@@ -788,12 +788,12 @@
     }
   ],
   "notes": [
-    "Snapshot as of 2026-09-13, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
+    "Snapshot as of 2026-09-18, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
     "All remaining MLS fixtures involving a Western club are included. East-vs-East fixtures are not required because team strengths are held fixed throughout each forecast.",
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.1705, fitted so the model reproduces the season's 95 draws in 372 matches (uncorrected Poisson would produce 82.58)."
+    "Low-score correction rho = -0.1652, fitted so the model reproduces the season's 95 draws in 373 matches (uncorrected Poisson would produce 82.91)."
   ],
   "recentForm": {
     "ATL": {
@@ -899,9 +899,9 @@
       "gp": 6
     },
     "NYC": {
-      "description": "Cincinnati 1–2, New England 1–1, Toronto 1–1, Nashville 0–0, New England 1–2, Real Salt Lake 2–0",
-      "ga": 6,
-      "gf": 6,
+      "description": "New England 1–1, Toronto 1–1, Nashville 0–0, New England 1–2, Real Salt Lake 2–0, Red Bull New York 0–1",
+      "ga": 5,
+      "gf": 5,
       "gp": 6
     },
     "ORL": {
@@ -923,9 +923,9 @@
       "gp": 6
     },
     "RBNY": {
-      "description": "Nashville 0–1, Chicago 1–1, Philadelphia 1–3, Seattle 0–0, LAFC 0–2, Columbus 1–0",
-      "ga": 7,
-      "gf": 3,
+      "description": "Chicago 1–1, Philadelphia 1–3, Seattle 0–0, LAFC 0–2, Columbus 1–0, New York City 1–0",
+      "ga": 6,
+      "gf": 4,
       "gp": 6
     },
     "RSL": {
@@ -1115,7 +1115,7 @@
     },
     {
       "conference": "East",
-      "currentRank": 9,
+      "currentRank": 10,
       "draws": 8,
       "ga": 59,
       "gf": 52,
@@ -1297,13 +1297,13 @@
     },
     {
       "conference": "East",
-      "currentRank": 8,
+      "currentRank": 9,
       "draws": 8,
-      "ga": 33,
+      "ga": 34,
       "gf": 39,
-      "gp": 25,
+      "gp": 26,
       "id": "NYC",
-      "losses": 9,
+      "losses": 10,
       "name": "New York City",
       "pts": 32,
       "wins": 8
@@ -1349,16 +1349,16 @@
     },
     {
       "conference": "East",
-      "currentRank": 10,
+      "currentRank": 8,
       "draws": 6,
       "ga": 48,
-      "gf": 33,
-      "gp": 25,
+      "gf": 34,
+      "gp": 26,
       "id": "RBNY",
       "losses": 11,
       "name": "Red Bull New York",
-      "pts": 30,
-      "wins": 8
+      "pts": 33,
+      "wins": 9
     },
     {
       "conference": "West",

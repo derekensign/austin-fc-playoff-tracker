@@ -1,22 +1,13 @@
 {
-  "asOf": "2026-09-19",
+  "asOf": "2026-09-20",
   "calibration": {
-    "drawRho": -0.183,
-    "modelDrawsCorrected": 99,
-    "modelDrawsUncorrected": 85.23,
-    "observedDraws": 99,
-    "observedGames": 386
+    "drawRho": -0.1935,
+    "modelDrawsCorrected": 100,
+    "modelDrawsUncorrected": 85.41,
+    "observedDraws": 100,
+    "observedGames": 387
   },
   "fixtures": [
-    {
-      "away": "SD",
-      "date": "2026-09-20",
-      "home": "MIA",
-      "id": "2026-09-20:MIA:SD",
-      "listedBy": [
-        "SD"
-      ]
-    },
     {
       "away": "RSL",
       "date": "2026-09-23",
@@ -702,12 +693,12 @@
     }
   ],
   "notes": [
-    "Snapshot as of 2026-09-19, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
+    "Snapshot as of 2026-09-20, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
     "All remaining MLS fixtures involving a Western club are included. East-vs-East fixtures are not required because team strengths are held fixed throughout each forecast.",
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.183, fitted so the model reproduces the season's 99 draws in 386 matches (uncorrected Poisson would produce 85.23)."
+    "Low-score correction rho = -0.1935, fitted so the model reproduces the season's 100 draws in 387 matches (uncorrected Poisson would produce 85.41)."
   ],
   "recentForm": {
     "ATL": {
@@ -783,7 +774,7 @@
       "gp": 6
     },
     "MIA": {
-      "description": "Philadelphia 2–2, Toronto 1–2, Montréal 7–1, Atlanta 2–2, Chicago 1–1, Nashville 2–2",
+      "description": "Toronto 1–2, Montréal 7–1, Atlanta 2–2, Chicago 1–1, Nashville 2–2, San Diego 2–2",
       "ga": 10,
       "gf": 15,
       "gp": 6
@@ -849,9 +840,9 @@
       "gp": 6
     },
     "SD": {
-      "description": "Portland 1–3, Colorado 3–0, LA Galaxy 3–1, Orlando 0–1, San Jose 2–3, Philadelphia 0–5",
-      "ga": 13,
-      "gf": 9,
+      "description": "Colorado 3–0, LA Galaxy 3–1, Orlando 0–1, San Jose 2–3, Philadelphia 0–5, Inter Miami 2–2",
+      "ga": 12,
+      "gf": 10,
       "gp": 6
     },
     "SEA": {
@@ -1147,14 +1138,14 @@
     {
       "conference": "East",
       "currentRank": 3,
-      "draws": 9,
-      "ga": 46,
-      "gf": 61,
-      "gp": 25,
+      "draws": 10,
+      "ga": 48,
+      "gf": 63,
+      "gp": 26,
       "id": "MIA",
       "losses": 4,
       "name": "Inter Miami",
-      "pts": 45,
+      "pts": 46,
       "wins": 12
     },
     {
@@ -1290,14 +1281,14 @@
     {
       "conference": "West",
       "currentRank": 10,
-      "draws": 6,
-      "ga": 42,
-      "gf": 42,
-      "gp": 25,
+      "draws": 7,
+      "ga": 44,
+      "gf": 44,
+      "gp": 26,
       "id": "SD",
       "losses": 11,
       "name": "San Diego",
-      "pts": 30,
+      "pts": 31,
       "wins": 8
     },
     {

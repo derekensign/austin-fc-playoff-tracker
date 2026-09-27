@@ -1,11 +1,11 @@
 {
   "asOf": "2026-09-26",
   "calibration": {
-    "drawRho": -0.1854,
+    "drawRho": -0.1806,
     "modelDrawsCorrected": 102,
-    "modelDrawsUncorrected": 87.66,
+    "modelDrawsUncorrected": 87.98,
     "observedDraws": 102,
-    "observedGames": 397
+    "observedGames": 398
   },
   "fixtures": [
     {
@@ -25,15 +25,6 @@
       "id": "2026-09-27:RBNY:STL",
       "listedBy": [
         "STL"
-      ]
-    },
-    {
-      "away": "NE",
-      "date": "2026-09-27",
-      "home": "RSL",
-      "id": "2026-09-27:RSL:NE",
-      "listedBy": [
-        "RSL"
       ]
     },
     {
@@ -648,8 +639,8 @@
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.1854, fitted so the model reproduces the season's 102 draws in 397 matches (uncorrected Poisson would produce 87.66).",
-    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-09-26:LAG:COL -> 2026-09-27; 2026-09-26:RBNY:STL -> 2026-09-27; 2026-09-26:RSL:NE -> 2026-09-27; 2026-09-26:SJ:POR -> 2026-09-27; 2026-09-26:VAN:DC -> 2026-09-27"
+    "Low-score correction rho = -0.1806, fitted so the model reproduces the season's 102 draws in 398 matches (uncorrected Poisson would produce 87.98).",
+    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-09-26:LAG:COL -> 2026-09-27; 2026-09-26:RBNY:STL -> 2026-09-27; 2026-09-26:SJ:POR -> 2026-09-27; 2026-09-26:VAN:DC -> 2026-09-27"
   ],
   "recentForm": {
     "ATL": {
@@ -743,9 +734,9 @@
       "gp": 6
     },
     "NE": {
-      "description": "New York City 1–1, Columbus 3–1, LA Galaxy 1–2, New York City 2–1, Chicago 2–1, Orlando 4–2",
-      "ga": 8,
-      "gf": 13,
+      "description": "Columbus 3–1, LA Galaxy 1–2, New York City 2–1, Chicago 2–1, Orlando 4–2, Real Salt Lake 0–3",
+      "ga": 10,
+      "gf": 12,
       "gp": 6
     },
     "NSH": {
@@ -785,9 +776,9 @@
       "gp": 6
     },
     "RSL": {
-      "description": "Colorado 0–1, LAFC 2–2, Houston 1–2, New York City 0–2, Vancouver 0–3, Seattle 0–2",
-      "ga": 12,
-      "gf": 3,
+      "description": "LAFC 2–2, Houston 1–2, New York City 0–2, Vancouver 0–3, Seattle 0–2, New England 3–0",
+      "ga": 11,
+      "gf": 6,
       "gp": 6
     },
     "SD": {
@@ -945,7 +936,7 @@
     },
     {
       "conference": "West",
-      "currentRank": 12,
+      "currentRank": 13,
       "draws": 10,
       "ga": 47,
       "gf": 35,
@@ -1129,11 +1120,11 @@
       "conference": "East",
       "currentRank": 2,
       "draws": 4,
-      "ga": 33,
+      "ga": 36,
       "gf": 45,
-      "gp": 26,
+      "gp": 27,
       "id": "NE",
-      "losses": 8,
+      "losses": 9,
       "name": "New England",
       "pts": 46,
       "wins": 14
@@ -1218,20 +1209,20 @@
     },
     {
       "conference": "West",
-      "currentRank": 13,
+      "currentRank": 11,
       "draws": 5,
       "ga": 44,
-      "gf": 37,
-      "gp": 26,
+      "gf": 40,
+      "gp": 27,
       "id": "RSL",
       "losses": 13,
       "name": "Real Salt Lake",
-      "pts": 29,
-      "wins": 8
+      "pts": 32,
+      "wins": 9
     },
     {
       "conference": "West",
-      "currentRank": 11,
+      "currentRank": 12,
       "draws": 8,
       "ga": 47,
       "gf": 47,

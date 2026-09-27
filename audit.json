@@ -49,9 +49,9 @@
     "seed": 20260926,
     "validation": "passed",
     "tieAudit": {
-      "austinAnyTiePct": 0.04,
-      "top9LowerPct": 8.562,
-      "top9UpperPct": 8.562
+      "austinAnyTiePct": 0.022000000000000002,
+      "top9LowerPct": 7.2459999999999996,
+      "top9UpperPct": 7.2459999999999996
     }
   }
 }

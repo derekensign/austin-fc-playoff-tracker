@@ -1,23 +1,13 @@
 {
-  "asOf": "2026-09-30",
+  "asOf": "2026-10-01",
   "calibration": {
-    "drawRho": -0.1813,
+    "drawRho": -0.1785,
     "modelDrawsCorrected": 103,
-    "modelDrawsUncorrected": 88.81,
+    "modelDrawsUncorrected": 89,
     "observedDraws": 103,
-    "observedGames": 403
+    "observedGames": 404
   },
   "fixtures": [
-    {
-      "away": "SKC",
-      "date": "2026-10-01",
-      "home": "SEA",
-      "id": "2026-10-01:SEA:SKC",
-      "listedBy": [
-        "SEA",
-        "SKC"
-      ]
-    },
     {
       "away": "VAN",
       "date": "2026-10-06",
@@ -596,12 +586,12 @@
     }
   ],
   "notes": [
-    "Snapshot as of 2026-09-30, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
+    "Snapshot as of 2026-10-01, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
     "All remaining MLS fixtures involving a Western club are included. East-vs-East fixtures are not required because team strengths are held fixed throughout each forecast.",
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.1813, fitted so the model reproduces the season's 103 draws in 403 matches (uncorrected Poisson would produce 88.81)."
+    "Low-score correction rho = -0.1785, fitted so the model reproduces the season's 103 draws in 404 matches (uncorrected Poisson would produce 89)."
   ],
   "recentForm": {
     "ATL": {
@@ -749,8 +739,8 @@
       "gp": 6
     },
     "SEA": {
-      "description": "Chicago 2–2, Red Bull New York 0–0, LA Galaxy 1–1, Colorado 3–3, Real Salt Lake 2–0, Minnesota 3–1",
-      "ga": 7,
+      "description": "Red Bull New York 0–0, LA Galaxy 1–1, Colorado 3–3, Real Salt Lake 2–0, Minnesota 3–1, Sporting KC 2–1",
+      "ga": 6,
       "gf": 11,
       "gp": 6
     },
@@ -761,7 +751,7 @@
       "gp": 6
     },
     "SKC": {
-      "description": "Atlanta 1–2, Vancouver 0–3, FC Dallas 3–4, LAFC 3–1, Philadelphia 3–4, Houston 2–0",
+      "description": "Vancouver 0–3, FC Dallas 3–4, LAFC 3–1, Philadelphia 3–4, Houston 2–0, Seattle 1–2",
       "ga": 14,
       "gf": 12,
       "gp": 6
@@ -962,7 +952,7 @@
     },
     {
       "conference": "West",
-      "currentRank": 7,
+      "currentRank": 8,
       "draws": 3,
       "ga": 38,
       "gf": 38,
@@ -1027,7 +1017,7 @@
     },
     {
       "conference": "West",
-      "currentRank": 8,
+      "currentRank": 9,
       "draws": 9,
       "ga": 44,
       "gf": 37,
@@ -1196,16 +1186,16 @@
     },
     {
       "conference": "West",
-      "currentRank": 9,
+      "currentRank": 7,
       "draws": 8,
-      "ga": 34,
-      "gf": 33,
-      "gp": 26,
+      "ga": 35,
+      "gf": 35,
+      "gp": 27,
       "id": "SEA",
       "losses": 9,
       "name": "Seattle",
-      "pts": 35,
-      "wins": 9
+      "pts": 38,
+      "wins": 10
     },
     {
       "conference": "West",
@@ -1224,11 +1214,11 @@
       "conference": "West",
       "currentRank": 15,
       "draws": 3,
-      "ga": 63,
-      "gf": 31,
-      "gp": 26,
+      "ga": 65,
+      "gf": 32,
+      "gp": 27,
       "id": "SKC",
-      "losses": 17,
+      "losses": 18,
       "name": "Sporting KC",
       "pts": 21,
       "wins": 6

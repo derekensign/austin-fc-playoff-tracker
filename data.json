@@ -1,22 +1,13 @@
 {
-  "asOf": "2026-10-01",
+  "asOf": "2026-10-06",
   "calibration": {
-    "drawRho": -0.1785,
+    "drawRho": -0.1741,
     "modelDrawsCorrected": 103,
-    "modelDrawsUncorrected": 89,
+    "modelDrawsUncorrected": 89.3,
     "observedDraws": 103,
-    "observedGames": 404
+    "observedGames": 405
   },
   "fixtures": [
-    {
-      "away": "VAN",
-      "date": "2026-10-06",
-      "home": "CHI",
-      "id": "2026-10-06:CHI:VAN",
-      "listedBy": [
-        "VAN"
-      ]
-    },
     {
       "away": "NSH",
       "date": "2026-10-10",
@@ -586,12 +577,12 @@
     }
   ],
   "notes": [
-    "Snapshot as of 2026-10-01, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
+    "Snapshot as of 2026-10-06, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
     "All remaining MLS fixtures involving a Western club are included. East-vs-East fixtures are not required because team strengths are held fixed throughout each forecast.",
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.1785, fitted so the model reproduces the season's 103 draws in 404 matches (uncorrected Poisson would produce 89)."
+    "Low-score correction rho = -0.1741, fitted so the model reproduces the season's 103 draws in 405 matches (uncorrected Poisson would produce 89.3)."
   ],
   "recentForm": {
     "ATL": {
@@ -607,9 +598,9 @@
       "gp": 6
     },
     "CHI": {
-      "description": "Seattle 2–2, Toronto 4–4, Inter Miami 1–1, New England 1–2, Nashville 0–3, Charlotte 1–0",
-      "ga": 12,
-      "gf": 9,
+      "description": "Toronto 4–4, Inter Miami 1–1, New England 1–2, Nashville 0–3, Charlotte 1–0, Vancouver 3–1",
+      "ga": 11,
+      "gf": 10,
       "gp": 6
     },
     "CIN": {
@@ -769,9 +760,9 @@
       "gp": 6
     },
     "VAN": {
-      "description": "Sporting KC 3–0, St. Louis 1–3, LA Galaxy 3–0, Austin FC 1–2, Real Salt Lake 3–0, D.C. United 3–3",
-      "ga": 8,
-      "gf": 14,
+      "description": "St. Louis 1–3, LA Galaxy 3–0, Austin FC 1–2, Real Salt Lake 3–0, D.C. United 3–3, Chicago 1–3",
+      "ga": 11,
+      "gf": 12,
       "gp": 6
     }
   },
@@ -900,16 +891,16 @@
     },
     {
       "conference": "East",
-      "currentRank": 5,
+      "currentRank": 4,
       "draws": 6,
-      "ga": 38,
-      "gf": 46,
-      "gp": 26,
+      "ga": 39,
+      "gf": 49,
+      "gp": 27,
       "id": "CHI",
       "losses": 8,
       "name": "Chicago",
-      "pts": 42,
-      "wins": 12
+      "pts": 45,
+      "wins": 13
     },
     {
       "conference": "East",
@@ -939,7 +930,7 @@
     },
     {
       "conference": "East",
-      "currentRank": 4,
+      "currentRank": 5,
       "draws": 7,
       "ga": 38,
       "gf": 47,
@@ -1253,11 +1244,11 @@
       "conference": "West",
       "currentRank": 1,
       "draws": 5,
-      "ga": 26,
-      "gf": 59,
-      "gp": 26,
+      "ga": 29,
+      "gf": 60,
+      "gp": 27,
       "id": "VAN",
-      "losses": 6,
+      "losses": 7,
       "name": "Vancouver",
       "pts": 50,
       "wins": 15

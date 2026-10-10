@@ -50,8 +50,8 @@
     "validation": "passed",
     "tieAudit": {
       "austinAnyTiePct": 0.048,
-      "top9LowerPct": 7.598000000000001,
-      "top9UpperPct": 7.606
+      "top9LowerPct": 7.611999999999999,
+      "top9UpperPct": 7.62
     }
   }
 }

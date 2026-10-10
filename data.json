@@ -1,11 +1,11 @@
 {
   "asOf": "2026-10-10",
   "calibration": {
-    "drawRho": -0.1706,
+    "drawRho": -0.1672,
     "modelDrawsCorrected": 103,
-    "modelDrawsUncorrected": 89.54,
+    "modelDrawsUncorrected": 89.77,
     "observedDraws": 103,
-    "observedGames": 406
+    "observedGames": 407
   },
   "fixtures": [
     {
@@ -582,7 +582,7 @@
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.1706, fitted so the model reproduces the season's 103 draws in 406 matches (uncorrected Poisson would produce 89.54).",
+    "Low-score correction rho = -0.1672, fitted so the model reproduces the season's 103 draws in 407 matches (uncorrected Poisson would produce 89.77).",
     "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-10:ATX:NSH -> 2026-10-11; 2026-10-10:CLT:DAL -> 2026-10-11; 2026-10-10:COL:SJ -> 2026-10-11; 2026-10-10:LAFC:VAN -> 2026-10-11; 2026-10-10:MIN:HOU -> 2026-10-11; 2026-10-10:NE:SEA -> 2026-10-11; 2026-10-10:PHI:RSL -> 2026-10-11; 2026-10-10:RBNY:SD -> 2026-10-11; 2026-10-10:SKC:POR -> 2026-10-11"
   ],
   "recentForm": {
@@ -599,9 +599,9 @@
       "gp": 6
     },
     "CHI": {
-      "description": "Toronto 4–4, Inter Miami 1–1, New England 1–2, Nashville 0–3, Charlotte 1–0, Vancouver 3–1",
-      "ga": 11,
-      "gf": 10,
+      "description": "Inter Miami 1–1, New England 1–2, Nashville 0–3, Charlotte 1–0, Vancouver 3–1, New York City 2–1",
+      "ga": 8,
+      "gf": 8,
       "gp": 6
     },
     "CIN": {
@@ -689,8 +689,8 @@
       "gp": 6
     },
     "NYC": {
-      "description": "Toronto 1–1, Nashville 0–0, New England 1–2, Real Salt Lake 2–0, Red Bull New York 0–1, Atlanta 2–2",
-      "ga": 6,
+      "description": "Nashville 0–0, New England 1–2, Real Salt Lake 2–0, Red Bull New York 0–1, Atlanta 2–2, Chicago 1–2",
+      "ga": 7,
       "gf": 6,
       "gp": 6
     },
@@ -892,16 +892,16 @@
     },
     {
       "conference": "East",
-      "currentRank": 4,
+      "currentRank": 2,
       "draws": 6,
-      "ga": 39,
-      "gf": 49,
-      "gp": 27,
+      "ga": 40,
+      "gf": 51,
+      "gp": 28,
       "id": "CHI",
       "losses": 8,
       "name": "Chicago",
-      "pts": 45,
-      "wins": 13
+      "pts": 48,
+      "wins": 14
     },
     {
       "conference": "East",
@@ -1022,7 +1022,7 @@
     },
     {
       "conference": "East",
-      "currentRank": 3,
+      "currentRank": 4,
       "draws": 10,
       "ga": 50,
       "gf": 64,
@@ -1061,7 +1061,7 @@
     },
     {
       "conference": "East",
-      "currentRank": 2,
+      "currentRank": 3,
       "draws": 4,
       "ga": 36,
       "gf": 45,
@@ -1089,11 +1089,11 @@
       "conference": "East",
       "currentRank": 9,
       "draws": 9,
-      "ga": 36,
-      "gf": 41,
-      "gp": 27,
+      "ga": 38,
+      "gf": 42,
+      "gp": 28,
       "id": "NYC",
-      "losses": 10,
+      "losses": 11,
       "name": "New York City",
       "pts": 33,
       "wins": 8

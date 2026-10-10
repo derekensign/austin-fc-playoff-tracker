@@ -1,36 +1,36 @@
 {
-  "asOf": "2026-10-06",
+  "asOf": "2026-10-10",
   "calibration": {
-    "drawRho": -0.1741,
+    "drawRho": -0.1706,
     "modelDrawsCorrected": 103,
-    "modelDrawsUncorrected": 89.3,
+    "modelDrawsUncorrected": 89.54,
     "observedDraws": 103,
-    "observedGames": 405
+    "observedGames": 406
   },
   "fixtures": [
     {
       "away": "NSH",
-      "date": "2026-10-10",
+      "date": "2026-10-11",
       "home": "ATX",
-      "id": "2026-10-10:ATX:NSH",
+      "id": "2026-10-11:ATX:NSH",
       "listedBy": [
         "ATX"
       ]
     },
     {
       "away": "DAL",
-      "date": "2026-10-10",
+      "date": "2026-10-11",
       "home": "CLT",
-      "id": "2026-10-10:CLT:DAL",
+      "id": "2026-10-11:CLT:DAL",
       "listedBy": [
         "DAL"
       ]
     },
     {
       "away": "SJ",
-      "date": "2026-10-10",
+      "date": "2026-10-11",
       "home": "COL",
-      "id": "2026-10-10:COL:SJ",
+      "id": "2026-10-11:COL:SJ",
       "listedBy": [
         "SJ",
         "COL"
@@ -38,9 +38,9 @@
     },
     {
       "away": "VAN",
-      "date": "2026-10-10",
+      "date": "2026-10-11",
       "home": "LAFC",
-      "id": "2026-10-10:LAFC:VAN",
+      "id": "2026-10-11:LAFC:VAN",
       "listedBy": [
         "VAN",
         "LAFC"
@@ -48,9 +48,9 @@
     },
     {
       "away": "HOU",
-      "date": "2026-10-10",
+      "date": "2026-10-11",
       "home": "MIN",
-      "id": "2026-10-10:MIN:HOU",
+      "id": "2026-10-11:MIN:HOU",
       "listedBy": [
         "HOU",
         "MIN"
@@ -58,36 +58,36 @@
     },
     {
       "away": "SEA",
-      "date": "2026-10-10",
+      "date": "2026-10-11",
       "home": "NE",
-      "id": "2026-10-10:NE:SEA",
+      "id": "2026-10-11:NE:SEA",
       "listedBy": [
         "SEA"
       ]
     },
     {
       "away": "RSL",
-      "date": "2026-10-10",
+      "date": "2026-10-11",
       "home": "PHI",
-      "id": "2026-10-10:PHI:RSL",
+      "id": "2026-10-11:PHI:RSL",
       "listedBy": [
         "RSL"
       ]
     },
     {
       "away": "SD",
-      "date": "2026-10-10",
+      "date": "2026-10-11",
       "home": "RBNY",
-      "id": "2026-10-10:RBNY:SD",
+      "id": "2026-10-11:RBNY:SD",
       "listedBy": [
         "SD"
       ]
     },
     {
       "away": "POR",
-      "date": "2026-10-10",
+      "date": "2026-10-11",
       "home": "SKC",
-      "id": "2026-10-10:SKC:POR",
+      "id": "2026-10-11:SKC:POR",
       "listedBy": [
         "POR",
         "SKC"
@@ -577,12 +577,13 @@
     }
   ],
   "notes": [
-    "Snapshot as of 2026-10-06, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
+    "Snapshot as of 2026-10-10, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
     "All remaining MLS fixtures involving a Western club are included. East-vs-East fixtures are not required because team strengths are held fixed throughout each forecast.",
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.1741, fitted so the model reproduces the season's 103 draws in 405 matches (uncorrected Poisson would produce 89.3)."
+    "Low-score correction rho = -0.1706, fitted so the model reproduces the season's 103 draws in 406 matches (uncorrected Poisson would produce 89.54).",
+    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-10:ATX:NSH -> 2026-10-11; 2026-10-10:CLT:DAL -> 2026-10-11; 2026-10-10:COL:SJ -> 2026-10-11; 2026-10-10:LAFC:VAN -> 2026-10-11; 2026-10-10:MIN:HOU -> 2026-10-11; 2026-10-10:NE:SEA -> 2026-10-11; 2026-10-10:PHI:RSL -> 2026-10-11; 2026-10-10:RBNY:SD -> 2026-10-11; 2026-10-10:SKC:POR -> 2026-10-11"
   ],
   "recentForm": {
     "ATL": {
@@ -670,8 +671,8 @@
       "gp": 6
     },
     "MTL": {
-      "description": "Inter Miami 1–7, Philadelphia 0–2, Charlotte 1–2, Colorado 0–1, Columbus 0–2, Cincinnati 3–1",
-      "ga": 15,
+      "description": "Philadelphia 0–2, Charlotte 1–2, Colorado 0–1, Columbus 0–2, Cincinnati 3–1, Toronto 1–2",
+      "ga": 10,
       "gf": 5,
       "gp": 6
     },
@@ -754,9 +755,9 @@
       "gp": 6
     },
     "TOR": {
-      "description": "New York City 1–1, Chicago 4–4, Nashville 2–1, Orlando 0–3, St. Louis 1–3, Nashville 0–2",
+      "description": "Chicago 4–4, Nashville 2–1, Orlando 0–3, St. Louis 1–3, Nashville 0–2, Montréal 2–1",
       "ga": 14,
-      "gf": 8,
+      "gf": 9,
       "gp": 6
     },
     "VAN": {
@@ -917,7 +918,7 @@
     },
     {
       "conference": "East",
-      "currentRank": 12,
+      "currentRank": 13,
       "draws": 5,
       "ga": 43,
       "gf": 39,
@@ -969,7 +970,7 @@
     },
     {
       "conference": "East",
-      "currentRank": 11,
+      "currentRank": 12,
       "draws": 12,
       "ga": 42,
       "gf": 34,
@@ -1049,11 +1050,11 @@
       "conference": "East",
       "currentRank": 15,
       "draws": 6,
-      "ga": 54,
-      "gf": 34,
-      "gp": 27,
+      "ga": 56,
+      "gf": 35,
+      "gp": 28,
       "id": "MTL",
-      "losses": 15,
+      "losses": 16,
       "name": "Montréal",
       "pts": 24,
       "wins": 6
@@ -1229,16 +1230,16 @@
     },
     {
       "conference": "East",
-      "currentRank": 13,
+      "currentRank": 11,
       "draws": 11,
-      "ga": 51,
-      "gf": 39,
-      "gp": 27,
+      "ga": 52,
+      "gf": 41,
+      "gp": 28,
       "id": "TOR",
       "losses": 10,
       "name": "Toronto",
-      "pts": 29,
-      "wins": 6
+      "pts": 32,
+      "wins": 7
     },
     {
       "conference": "West",

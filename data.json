@@ -1,23 +1,13 @@
 {
   "asOf": "2026-10-10",
   "calibration": {
-    "drawRho": -0.1693,
-    "modelDrawsCorrected": 105,
-    "modelDrawsUncorrected": 91.42,
-    "observedDraws": 105,
-    "observedGames": 417
+    "drawRho": -0.1774,
+    "modelDrawsCorrected": 106,
+    "modelDrawsUncorrected": 91.72,
+    "observedDraws": 106,
+    "observedGames": 418
   },
   "fixtures": [
-    {
-      "away": "SJ",
-      "date": "2026-10-11",
-      "home": "COL",
-      "id": "2026-10-11:COL:SJ",
-      "listedBy": [
-        "SJ",
-        "COL"
-      ]
-    },
     {
       "away": "VAN",
       "date": "2026-10-11",
@@ -517,8 +507,8 @@
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.1693, fitted so the model reproduces the season's 105 draws in 417 matches (uncorrected Poisson would produce 91.42).",
-    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-10:COL:SJ -> 2026-10-11; 2026-10-10:LAFC:VAN -> 2026-10-11"
+    "Low-score correction rho = -0.1774, fitted so the model reproduces the season's 106 draws in 418 matches (uncorrected Poisson would produce 91.72).",
+    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-10:LAFC:VAN -> 2026-10-11"
   ],
   "recentForm": {
     "ATL": {
@@ -558,8 +548,8 @@
       "gp": 6
     },
     "COL": {
-      "description": "Real Salt Lake 1–0, Columbus 0–3, Austin FC 1–1, Montréal 1–0, Seattle 3–3, LA Galaxy 2–3",
-      "ga": 10,
+      "description": "Columbus 0–3, Austin FC 1–1, Montréal 1–0, Seattle 3–3, LA Galaxy 2–3, San Jose 1–1",
+      "ga": 11,
       "gf": 8,
       "gp": 6
     },
@@ -672,9 +662,9 @@
       "gp": 6
     },
     "SJ": {
-      "description": "Houston 0–0, Austin FC 1–1, San Diego 3–2, Houston 1–0, LAFC 2–2, Portland 3–1",
-      "ga": 6,
-      "gf": 10,
+      "description": "Austin FC 1–1, San Diego 3–2, Houston 1–0, LAFC 2–2, Portland 3–1, Colorado 1–1",
+      "ga": 7,
+      "gf": 11,
       "gp": 6
     },
     "SKC": {
@@ -880,14 +870,14 @@
     {
       "conference": "West",
       "currentRank": 8,
-      "draws": 3,
-      "ga": 38,
-      "gf": 38,
-      "gp": 27,
+      "draws": 4,
+      "ga": 39,
+      "gf": 39,
+      "gp": 28,
       "id": "COL",
       "losses": 13,
       "name": "Colorado",
-      "pts": 36,
+      "pts": 37,
       "wins": 11
     },
     {
@@ -1127,14 +1117,14 @@
     {
       "conference": "West",
       "currentRank": 4,
-      "draws": 6,
-      "ga": 39,
-      "gf": 49,
-      "gp": 27,
+      "draws": 7,
+      "ga": 40,
+      "gf": 50,
+      "gp": 28,
       "id": "SJ",
       "losses": 8,
       "name": "San Jose",
-      "pts": 45,
+      "pts": 46,
       "wins": 13
     },
     {

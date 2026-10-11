@@ -1,23 +1,13 @@
 {
   "asOf": "2026-10-10",
   "calibration": {
-    "drawRho": -0.1774,
-    "modelDrawsCorrected": 106,
-    "modelDrawsUncorrected": 91.72,
-    "observedDraws": 106,
-    "observedGames": 418
+    "drawRho": -0.185,
+    "modelDrawsCorrected": 107,
+    "modelDrawsUncorrected": 92.05,
+    "observedDraws": 107,
+    "observedGames": 419
   },
   "fixtures": [
-    {
-      "away": "VAN",
-      "date": "2026-10-11",
-      "home": "LAFC",
-      "id": "2026-10-11:LAFC:VAN",
-      "listedBy": [
-        "VAN",
-        "LAFC"
-      ]
-    },
     {
       "away": "LAG",
       "date": "2026-10-11",
@@ -507,8 +497,7 @@
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.1774, fitted so the model reproduces the season's 106 draws in 418 matches (uncorrected Poisson would produce 91.72).",
-    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-10:LAFC:VAN -> 2026-10-11"
+    "Low-score correction rho = -0.185, fitted so the model reproduces the season's 107 draws in 419 matches (uncorrected Poisson would produce 92.05)."
   ],
   "recentForm": {
     "ATL": {
@@ -572,9 +561,9 @@
       "gp": 6
     },
     "LAFC": {
-      "description": "D.C. United 0–0, Real Salt Lake 2–2, Red Bull New York 2–0, Sporting KC 1–3, San Jose 2–2, FC Dallas 0–1",
-      "ga": 8,
-      "gf": 7,
+      "description": "Real Salt Lake 2–2, Red Bull New York 2–0, Sporting KC 1–3, San Jose 2–2, FC Dallas 0–1, Vancouver 1–1",
+      "ga": 9,
+      "gf": 8,
       "gp": 6
     },
     "LAG": {
@@ -686,8 +675,8 @@
       "gp": 6
     },
     "VAN": {
-      "description": "St. Louis 1–3, LA Galaxy 3–0, Austin FC 1–2, Real Salt Lake 3–0, D.C. United 3–3, Chicago 1–3",
-      "ga": 11,
+      "description": "LA Galaxy 3–0, Austin FC 1–2, Real Salt Lake 3–0, D.C. United 3–3, Chicago 1–3, LAFC 1–1",
+      "ga": 9,
       "gf": 12,
       "gp": 6
     }
@@ -922,14 +911,14 @@
     {
       "conference": "West",
       "currentRank": 6,
-      "draws": 8,
-      "ga": 30,
-      "gf": 43,
-      "gp": 28,
+      "draws": 9,
+      "ga": 31,
+      "gf": 44,
+      "gp": 29,
       "id": "LAFC",
       "losses": 9,
       "name": "LAFC",
-      "pts": 41,
+      "pts": 42,
       "wins": 11
     },
     {
@@ -1169,14 +1158,14 @@
     {
       "conference": "West",
       "currentRank": 1,
-      "draws": 5,
-      "ga": 29,
-      "gf": 60,
-      "gp": 27,
+      "draws": 6,
+      "ga": 30,
+      "gf": 61,
+      "gp": 28,
       "id": "VAN",
       "losses": 7,
       "name": "Vancouver",
-      "pts": 50,
+      "pts": 51,
       "wins": 15
     }
   ],

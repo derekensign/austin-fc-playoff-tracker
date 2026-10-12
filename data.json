@@ -1,23 +1,13 @@
 {
-  "asOf": "2026-10-10",
+  "asOf": "2026-10-11",
   "calibration": {
-    "drawRho": -0.185,
+    "drawRho": -0.1869,
     "modelDrawsCorrected": 107,
-    "modelDrawsUncorrected": 92.05,
+    "modelDrawsUncorrected": 91.94,
     "observedDraws": 107,
-    "observedGames": 419
+    "observedGames": 420
   },
   "fixtures": [
-    {
-      "away": "LAG",
-      "date": "2026-10-11",
-      "home": "STL",
-      "id": "2026-10-11:STL:LAG",
-      "listedBy": [
-        "STL",
-        "LAG"
-      ]
-    },
     {
       "away": "MIN",
       "date": "2026-10-14",
@@ -492,12 +482,12 @@
     }
   ],
   "notes": [
-    "Snapshot as of 2026-10-10, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
+    "Snapshot as of 2026-10-11, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
     "All remaining MLS fixtures involving a Western club are included. East-vs-East fixtures are not required because team strengths are held fixed throughout each forecast.",
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.185, fitted so the model reproduces the season's 107 draws in 419 matches (uncorrected Poisson would produce 92.05)."
+    "Low-score correction rho = -0.1869, fitted so the model reproduces the season's 107 draws in 420 matches (uncorrected Poisson would produce 91.94)."
   ],
   "recentForm": {
     "ATL": {
@@ -567,9 +557,9 @@
       "gp": 6
     },
     "LAG": {
-      "description": "San Diego 1–3, New England 2–1, Vancouver 0–3, Seattle 1–1, Minnesota 3–2, Colorado 3–2",
-      "ga": 12,
-      "gf": 10,
+      "description": "New England 2–1, Vancouver 0–3, Seattle 1–1, Minnesota 3–2, Colorado 3–2, St. Louis 2–6",
+      "ga": 15,
+      "gf": 11,
       "gp": 6
     },
     "MIA": {
@@ -663,9 +653,9 @@
       "gp": 6
     },
     "STL": {
-      "description": "FC Dallas 3–3, Vancouver 3–1, Portland 2–2, Minnesota 4–2, Toronto 3–1, Red Bull New York 3–0",
-      "ga": 9,
-      "gf": 18,
+      "description": "Vancouver 3–1, Portland 2–2, Minnesota 4–2, Toronto 3–1, Red Bull New York 3–0, LA Galaxy 6–2",
+      "ga": 8,
+      "gf": 21,
       "gp": 6
     },
     "TOR": {
@@ -925,11 +915,11 @@
       "conference": "West",
       "currentRank": 9,
       "draws": 9,
-      "ga": 44,
-      "gf": 37,
-      "gp": 28,
+      "ga": 50,
+      "gf": 39,
+      "gp": 29,
       "id": "LAG",
-      "losses": 10,
+      "losses": 11,
       "name": "LA Galaxy",
       "pts": 36,
       "wins": 9
@@ -1133,14 +1123,14 @@
       "conference": "West",
       "currentRank": 2,
       "draws": 8,
-      "ga": 36,
-      "gf": 48,
-      "gp": 27,
+      "ga": 38,
+      "gf": 54,
+      "gp": 28,
       "id": "STL",
       "losses": 6,
       "name": "St. Louis",
-      "pts": 47,
-      "wins": 13
+      "pts": 50,
+      "wins": 14
     },
     {
       "conference": "East",

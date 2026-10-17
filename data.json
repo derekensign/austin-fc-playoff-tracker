@@ -1,11 +1,11 @@
 {
   "asOf": "2026-10-17",
   "calibration": {
-    "drawRho": -0.2144,
+    "drawRho": -0.2118,
     "modelDrawsCorrected": 113,
-    "modelDrawsUncorrected": 95.12,
+    "modelDrawsUncorrected": 95.32,
     "observedDraws": 113,
-    "observedGames": 436
+    "observedGames": 437
   },
   "fixtures": [
     {
@@ -36,16 +36,6 @@
       "listedBy": [
         "SD",
         "LAG"
-      ]
-    },
-    {
-      "away": "STL",
-      "date": "2026-10-18",
-      "home": "MIN",
-      "id": "2026-10-18:MIN:STL",
-      "listedBy": [
-        "STL",
-        "MIN"
       ]
     },
     {
@@ -408,8 +398,8 @@
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.2144, fitted so the model reproduces the season's 113 draws in 436 matches (uncorrected Poisson would produce 95.12).",
-    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-17:ATX:VAN -> 2026-10-18; 2026-10-17:HOU:DAL -> 2026-10-18; 2026-10-17:LAG:SD -> 2026-10-18; 2026-10-17:MIN:STL -> 2026-10-18; 2026-10-17:POR:COL -> 2026-10-18; 2026-10-17:SEA:MTL -> 2026-10-18; 2026-10-17:SJ:NSH -> 2026-10-18; 2026-10-17:SKC:RSL -> 2026-10-18"
+    "Low-score correction rho = -0.2118, fitted so the model reproduces the season's 113 draws in 437 matches (uncorrected Poisson would produce 95.32).",
+    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-17:ATX:VAN -> 2026-10-18; 2026-10-17:HOU:DAL -> 2026-10-18; 2026-10-17:LAG:SD -> 2026-10-18; 2026-10-17:POR:COL -> 2026-10-18; 2026-10-17:SEA:MTL -> 2026-10-18; 2026-10-17:SJ:NSH -> 2026-10-18; 2026-10-17:SKC:RSL -> 2026-10-18"
   ],
   "recentForm": {
     "ATL": {
@@ -491,9 +481,9 @@
       "gp": 6
     },
     "MIN": {
-      "description": "FC Dallas 1–2, St. Louis 2–4, LA Galaxy 2–3, Seattle 1–3, Houston 2–2, Colorado 2–2",
+      "description": "St. Louis 2–4, LA Galaxy 2–3, Seattle 1–3, Houston 2–2, Colorado 2–2, St. Louis 3–2",
       "ga": 16,
-      "gf": 10,
+      "gf": 12,
       "gp": 6
     },
     "MTL": {
@@ -575,8 +565,8 @@
       "gp": 6
     },
     "STL": {
-      "description": "Portland 2–2, Minnesota 4–2, Toronto 3–1, Red Bull New York 3–0, LA Galaxy 6–2, Vancouver 0–0",
-      "ga": 7,
+      "description": "Minnesota 4–2, Toronto 3–1, Red Bull New York 3–0, LA Galaxy 6–2, Vancouver 0–0, Minnesota 2–3",
+      "ga": 8,
       "gf": 18,
       "gp": 6
     },
@@ -861,16 +851,16 @@
     },
     {
       "conference": "West",
-      "currentRank": 13,
+      "currentRank": 10,
       "draws": 10,
-      "ga": 53,
-      "gf": 44,
-      "gp": 29,
+      "ga": 55,
+      "gf": 47,
+      "gp": 30,
       "id": "MIN",
       "losses": 12,
       "name": "Minnesota",
-      "pts": 31,
-      "wins": 7
+      "pts": 34,
+      "wins": 8
     },
     {
       "conference": "East",
@@ -952,7 +942,7 @@
     },
     {
       "conference": "West",
-      "currentRank": 10,
+      "currentRank": 11,
       "draws": 6,
       "ga": 56,
       "gf": 51,
@@ -978,7 +968,7 @@
     },
     {
       "conference": "West",
-      "currentRank": 11,
+      "currentRank": 12,
       "draws": 6,
       "ga": 47,
       "gf": 42,
@@ -991,7 +981,7 @@
     },
     {
       "conference": "West",
-      "currentRank": 12,
+      "currentRank": 13,
       "draws": 9,
       "ga": 54,
       "gf": 51,
@@ -1045,11 +1035,11 @@
       "conference": "West",
       "currentRank": 2,
       "draws": 9,
-      "ga": 38,
-      "gf": 54,
-      "gp": 29,
+      "ga": 41,
+      "gf": 56,
+      "gp": 30,
       "id": "STL",
-      "losses": 6,
+      "losses": 7,
       "name": "St. Louis",
       "pts": 51,
       "wins": 14

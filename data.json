@@ -1,23 +1,13 @@
 {
   "asOf": "2026-10-18",
   "calibration": {
-    "drawRho": -0.2302,
-    "modelDrawsCorrected": 118,
-    "modelDrawsUncorrected": 98.16,
-    "observedDraws": 118,
-    "observedGames": 449
+    "drawRho": -0.2364,
+    "modelDrawsCorrected": 119,
+    "modelDrawsUncorrected": 98.53,
+    "observedDraws": 119,
+    "observedGames": 450
   },
   "fixtures": [
-    {
-      "away": "COL",
-      "date": "2026-10-19",
-      "home": "POR",
-      "id": "2026-10-19:POR:COL",
-      "listedBy": [
-        "COL",
-        "POR"
-      ]
-    },
     {
       "away": "VAN",
       "date": "2026-10-24",
@@ -331,8 +321,7 @@
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.2302, fitted so the model reproduces the season's 118 draws in 449 matches (uncorrected Poisson would produce 98.16).",
-    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-17:POR:COL -> 2026-10-19"
+    "Low-score correction rho = -0.2364, fitted so the model reproduces the season's 119 draws in 450 matches (uncorrected Poisson would produce 98.53)."
   ],
   "recentForm": {
     "ATL": {
@@ -372,9 +361,9 @@
       "gp": 6
     },
     "COL": {
-      "description": "Austin FC 1–1, Montréal 1–0, Seattle 3–3, LA Galaxy 2–3, San Jose 1–1, Minnesota 2–2",
-      "ga": 10,
-      "gf": 10,
+      "description": "Montréal 1–0, Seattle 3–3, LA Galaxy 2–3, San Jose 1–1, Minnesota 2–2, Portland 0–0",
+      "ga": 9,
+      "gf": 9,
       "gp": 6
     },
     "DAL": {
@@ -456,9 +445,9 @@
       "gp": 6
     },
     "POR": {
-      "description": "St. Louis 2–2, FC Dallas 1–2, Atlanta 0–1, San Jose 1–3, Sporting KC 3–3, LA Galaxy 0–2",
-      "ga": 13,
-      "gf": 7,
+      "description": "FC Dallas 1–2, Atlanta 0–1, San Jose 1–3, Sporting KC 3–3, LA Galaxy 0–2, Colorado 0–0",
+      "ga": 11,
+      "gf": 5,
       "gp": 6
     },
     "RBNY": {
@@ -694,14 +683,14 @@
     {
       "conference": "West",
       "currentRank": 9,
-      "draws": 5,
+      "draws": 6,
       "ga": 41,
       "gf": 41,
-      "gp": 29,
+      "gp": 30,
       "id": "COL",
       "losses": 13,
       "name": "Colorado",
-      "pts": 38,
+      "pts": 39,
       "wins": 11
     },
     {
@@ -784,7 +773,7 @@
     },
     {
       "conference": "West",
-      "currentRank": 12,
+      "currentRank": 13,
       "draws": 10,
       "ga": 55,
       "gf": 47,
@@ -875,15 +864,15 @@
     },
     {
       "conference": "West",
-      "currentRank": 13,
-      "draws": 6,
+      "currentRank": 11,
+      "draws": 7,
       "ga": 56,
       "gf": 51,
-      "gp": 29,
+      "gp": 30,
       "id": "POR",
       "losses": 14,
       "name": "Portland",
-      "pts": 33,
+      "pts": 34,
       "wins": 9
     },
     {
@@ -914,7 +903,7 @@
     },
     {
       "conference": "West",
-      "currentRank": 11,
+      "currentRank": 12,
       "draws": 10,
       "ga": 56,
       "gf": 53,

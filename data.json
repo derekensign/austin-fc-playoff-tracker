@@ -1,30 +1,21 @@
 {
-  "asOf": "2026-10-17",
+  "asOf": "2026-10-18",
   "calibration": {
-    "drawRho": -0.2279,
-    "modelDrawsCorrected": 117,
-    "modelDrawsUncorrected": 97.5,
-    "observedDraws": 117,
-    "observedGames": 446
+    "drawRho": -0.2302,
+    "modelDrawsCorrected": 118,
+    "modelDrawsUncorrected": 98.16,
+    "observedDraws": 118,
+    "observedGames": 449
   },
   "fixtures": [
     {
-      "away": "VAN",
-      "date": "2026-10-18",
-      "home": "ATX",
-      "id": "2026-10-18:ATX:VAN",
+      "away": "COL",
+      "date": "2026-10-19",
+      "home": "POR",
+      "id": "2026-10-19:POR:COL",
       "listedBy": [
-        "ATX",
-        "VAN"
-      ]
-    },
-    {
-      "away": "MTL",
-      "date": "2026-10-18",
-      "home": "SEA",
-      "id": "2026-10-18:SEA:MTL",
-      "listedBy": [
-        "SEA"
+        "COL",
+        "POR"
       ]
     },
     {
@@ -255,15 +246,6 @@
       ]
     },
     {
-      "away": "LAFC",
-      "date": "2026-11-04",
-      "home": "NYC",
-      "id": "2026-11-04:NYC:LAFC",
-      "listedBy": [
-        "LAFC"
-      ]
-    },
-    {
       "away": "POR",
       "date": "2026-11-07",
       "home": "ATX",
@@ -344,13 +326,13 @@
     }
   ],
   "notes": [
-    "Snapshot as of 2026-10-17, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
+    "Snapshot as of 2026-10-18, rebuilt automatically from the American Soccer Analysis results feed. Goals for/against and wins/losses reconcile across all 30 clubs.",
     "All remaining MLS fixtures involving a Western club are included. East-vs-East fixtures are not required because team strengths are held fixed throughout each forecast.",
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.2279, fitted so the model reproduces the season's 117 draws in 446 matches (uncorrected Poisson would produce 97.5).",
-    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-17:ATX:VAN -> 2026-10-18; 2026-10-17:SEA:MTL -> 2026-10-18"
+    "Low-score correction rho = -0.2302, fitted so the model reproduces the season's 118 draws in 449 matches (uncorrected Poisson would produce 98.16).",
+    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-17:POR:COL -> 2026-10-19"
   ],
   "recentForm": {
     "ATL": {
@@ -360,8 +342,8 @@
       "gp": 6
     },
     "ATX": {
-      "description": "Colorado 1–1, Vancouver 2–1, FC Dallas 0–0, San Diego 3–3, Nashville 1–4, LAFC 1–3",
-      "ga": 12,
+      "description": "Vancouver 2–1, FC Dallas 0–0, San Diego 3–3, Nashville 1–4, LAFC 1–3, Vancouver 1–2",
+      "ga": 13,
       "gf": 8,
       "gp": 6
     },
@@ -372,15 +354,15 @@
       "gp": 6
     },
     "CIN": {
-      "description": "Philadelphia 0–5, Charlotte 3–3, Houston 2–2, Montréal 1–3, Atlanta 3–1, New England 2–3",
-      "ga": 17,
+      "description": "Charlotte 3–3, Houston 2–2, Montréal 1–3, Atlanta 3–1, New England 2–3, Columbus 0–2",
+      "ga": 14,
       "gf": 11,
       "gp": 6
     },
     "CLB": {
-      "description": "D.C. United 1–2, Red Bull New York 0–1, Montréal 2–0, Inter Miami 2–1, Orlando 2–3, Charlotte 3–1",
-      "ga": 8,
-      "gf": 10,
+      "description": "Red Bull New York 0–1, Montréal 2–0, Inter Miami 2–1, Orlando 2–3, Charlotte 3–1, Cincinnati 2–0",
+      "ga": 6,
+      "gf": 11,
       "gp": 6
     },
     "CLT": {
@@ -390,9 +372,9 @@
       "gp": 6
     },
     "COL": {
-      "description": "Montréal 1–0, Seattle 3–3, LA Galaxy 2–3, San Jose 1–1, Minnesota 2–2, Portland 0–0",
-      "ga": 9,
-      "gf": 9,
+      "description": "Austin FC 1–1, Montréal 1–0, Seattle 3–3, LA Galaxy 2–3, San Jose 1–1, Minnesota 2–2",
+      "ga": 10,
+      "gf": 10,
       "gp": 6
     },
     "DAL": {
@@ -414,9 +396,9 @@
       "gp": 6
     },
     "LAFC": {
-      "description": "Red Bull New York 2–0, Sporting KC 1–3, San Jose 2–2, FC Dallas 0–1, Vancouver 1–1, Austin FC 3–1",
-      "ga": 8,
-      "gf": 9,
+      "description": "Sporting KC 1–3, San Jose 2–2, FC Dallas 0–1, Vancouver 1–1, Austin FC 3–1, New York City 1–1",
+      "ga": 9,
+      "gf": 8,
       "gp": 6
     },
     "LAG": {
@@ -438,8 +420,8 @@
       "gp": 6
     },
     "MTL": {
-      "description": "Charlotte 1–2, Colorado 0–1, Columbus 0–2, Cincinnati 3–1, Toronto 1–2, Atlanta 0–3",
-      "ga": 11,
+      "description": "Colorado 0–1, Columbus 0–2, Cincinnati 3–1, Toronto 1–2, Atlanta 0–3, Seattle 1–1",
+      "ga": 10,
       "gf": 5,
       "gp": 6
     },
@@ -456,8 +438,8 @@
       "gp": 6
     },
     "NYC": {
-      "description": "New England 1–2, Real Salt Lake 2–0, Red Bull New York 0–1, Atlanta 2–2, Chicago 1–2, Inter Miami 0–2",
-      "ga": 9,
+      "description": "Real Salt Lake 2–0, Red Bull New York 0–1, Atlanta 2–2, Chicago 1–2, Inter Miami 0–2, LAFC 1–1",
+      "ga": 8,
       "gf": 6,
       "gp": 6
     },
@@ -474,9 +456,9 @@
       "gp": 6
     },
     "POR": {
-      "description": "FC Dallas 1–2, Atlanta 0–1, San Jose 1–3, Sporting KC 3–3, LA Galaxy 0–2, Colorado 0–0",
-      "ga": 11,
-      "gf": 5,
+      "description": "St. Louis 2–2, FC Dallas 1–2, Atlanta 0–1, San Jose 1–3, Sporting KC 3–3, LA Galaxy 0–2",
+      "ga": 13,
+      "gf": 7,
       "gp": 6
     },
     "RBNY": {
@@ -498,9 +480,9 @@
       "gp": 6
     },
     "SEA": {
-      "description": "Colorado 3–3, Real Salt Lake 2–0, Minnesota 3–1, Sporting KC 2–1, New England 3–0, FC Dallas 0–1",
-      "ga": 6,
-      "gf": 13,
+      "description": "Real Salt Lake 2–0, Minnesota 3–1, Sporting KC 2–1, New England 3–0, FC Dallas 0–1, Montréal 1–1",
+      "ga": 4,
+      "gf": 11,
       "gp": 6
     },
     "SJ": {
@@ -528,9 +510,9 @@
       "gp": 6
     },
     "VAN": {
-      "description": "Austin FC 1–2, Real Salt Lake 3–0, D.C. United 3–3, Chicago 1–3, LAFC 1–1, St. Louis 0–0",
-      "ga": 9,
-      "gf": 9,
+      "description": "Real Salt Lake 3–0, D.C. United 3–3, Chicago 1–3, LAFC 1–1, St. Louis 0–0, Austin FC 2–1",
+      "ga": 8,
+      "gf": 10,
       "gp": 6
     }
   },
@@ -648,11 +630,11 @@
       "conference": "West",
       "currentRank": 14,
       "draws": 10,
-      "ga": 54,
-      "gf": 37,
-      "gp": 29,
+      "ga": 56,
+      "gf": 38,
+      "gp": 30,
       "id": "ATX",
-      "losses": 12,
+      "losses": 13,
       "name": "Austin FC",
       "pts": 31,
       "wins": 7
@@ -674,27 +656,27 @@
       "conference": "East",
       "currentRank": 9,
       "draws": 9,
-      "ga": 68,
+      "ga": 70,
       "gf": 60,
-      "gp": 28,
+      "gp": 29,
       "id": "CIN",
-      "losses": 10,
+      "losses": 11,
       "name": "Cincinnati",
       "pts": 36,
       "wins": 9
     },
     {
       "conference": "East",
-      "currentRank": 13,
+      "currentRank": 11,
       "draws": 5,
       "ga": 47,
-      "gf": 44,
-      "gp": 29,
+      "gf": 46,
+      "gp": 30,
       "id": "CLB",
       "losses": 15,
       "name": "Columbus",
-      "pts": 32,
-      "wins": 9
+      "pts": 35,
+      "wins": 10
     },
     {
       "conference": "East",
@@ -712,14 +694,14 @@
     {
       "conference": "West",
       "currentRank": 9,
-      "draws": 6,
+      "draws": 5,
       "ga": 41,
       "gf": 41,
-      "gp": 30,
+      "gp": 29,
       "id": "COL",
       "losses": 13,
       "name": "Colorado",
-      "pts": 39,
+      "pts": 38,
       "wins": 11
     },
     {
@@ -737,7 +719,7 @@
     },
     {
       "conference": "East",
-      "currentRank": 12,
+      "currentRank": 13,
       "draws": 12,
       "ga": 51,
       "gf": 37,
@@ -764,14 +746,14 @@
     {
       "conference": "West",
       "currentRank": 6,
-      "draws": 9,
-      "ga": 32,
-      "gf": 47,
-      "gp": 30,
+      "draws": 10,
+      "ga": 33,
+      "gf": 48,
+      "gp": 31,
       "id": "LAFC",
       "losses": 9,
       "name": "LAFC",
-      "pts": 45,
+      "pts": 46,
       "wins": 12
     },
     {
@@ -802,7 +784,7 @@
     },
     {
       "conference": "West",
-      "currentRank": 13,
+      "currentRank": 12,
       "draws": 10,
       "ga": 55,
       "gf": 47,
@@ -816,14 +798,14 @@
     {
       "conference": "East",
       "currentRank": 15,
-      "draws": 6,
-      "ga": 59,
-      "gf": 35,
-      "gp": 29,
+      "draws": 7,
+      "ga": 60,
+      "gf": 36,
+      "gp": 30,
       "id": "MTL",
       "losses": 17,
       "name": "Montréal",
-      "pts": 24,
+      "pts": 25,
       "wins": 6
     },
     {
@@ -854,15 +836,15 @@
     },
     {
       "conference": "East",
-      "currentRank": 11,
-      "draws": 9,
-      "ga": 40,
-      "gf": 42,
-      "gp": 29,
+      "currentRank": 12,
+      "draws": 10,
+      "ga": 41,
+      "gf": 43,
+      "gp": 30,
       "id": "NYC",
       "losses": 12,
       "name": "New York City",
-      "pts": 33,
+      "pts": 34,
       "wins": 8
     },
     {
@@ -893,15 +875,15 @@
     },
     {
       "conference": "West",
-      "currentRank": 11,
-      "draws": 7,
+      "currentRank": 13,
+      "draws": 6,
       "ga": 56,
       "gf": 51,
-      "gp": 30,
+      "gp": 29,
       "id": "POR",
       "losses": 14,
       "name": "Portland",
-      "pts": 34,
+      "pts": 33,
       "wins": 9
     },
     {
@@ -932,7 +914,7 @@
     },
     {
       "conference": "West",
-      "currentRank": 12,
+      "currentRank": 11,
       "draws": 10,
       "ga": 56,
       "gf": 53,
@@ -946,14 +928,14 @@
     {
       "conference": "West",
       "currentRank": 7,
-      "draws": 8,
-      "ga": 36,
-      "gf": 38,
-      "gp": 29,
+      "draws": 9,
+      "ga": 37,
+      "gf": 39,
+      "gp": 30,
       "id": "SEA",
       "losses": 10,
       "name": "Seattle",
-      "pts": 41,
+      "pts": 42,
       "wins": 11
     },
     {
@@ -1012,14 +994,14 @@
       "conference": "West",
       "currentRank": 1,
       "draws": 7,
-      "ga": 30,
-      "gf": 61,
-      "gp": 29,
+      "ga": 31,
+      "gf": 63,
+      "gp": 30,
       "id": "VAN",
       "losses": 7,
       "name": "Vancouver",
-      "pts": 52,
-      "wins": 15
+      "pts": 55,
+      "wins": 16
     }
   ],
   "version": "2.3.0"

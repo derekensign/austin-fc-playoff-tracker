@@ -44,14 +44,14 @@
   },
   "version": "2.3.0",
   "latestRefresh": {
-    "asOf": "2026-10-14",
+    "asOf": "2026-10-21",
     "iterations": 50000,
-    "seed": 20261014,
+    "seed": 20261021,
     "validation": "passed",
     "tieAudit": {
-      "austinAnyTiePct": 0.022000000000000002,
-      "top9LowerPct": 3.3640000000000003,
-      "top9UpperPct": 3.37
+      "austinAnyTiePct": 0.052,
+      "top9LowerPct": 1.1900000000000002,
+      "top9UpperPct": 1.198
     }
   }
 }

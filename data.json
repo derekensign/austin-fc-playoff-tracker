@@ -1,11 +1,11 @@
 {
   "asOf": "2026-10-24",
   "calibration": {
-    "drawRho": -0.2312,
+    "drawRho": -0.2304,
     "modelDrawsCorrected": 119,
-    "modelDrawsUncorrected": 98.89,
+    "modelDrawsUncorrected": 98.98,
     "observedDraws": 119,
-    "observedGames": 452
+    "observedGames": 453
   },
   "fixtures": [
     {
@@ -321,7 +321,7 @@
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.2312, fitted so the model reproduces the season's 119 draws in 452 matches (uncorrected Poisson would produce 98.89).",
+    "Low-score correction rho = -0.2304, fitted so the model reproduces the season's 119 draws in 453 matches (uncorrected Poisson would produce 98.98).",
     "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-24:COL:VAN -> 2026-10-25; 2026-10-24:DAL:SJ -> 2026-10-25; 2026-10-24:HOU:MIN -> 2026-10-25; 2026-10-24:POR:CLT -> 2026-10-25; 2026-10-24:RSL:STL -> 2026-10-25; 2026-10-24:SD:SEA -> 2026-10-25; 2026-10-24:SKC:ATX -> 2026-10-25"
   ],
   "recentForm": {
@@ -350,9 +350,9 @@
       "gp": 6
     },
     "CLB": {
-      "description": "Red Bull New York 0–1, Montréal 2–0, Inter Miami 2–1, Orlando 2–3, Charlotte 3–1, Cincinnati 2–0",
-      "ga": 6,
-      "gf": 11,
+      "description": "Montréal 2–0, Inter Miami 2–1, Orlando 2–3, Charlotte 3–1, Cincinnati 2–0, Toronto 4–2",
+      "ga": 7,
+      "gf": 15,
       "gp": 6
     },
     "CLT": {
@@ -494,9 +494,9 @@
       "gp": 6
     },
     "TOR": {
-      "description": "Orlando 0–3, St. Louis 1–3, Nashville 0–2, Montréal 2–1, Orlando 3–3, Red Bull New York 2–0",
-      "ga": 12,
-      "gf": 8,
+      "description": "St. Louis 1–3, Nashville 0–2, Montréal 2–1, Orlando 3–3, Red Bull New York 2–0, Columbus 2–4",
+      "ga": 13,
+      "gf": 10,
       "gp": 6
     },
     "VAN": {
@@ -657,16 +657,16 @@
     },
     {
       "conference": "East",
-      "currentRank": 11,
+      "currentRank": 9,
       "draws": 5,
-      "ga": 47,
-      "gf": 46,
-      "gp": 30,
+      "ga": 49,
+      "gf": 50,
+      "gp": 31,
       "id": "CLB",
       "losses": 15,
       "name": "Columbus",
-      "pts": 35,
-      "wins": 10
+      "pts": 38,
+      "wins": 11
     },
     {
       "conference": "East",
@@ -878,7 +878,7 @@
     },
     {
       "conference": "East",
-      "currentRank": 9,
+      "currentRank": 10,
       "draws": 6,
       "ga": 56,
       "gf": 39,
@@ -969,13 +969,13 @@
     },
     {
       "conference": "East",
-      "currentRank": 10,
+      "currentRank": 11,
       "draws": 12,
-      "ga": 55,
-      "gf": 46,
-      "gp": 30,
+      "ga": 59,
+      "gf": 48,
+      "gp": 31,
       "id": "TOR",
-      "losses": 10,
+      "losses": 11,
       "name": "Toronto",
       "pts": 36,
       "wins": 8

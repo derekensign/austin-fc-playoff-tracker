@@ -1,11 +1,11 @@
 {
   "asOf": "2026-10-24",
   "calibration": {
-    "drawRho": -0.2304,
+    "drawRho": -0.2256,
     "modelDrawsCorrected": 119,
-    "modelDrawsUncorrected": 98.98,
+    "modelDrawsUncorrected": 99.32,
     "observedDraws": 119,
-    "observedGames": 453
+    "observedGames": 454
   },
   "fixtures": [
     {
@@ -321,7 +321,7 @@
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.2304, fitted so the model reproduces the season's 119 draws in 453 matches (uncorrected Poisson would produce 98.98).",
+    "Low-score correction rho = -0.2256, fitted so the model reproduces the season's 119 draws in 454 matches (uncorrected Poisson would produce 99.32).",
     "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-24:COL:VAN -> 2026-10-25; 2026-10-24:DAL:SJ -> 2026-10-25; 2026-10-24:HOU:MIN -> 2026-10-25; 2026-10-24:POR:CLT -> 2026-10-25; 2026-10-24:RSL:STL -> 2026-10-25; 2026-10-24:SD:SEA -> 2026-10-25; 2026-10-24:SKC:ATX -> 2026-10-25"
   ],
   "recentForm": {
@@ -398,9 +398,9 @@
       "gp": 6
     },
     "MIA": {
-      "description": "Nashville 2–2, San Diego 2–2, Columbus 1–2, D.C. United 4–0, New York City 2–0, Atlanta 3–1",
+      "description": "San Diego 2–2, Columbus 1–2, D.C. United 4–0, New York City 2–0, Atlanta 3–1, Red Bull New York 0–2",
       "ga": 7,
-      "gf": 14,
+      "gf": 12,
       "gp": 6
     },
     "MIN": {
@@ -452,9 +452,9 @@
       "gp": 6
     },
     "RBNY": {
-      "description": "Columbus 1–0, New York City 1–0, St. Louis 0–3, San Diego 4–1, D.C. United 1–2, Toronto 0–2",
+      "description": "New York City 1–0, St. Louis 0–3, San Diego 4–1, D.C. United 1–2, Toronto 0–2, Inter Miami 2–0",
       "ga": 8,
-      "gf": 7,
+      "gf": 8,
       "gp": 6
     },
     "RSL": {
@@ -644,7 +644,7 @@
     },
     {
       "conference": "East",
-      "currentRank": 8,
+      "currentRank": 9,
       "draws": 9,
       "ga": 71,
       "gf": 62,
@@ -657,7 +657,7 @@
     },
     {
       "conference": "East",
-      "currentRank": 9,
+      "currentRank": 10,
       "draws": 5,
       "ga": 49,
       "gf": 50,
@@ -763,11 +763,11 @@
       "conference": "East",
       "currentRank": 2,
       "draws": 10,
-      "ga": 51,
+      "ga": 53,
       "gf": 73,
-      "gp": 30,
+      "gp": 31,
       "id": "MIA",
-      "losses": 5,
+      "losses": 6,
       "name": "Inter Miami",
       "pts": 55,
       "wins": 15
@@ -878,16 +878,16 @@
     },
     {
       "conference": "East",
-      "currentRank": 10,
+      "currentRank": 8,
       "draws": 6,
       "ga": 56,
-      "gf": 39,
-      "gp": 30,
+      "gf": 41,
+      "gp": 31,
       "id": "RBNY",
       "losses": 14,
       "name": "Red Bull New York",
-      "pts": 36,
-      "wins": 10
+      "pts": 39,
+      "wins": 11
     },
     {
       "conference": "West",

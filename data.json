@@ -1,23 +1,13 @@
 {
   "asOf": "2026-10-24",
   "calibration": {
-    "drawRho": -0.2247,
+    "drawRho": -0.2152,
     "modelDrawsCorrected": 121,
-    "modelDrawsUncorrected": 101.05,
+    "modelDrawsUncorrected": 101.75,
     "observedDraws": 121,
-    "observedGames": 461
+    "observedGames": 463
   },
   "fixtures": [
-    {
-      "away": "VAN",
-      "date": "2026-10-25",
-      "home": "COL",
-      "id": "2026-10-25:COL:VAN",
-      "listedBy": [
-        "VAN",
-        "COL"
-      ]
-    },
     {
       "away": "LAG",
       "date": "2026-10-25",
@@ -35,16 +25,6 @@
       "id": "2026-10-25:POR:CLT",
       "listedBy": [
         "POR"
-      ]
-    },
-    {
-      "away": "STL",
-      "date": "2026-10-25",
-      "home": "RSL",
-      "id": "2026-10-25:RSL:STL",
-      "listedBy": [
-        "STL",
-        "RSL"
       ]
     },
     {
@@ -291,8 +271,8 @@
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.2247, fitted so the model reproduces the season's 121 draws in 461 matches (uncorrected Poisson would produce 101.05).",
-    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-24:COL:VAN -> 2026-10-25; 2026-10-24:POR:CLT -> 2026-10-25; 2026-10-24:RSL:STL -> 2026-10-25; 2026-10-24:SD:SEA -> 2026-10-25"
+    "Low-score correction rho = -0.2152, fitted so the model reproduces the season's 121 draws in 463 matches (uncorrected Poisson would produce 101.75).",
+    "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-24:POR:CLT -> 2026-10-25; 2026-10-24:SD:SEA -> 2026-10-25"
   ],
   "recentForm": {
     "ATL": {
@@ -332,7 +312,7 @@
       "gp": 6
     },
     "COL": {
-      "description": "Montréal 1–0, Seattle 3–3, LA Galaxy 2–3, San Jose 1–1, Minnesota 2–2, Portland 0–0",
+      "description": "Seattle 3–3, LA Galaxy 2–3, San Jose 1–1, Minnesota 2–2, Portland 0–0, Vancouver 1–0",
       "ga": 9,
       "gf": 9,
       "gp": 6
@@ -428,9 +408,9 @@
       "gp": 6
     },
     "RSL": {
-      "description": "Vancouver 0–3, Seattle 0–2, New England 3–0, Philadelphia 1–2, San Jose 1–1, Sporting KC 3–1",
-      "ga": 9,
-      "gf": 8,
+      "description": "Seattle 0–2, New England 3–0, Philadelphia 1–2, San Jose 1–1, Sporting KC 3–1, St. Louis 3–0",
+      "ga": 6,
+      "gf": 11,
       "gp": 6
     },
     "SD": {
@@ -458,9 +438,9 @@
       "gp": 6
     },
     "STL": {
-      "description": "Minnesota 4–2, Toronto 3–1, Red Bull New York 3–0, LA Galaxy 6–2, Vancouver 0–0, Minnesota 2–3",
-      "ga": 8,
-      "gf": 18,
+      "description": "Toronto 3–1, Red Bull New York 3–0, LA Galaxy 6–2, Vancouver 0–0, Minnesota 2–3, Real Salt Lake 0–3",
+      "ga": 9,
+      "gf": 14,
       "gp": 6
     },
     "TOR": {
@@ -470,9 +450,9 @@
       "gp": 6
     },
     "VAN": {
-      "description": "Real Salt Lake 3–0, D.C. United 3–3, Chicago 1–3, LAFC 1–1, St. Louis 0–0, Austin FC 2–1",
-      "ga": 8,
-      "gf": 10,
+      "description": "D.C. United 3–3, Chicago 1–3, LAFC 1–1, St. Louis 0–0, Austin FC 2–1, Colorado 0–1",
+      "ga": 9,
+      "gf": 7,
       "gp": 6
     }
   },
@@ -653,16 +633,16 @@
     },
     {
       "conference": "West",
-      "currentRank": 9,
+      "currentRank": 7,
       "draws": 6,
       "ga": 41,
-      "gf": 41,
-      "gp": 30,
+      "gf": 42,
+      "gp": 31,
       "id": "COL",
       "losses": 13,
       "name": "Colorado",
-      "pts": 39,
-      "wins": 11
+      "pts": 42,
+      "wins": 12
     },
     {
       "conference": "West",
@@ -718,7 +698,7 @@
     },
     {
       "conference": "West",
-      "currentRank": 8,
+      "currentRank": 9,
       "draws": 10,
       "ga": 52,
       "gf": 43,
@@ -864,13 +844,13 @@
       "currentRank": 10,
       "draws": 6,
       "ga": 48,
-      "gf": 45,
-      "gp": 30,
+      "gf": 48,
+      "gp": 31,
       "id": "RSL",
       "losses": 14,
       "name": "Real Salt Lake",
-      "pts": 36,
-      "wins": 10
+      "pts": 39,
+      "wins": 11
     },
     {
       "conference": "West",
@@ -887,7 +867,7 @@
     },
     {
       "conference": "West",
-      "currentRank": 7,
+      "currentRank": 8,
       "draws": 9,
       "ga": 37,
       "gf": 39,
@@ -928,11 +908,11 @@
       "conference": "West",
       "currentRank": 3,
       "draws": 9,
-      "ga": 41,
+      "ga": 44,
       "gf": 56,
-      "gp": 30,
+      "gp": 31,
       "id": "STL",
-      "losses": 7,
+      "losses": 8,
       "name": "St. Louis",
       "pts": 51,
       "wins": 14
@@ -954,11 +934,11 @@
       "conference": "West",
       "currentRank": 1,
       "draws": 7,
-      "ga": 31,
+      "ga": 32,
       "gf": 63,
-      "gp": 30,
+      "gp": 31,
       "id": "VAN",
-      "losses": 7,
+      "losses": 8,
       "name": "Vancouver",
       "pts": 55,
       "wins": 16

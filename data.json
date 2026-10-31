@@ -1,11 +1,11 @@
 {
   "asOf": "2026-10-31",
   "calibration": {
-    "drawRho": -0.2395,
-    "modelDrawsCorrected": 128,
-    "modelDrawsUncorrected": 105.75,
-    "observedDraws": 128,
-    "observedGames": 484
+    "drawRho": -0.2382,
+    "modelDrawsCorrected": 127,
+    "modelDrawsUncorrected": 105.05,
+    "observedDraws": 127,
+    "observedGames": 481
   },
   "fixtures": [
     {
@@ -173,7 +173,7 @@
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.2395, fitted so the model reproduces the season's 128 draws in 484 matches (uncorrected Poisson would produce 105.75).",
+    "Low-score correction rho = -0.2382, fitted so the model reproduces the season's 127 draws in 481 matches (uncorrected Poisson would produce 105.05).",
     "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-10-31:COL:CHI -> 2026-11-01; 2026-10-31:LAG:ATX -> 2026-11-01; 2026-10-31:SKC:DAL -> 2026-11-01"
   ],
   "recentForm": {
@@ -196,15 +196,15 @@
       "gp": 6
     },
     "CIN": {
-      "description": "New England 2–3, Columbus 0–2, D.C. United 2–1, D.C. United 2–0, Inter Miami 2–2, Philadelphia 1–0",
-      "ga": 8,
-      "gf": 9,
+      "description": "Atlanta 3–1, New England 2–3, Columbus 0–2, D.C. United 2–1, D.C. United 2–0, Inter Miami 2–2",
+      "ga": 9,
+      "gf": 11,
       "gp": 6
     },
     "CLB": {
-      "description": "Orlando 2–3, Charlotte 3–1, Cincinnati 2–0, Toronto 4–2, FC Dallas 2–0, D.C. United 3–0",
-      "ga": 6,
-      "gf": 16,
+      "description": "Inter Miami 2–1, Orlando 2–3, Charlotte 3–1, Cincinnati 2–0, Toronto 4–2, FC Dallas 2–0",
+      "ga": 7,
+      "gf": 15,
       "gp": 6
     },
     "CLT": {
@@ -226,8 +226,8 @@
       "gp": 6
     },
     "DC": {
-      "description": "Red Bull New York 2–1, Orlando 1–4, Cincinnati 1–2, Cincinnati 0–2, Toronto 1–2, Columbus 0–3",
-      "ga": 14,
+      "description": "Inter Miami 0–4, Red Bull New York 2–1, Orlando 1–4, Cincinnati 1–2, Cincinnati 0–2, Toronto 1–2",
+      "ga": 15,
       "gf": 5,
       "gp": 6
     },
@@ -262,9 +262,9 @@
       "gp": 6
     },
     "MTL": {
-      "description": "Toronto 1–2, Atlanta 0–3, Seattle 1–1, Nashville 0–2, Charlotte 0–4, New York City 1–1",
+      "description": "Cincinnati 3–1, Toronto 1–2, Atlanta 0–3, Seattle 1–1, Nashville 0–2, Charlotte 0–4",
       "ga": 13,
-      "gf": 3,
+      "gf": 5,
       "gp": 6
     },
     "NE": {
@@ -280,9 +280,9 @@
       "gp": 6
     },
     "NYC": {
-      "description": "Chicago 1–2, Inter Miami 0–2, LAFC 1–1, Orlando 2–2, Atlanta 2–1, Montréal 1–1",
-      "ga": 9,
-      "gf": 7,
+      "description": "Atlanta 2–2, Chicago 1–2, Inter Miami 0–2, LAFC 1–1, Orlando 2–2, Atlanta 2–1",
+      "ga": 10,
+      "gf": 8,
       "gp": 6
     },
     "ORL": {
@@ -292,9 +292,9 @@
       "gp": 6
     },
     "PHI": {
-      "description": "Real Salt Lake 2–1, Chicago 3–1, Charlotte 2–2, New England 1–2, Nashville 0–0, Cincinnati 0–1",
-      "ga": 7,
-      "gf": 8,
+      "description": "Orlando 4–2, Real Salt Lake 2–1, Chicago 3–1, Charlotte 2–2, New England 1–2, Nashville 0–0",
+      "ga": 8,
+      "gf": 12,
       "gp": 6
     },
     "POR": {
@@ -496,29 +496,29 @@
     },
     {
       "conference": "East",
-      "currentRank": 7,
+      "currentRank": 8,
       "draws": 10,
       "ga": 73,
-      "gf": 67,
-      "gp": 33,
+      "gf": 66,
+      "gp": 32,
       "id": "CIN",
       "losses": 11,
       "name": "Cincinnati",
-      "pts": 46,
-      "wins": 12
+      "pts": 43,
+      "wins": 11
     },
     {
       "conference": "East",
-      "currentRank": 8,
+      "currentRank": 9,
       "draws": 5,
       "ga": 49,
-      "gf": 55,
-      "gp": 33,
+      "gf": 52,
+      "gp": 32,
       "id": "CLB",
       "losses": 15,
       "name": "Columbus",
-      "pts": 44,
-      "wins": 13
+      "pts": 41,
+      "wins": 12
     },
     {
       "conference": "East",
@@ -563,11 +563,11 @@
       "conference": "East",
       "currentRank": 13,
       "draws": 12,
-      "ga": 60,
+      "ga": 57,
       "gf": 39,
-      "gp": 33,
+      "gp": 32,
       "id": "DC",
-      "losses": 14,
+      "losses": 13,
       "name": "D.C. United",
       "pts": 33,
       "wins": 7
@@ -640,14 +640,14 @@
     {
       "conference": "East",
       "currentRank": 15,
-      "draws": 8,
-      "ga": 67,
-      "gf": 37,
-      "gp": 33,
+      "draws": 7,
+      "ga": 66,
+      "gf": 36,
+      "gp": 32,
       "id": "MTL",
       "losses": 19,
       "name": "Montréal",
-      "pts": 26,
+      "pts": 25,
       "wins": 6
     },
     {
@@ -678,20 +678,20 @@
     },
     {
       "conference": "East",
-      "currentRank": 11,
-      "draws": 12,
-      "ga": 45,
-      "gf": 48,
-      "gp": 33,
+      "currentRank": 12,
+      "draws": 11,
+      "ga": 44,
+      "gf": 47,
+      "gp": 32,
       "id": "NYC",
       "losses": 12,
       "name": "New York City",
-      "pts": 39,
+      "pts": 38,
       "wins": 9
     },
     {
       "conference": "East",
-      "currentRank": 9,
+      "currentRank": 7,
       "draws": 7,
       "ga": 78,
       "gf": 62,
@@ -706,11 +706,11 @@
       "conference": "East",
       "currentRank": 6,
       "draws": 8,
-      "ga": 51,
+      "ga": 50,
       "gf": 62,
-      "gp": 33,
+      "gp": 32,
       "id": "PHI",
-      "losses": 12,
+      "losses": 11,
       "name": "Philadelphia",
       "pts": 47,
       "wins": 13
@@ -821,7 +821,7 @@
     },
     {
       "conference": "East",
-      "currentRank": 12,
+      "currentRank": 11,
       "draws": 12,
       "ga": 60,
       "gf": 50,

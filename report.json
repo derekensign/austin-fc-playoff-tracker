@@ -8,17 +8,17 @@
       "priorGames": 8,
       "homeLog": 0.13,
       "recentWeight": 0,
-      "drawRho": -0.2369
+      "drawRho": -0.2464
     },
     "teams": [
       {
         "id": "ATX",
-        "meanPoints": 35.34834,
-        "meanPlace": 14,
-        "medianPoints": 35,
+        "meanPoints": 36.34594,
+        "meanPlace": 13.76594,
+        "medianPoints": 37,
         "medianPlace": 14,
         "p10": 34,
-        "p90": 37,
+        "p90": 38,
         "positionPct": [
           0,
           0,
@@ -31,9 +31,9 @@
           0,
           0,
           0,
-          0,
-          0,
-          100,
+          3.768,
+          15.870000000000001,
+          80.362,
           0
         ],
         "top9Pct": 0,
@@ -41,46 +41,46 @@
       },
       {
         "id": "COL",
-        "meanPoints": 43.96878,
-        "meanPlace": 9.16776,
-        "medianPoints": 44,
-        "medianPlace": 9,
+        "meanPoints": 45.4772,
+        "meanPlace": 8.0945,
+        "medianPoints": 46,
+        "medianPlace": 8,
         "p10": 43,
-        "p90": 46,
+        "p90": 47,
         "positionPct": [
           0,
           0,
           0,
           0,
-          0,
-          0,
-          12.826,
-          19.31,
-          24.41,
-          26.240000000000002,
-          16.144,
-          1.0699999999999998,
+          0.23600000000000002,
+          3.7800000000000002,
+          34.526,
+          27.192,
+          20.092,
+          10.562000000000001,
+          3.42,
+          0.192,
           0,
           0,
           0
         ],
-        "top9Pct": 56.546,
-        "top7Pct": 12.826
+        "top9Pct": 85.82600000000001,
+        "top7Pct": 38.542
       },
       {
         "id": "DAL",
-        "meanPoints": 56.75028,
-        "meanPlace": 2.14158,
-        "medianPoints": 56,
+        "meanPoints": 57.59776,
+        "meanPlace": 2.17122,
+        "medianPoints": 58,
         "medianPlace": 2,
         "p10": 55,
-        "p90": 58,
+        "p90": 60,
         "positionPct": [
-          0,
-          86.82,
-          12.202,
-          0.9780000000000001,
-          0,
+          2.466,
+          80.47999999999999,
+          14.66,
+          2.254,
+          0.13999999999999999,
           0,
           0,
           0,
@@ -97,19 +97,19 @@
       },
       {
         "id": "HOU",
-        "meanPoints": 53.69314,
-        "meanPlace": 3.98292,
+        "meanPoints": 53.65428,
+        "meanPlace": 4.01142,
         "medianPoints": 54,
         "medianPlace": 4,
         "p10": 51,
         "p90": 57,
         "positionPct": [
           0,
-          6.078,
-          32.786,
-          23.852,
-          31.334,
-          5.949999999999999,
+          3.434,
+          28.233999999999998,
+          36.559999999999995,
+          27.3,
+          4.472,
           0,
           0,
           0,
@@ -125,8 +125,8 @@
       },
       {
         "id": "LAFC",
-        "meanPoints": 50.26036,
-        "meanPlace": 5.69742,
+        "meanPoints": 50.27036,
+        "meanPlace": 5.63142,
         "medianPoints": 50,
         "medianPlace": 6,
         "p10": 48,
@@ -134,13 +134,13 @@
         "positionPct": [
           0,
           0,
-          2.646,
-          9.520000000000001,
-          5.334,
-          80.446,
-          2.054,
-          0,
-          0,
+          1.498,
+          8.73,
+          23.086000000000002,
+          59.367999999999995,
+          6.510000000000001,
+          0.752,
+          0.055999999999999994,
           0,
           0,
           0,
@@ -149,15 +149,15 @@
           0
         ],
         "top9Pct": 100,
-        "top7Pct": 100
+        "top7Pct": 99.19200000000001
       },
       {
         "id": "LAG",
-        "meanPoints": 45.0088,
-        "meanPlace": 8.61168,
-        "medianPoints": 45,
-        "medianPlace": 9,
-        "p10": 44,
+        "meanPoints": 43.69034,
+        "meanPlace": 9.8393,
+        "medianPoints": 44,
+        "medianPlace": 10,
+        "p10": 41,
         "p90": 47,
         "positionPct": [
           0,
@@ -166,25 +166,25 @@
           0,
           0,
           0,
-          28.712,
-          20.724,
-          20.548,
-          21.184,
-          8.364,
-          0.468,
-          0,
+          8.686,
+          12.49,
+          14.494000000000002,
+          24.87,
+          30.074,
+          8.77,
+          0.616,
           0,
           0
         ],
-        "top9Pct": 69.98400000000001,
-        "top7Pct": 28.712
+        "top9Pct": 35.67,
+        "top7Pct": 8.686
       },
       {
         "id": "MIN",
-        "meanPoints": 40.19646,
-        "meanPlace": 12.4033,
+        "meanPoints": 40.20028,
+        "meanPlace": 12.03314,
         "medianPoints": 40,
-        "medianPlace": 13,
+        "medianPlace": 12,
         "p10": 38,
         "p90": 42,
         "positionPct": [
@@ -194,23 +194,23 @@
           0,
           0,
           0,
-          0,
-          0.51,
-          2.384,
-          2.778,
-          6.3020000000000005,
-          26.645999999999997,
-          61.38,
-          0,
+          0.013999999999999999,
+          0.27799999999999997,
+          1.558,
+          4.594,
+          12.458,
+          52.334,
+          26.712000000000003,
+          2.052,
           0
         ],
-        "top9Pct": 2.894,
-        "top7Pct": 0
+        "top9Pct": 1.8499999999999999,
+        "top7Pct": 0.013999999999999999
       },
       {
         "id": "POR",
-        "meanPoints": 42.8875,
-        "meanPlace": 10.01044,
+        "meanPoints": 42.87074,
+        "meanPlace": 10.05802,
         "medianPoints": 43,
         "medianPlace": 10,
         "p10": 40,
@@ -222,54 +222,54 @@
           0,
           0,
           0,
-          8.4,
-          12.614,
-          15.509999999999998,
-          14.382,
-          34.69,
-          10.92,
-          3.4840000000000004,
+          4.756,
+          9.99,
+          16.056,
+          24.352,
+          34.298,
+          9.836,
+          0.712,
           0,
           0
         ],
-        "top9Pct": 36.524,
-        "top7Pct": 8.4
+        "top9Pct": 30.802000000000003,
+        "top7Pct": 4.756
       },
       {
         "id": "RSL",
-        "meanPoints": 43.71224,
-        "meanPlace": 9.0484,
-        "medianPoints": 43,
-        "medianPlace": 9,
+        "meanPoints": 44.78192,
+        "meanPlace": 8.52132,
+        "medianPoints": 45,
+        "medianPlace": 8,
         "p10": 42,
-        "p90": 45,
+        "p90": 48,
         "positionPct": [
           0,
           0,
           0,
           0,
           0,
-          0,
-          18.29,
-          23.192,
-          16.078,
-          21.560000000000002,
-          19.588,
-          1.2919999999999998,
+          2.062,
+          27.358,
+          25.592,
+          18.178,
+          15.616,
+          10.572,
+          0.622,
           0,
           0,
           0
         ],
-        "top9Pct": 57.56,
-        "top7Pct": 18.29
+        "top9Pct": 73.19,
+        "top7Pct": 29.42
       },
       {
         "id": "SD",
-        "meanPoints": 40.1978,
-        "meanPlace": 12.2931,
-        "medianPoints": 41,
-        "medianPlace": 12,
-        "p10": 38,
+        "meanPoints": 38.05672,
+        "meanPlace": 12.88918,
+        "medianPoints": 38,
+        "medianPlace": 13,
+        "p10": 36,
         "p90": 41,
         "positionPct": [
           0,
@@ -281,11 +281,11 @@
           0,
           0,
           0,
-          0,
-          5.826,
-          59.038000000000004,
-          35.136,
-          0,
+          0.13,
+          2.084,
+          24.11,
+          56.089999999999996,
+          17.586,
           0
         ],
         "top9Pct": 0,
@@ -293,10 +293,10 @@
       },
       {
         "id": "SEA",
-        "meanPoints": 45.01446,
-        "meanPlace": 8.44478,
+        "meanPoints": 45.01218,
+        "meanPlace": 8.70694,
         "medianPoints": 45,
-        "medianPlace": 8,
+        "medianPlace": 9,
         "p10": 43,
         "p90": 47,
         "positionPct": [
@@ -304,38 +304,38 @@
           0,
           0,
           0,
-          0,
-          2.054,
-          29.718,
-          23.65,
-          21.07,
-          13.855999999999998,
-          9.086,
-          0.5660000000000001,
+          0.07200000000000001,
+          1.8319999999999999,
+          17.498,
+          23.694000000000003,
+          29.566,
+          19.875999999999998,
+          7.094,
+          0.368,
           0,
           0,
           0
         ],
-        "top9Pct": 76.492,
-        "top7Pct": 31.772
+        "top9Pct": 72.662,
+        "top7Pct": 19.402
       },
       {
         "id": "SJ",
-        "meanPoints": 53.31578,
-        "meanPlace": 3.80088,
-        "medianPoints": 53,
-        "medianPlace": 4,
-        "p10": 52,
+        "meanPoints": 52.01174,
+        "meanPlace": 4.79064,
+        "medianPoints": 52,
+        "medianPlace": 5,
+        "p10": 50,
         "p90": 55,
         "positionPct": [
           0,
-          7.102,
-          29.165999999999997,
-          42.502,
-          19.002,
-          2.228,
-          0,
-          0,
+          1.3,
+          9,
+          26.924,
+          35.564,
+          26.548,
+          0.652,
+          0.012,
           0,
           0,
           0,
@@ -345,15 +345,15 @@
           0
         ],
         "top9Pct": 100,
-        "top7Pct": 100
+        "top7Pct": 99.988
       },
       {
         "id": "SKC",
-        "meanPoints": 23.60936,
+        "meanPoints": 23.4719,
         "meanPlace": 15,
         "medianPoints": 23,
         "medianPlace": 15,
-        "p10": 23,
+        "p10": 22,
         "p90": 26,
         "positionPct": [
           0,
@@ -377,19 +377,19 @@
       },
       {
         "id": "STL",
-        "meanPoints": 52.19004,
-        "meanPlace": 4.39774,
-        "medianPoints": 52,
-        "medianPlace": 5,
-        "p10": 51,
-        "p90": 54,
+        "meanPoints": 54.13182,
+        "meanPlace": 3.4623,
+        "medianPoints": 54,
+        "medianPlace": 3,
+        "p10": 52,
+        "p90": 57,
         "positionPct": [
           0,
-          0,
-          23.200000000000003,
-          23.148,
-          44.330000000000005,
-          9.322,
+          12.32,
+          46.608,
+          25.532,
+          13.602,
+          1.9380000000000002,
           0,
           0,
           0,
@@ -405,15 +405,15 @@
       },
       {
         "id": "VAN",
-        "meanPoints": 62.11528,
-        "meanPlace": 1,
+        "meanPoints": 62.10778,
+        "meanPlace": 1.02466,
         "medianPoints": 62,
         "medianPlace": 1,
         "p10": 60,
         "p90": 64,
         "positionPct": [
-          100,
-          0,
+          97.53399999999999,
+          2.466,
           0,
           0,
           0,
@@ -434,12 +434,12 @@
     ],
     "atx": {
       "id": "ATX",
-      "meanPoints": 35.34834,
-      "meanPlace": 14,
-      "medianPoints": 35,
+      "meanPoints": 36.34594,
+      "meanPlace": 13.76594,
+      "medianPoints": 37,
       "medianPlace": 14,
       "p10": 34,
-      "p90": 37,
+      "p90": 38,
       "positionPct": [
         0,
         0,
@@ -452,9 +452,9 @@
         0,
         0,
         0,
-        0,
-        0,
-        100,
+        3.768,
+        15.870000000000001,
+        80.362,
         0
       ],
       "top9Pct": 0,
@@ -463,7 +463,7 @@
     "cutoff": {
       "median": 44,
       "p10": 43,
-      "p90": 45
+      "p90": 46
     },
     "targets": {
       "42": {
@@ -478,19 +478,37 @@
     "pointsCurve": [
       {
         "pts": 34,
-        "sharePct": 37.31,
+        "sharePct": 17.646,
         "top9Pct": 0,
         "top7Pct": 0
       },
       {
         "pts": 35,
-        "sharePct": 26.618000000000002,
+        "sharePct": 23.200000000000003,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 36,
+        "sharePct": 7.872,
         "top9Pct": 0,
         "top7Pct": 0
       },
       {
         "pts": 37,
-        "sharePct": 36.071999999999996,
+        "sharePct": 26.222,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 38,
+        "sharePct": 16.688,
+        "top9Pct": 0,
+        "top7Pct": 0
+      },
+      {
+        "pts": 40,
+        "sharePct": 8.372,
         "top9Pct": 0,
         "top7Pct": 0
       }
@@ -502,16 +520,29 @@
     },
     "matches": [
       {
+        "id": "2026-11-01:LAG:ATX",
+        "date": "2026-11-01",
+        "home": "LAG",
+        "away": "ATX",
+        "lambdaHome": 1.8307032572906508,
+        "lambdaAway": 1.2228991835115486,
+        "probs": {
+          "W": 0.2287698832067172,
+          "D": 0.280985119929488,
+          "L": 0.49024499686379536
+        }
+      },
+      {
         "id": "2026-11-07:ATX:POR",
         "date": "2026-11-07",
         "home": "ATX",
         "away": "POR",
-        "lambdaHome": 1.7177798166330465,
-        "lambdaAway": 1.7552066711592198,
+        "lambdaHome": 1.728085591138849,
+        "lambdaAway": 1.70370916829331,
         "probs": {
-          "W": 0.3582736602981645,
-          "D": 0.2680464420319781,
-          "L": 0.37367989766985665
+          "W": 0.36897115380437556,
+          "D": 0.2721469441639475,
+          "L": 0.35888190203167636
         }
       }
     ]
@@ -522,12 +553,12 @@
       "label": "No low-score correction (plain independent Poisson)",
       "atx": {
         "id": "ATX",
-        "meanPoints": 35.36916,
-        "meanPlace": 14,
-        "medianPoints": 35,
+        "meanPoints": 36.3958,
+        "meanPlace": 13.75422,
+        "medianPoints": 37,
         "medianPlace": 14,
         "p10": 34,
-        "p90": 37,
+        "p90": 40,
         "positionPct": [
           0,
           0,
@@ -540,9 +571,9 @@
           0,
           0,
           0,
-          0,
-          0,
-          100,
+          4.092,
+          16.394000000000002,
+          79.514,
           0
         ],
         "top9Pct": 0,
@@ -560,12 +591,12 @@
       "label": "20% weight on every club’s last six",
       "atx": {
         "id": "ATX",
-        "meanPoints": 35.29158,
-        "meanPlace": 14,
-        "medianPoints": 35,
+        "meanPoints": 36.26566,
+        "meanPlace": 13.77538,
+        "medianPoints": 37,
         "medianPlace": 14,
         "p10": 34,
-        "p90": 37,
+        "p90": 38,
         "positionPct": [
           0,
           0,
@@ -578,9 +609,9 @@
           0,
           0,
           0,
-          0,
-          0,
-          100,
+          3.212,
+          16.038,
+          80.75,
           0
         ],
         "top9Pct": 0,
@@ -590,7 +621,7 @@
         "priorGames": 8,
         "homeLog": 0.13,
         "recentWeight": 0.2,
-        "drawRho": -0.2369
+        "drawRho": -0.2464
       }
     },
     {
@@ -598,12 +629,12 @@
       "label": "Less regression to league average",
       "atx": {
         "id": "ATX",
-        "meanPoints": 35.31488,
-        "meanPlace": 14,
-        "medianPoints": 35,
+        "meanPoints": 36.30682,
+        "meanPlace": 13.7793,
+        "medianPoints": 37,
         "medianPlace": 14,
         "p10": 34,
-        "p90": 37,
+        "p90": 38,
         "positionPct": [
           0,
           0,
@@ -616,9 +647,9 @@
           0,
           0,
           0,
-          0,
-          0,
-          100,
+          3.7319999999999998,
+          14.606,
+          81.662,
           0
         ],
         "top9Pct": 0,
@@ -628,7 +659,7 @@
         "priorGames": 4,
         "homeLog": 0.13,
         "recentWeight": 0,
-        "drawRho": -0.2369
+        "drawRho": -0.2464
       }
     },
     {
@@ -636,12 +667,12 @@
       "label": "More regression to league average",
       "atx": {
         "id": "ATX",
-        "meanPoints": 35.39452,
-        "meanPlace": 14,
-        "medianPoints": 35,
+        "meanPoints": 36.41688,
+        "meanPlace": 13.74492,
+        "medianPoints": 37,
         "medianPlace": 14,
         "p10": 34,
-        "p90": 37,
+        "p90": 38,
         "positionPct": [
           0,
           0,
@@ -654,9 +685,9 @@
           0,
           0,
           0,
-          0,
-          0,
-          100,
+          3.8920000000000003,
+          17.724,
+          78.384,
           0
         ],
         "top9Pct": 0,
@@ -666,7 +697,7 @@
         "priorGames": 16,
         "homeLog": 0.13,
         "recentWeight": 0,
-        "drawRho": -0.2369
+        "drawRho": -0.2464
       }
     },
     {
@@ -674,12 +705,12 @@
       "label": "Smaller home advantage",
       "atx": {
         "id": "ATX",
-        "meanPoints": 35.23584,
-        "meanPlace": 14,
-        "medianPoints": 35,
+        "meanPoints": 36.33162,
+        "meanPlace": 13.75768,
+        "medianPoints": 37,
         "medianPlace": 14,
         "p10": 34,
-        "p90": 37,
+        "p90": 38,
         "positionPct": [
           0,
           0,
@@ -692,9 +723,9 @@
           0,
           0,
           0,
-          0,
-          0,
-          100,
+          3.904,
+          16.424,
+          79.672,
           0
         ],
         "top9Pct": 0,
@@ -704,7 +735,7 @@
         "priorGames": 8,
         "homeLog": 0.08,
         "recentWeight": 0,
-        "drawRho": -0.2369
+        "drawRho": -0.2464
       }
     },
     {
@@ -712,12 +743,12 @@
       "label": "Larger home advantage",
       "atx": {
         "id": "ATX",
-        "meanPoints": 35.45324,
-        "meanPlace": 14,
-        "medianPoints": 35,
+        "meanPoints": 36.36726,
+        "meanPlace": 13.77686,
+        "medianPoints": 37,
         "medianPlace": 14,
         "p10": 34,
-        "p90": 37,
+        "p90": 38,
         "positionPct": [
           0,
           0,
@@ -730,9 +761,9 @@
           0,
           0,
           0,
-          0,
-          0,
-          100,
+          3.5860000000000003,
+          15.142,
+          81.272,
           0
         ],
         "top9Pct": 0,
@@ -742,7 +773,7 @@
         "priorGames": 8,
         "homeLog": 0.18,
         "recentWeight": 0,
-        "drawRho": -0.2369
+        "drawRho": -0.2464
       }
     }
   ],
@@ -751,14 +782,14 @@
     "45": null
   },
   "nextMatch": {
-    "id": "2026-11-07:ATX:POR",
-    "date": "2026-11-07",
-    "home": "ATX",
-    "away": "POR",
+    "id": "2026-11-01:LAG:ATX",
+    "date": "2026-11-01",
+    "home": "LAG",
+    "away": "ATX",
     "probs": {
-      "W": 0.3582736602981645,
-      "D": 0.2680464420319781,
-      "L": 0.37367989766985665
+      "W": 0.2287698832067172,
+      "D": 0.280985119929488,
+      "L": 0.49024499686379536
     },
     "ifWin": 0,
     "ifDraw": 0,
@@ -773,14 +804,46 @@
     "baselineTop9Pct": 0,
     "fixtures": [
       {
+        "id": "2026-11-01:COL:CHI",
+        "date": "2026-11-01",
+        "home": "COL",
+        "away": "CHI",
+        "probs": {
+          "H": 0.39149516081527486,
+          "D": 0.30650945838170535,
+          "A": 0.3019953808030202
+        },
+        "ifHome": 0,
+        "ifDraw": 0,
+        "ifAway": 0,
+        "swing": 0,
+        "rootFor": "H"
+      },
+      {
         "id": "2026-11-01:LAFC:MIN",
         "date": "2026-11-01",
         "home": "LAFC",
         "away": "MIN",
         "probs": {
-          "H": 0.5554203137088877,
-          "D": 0.2702541601348121,
-          "A": 0.17432552615630034
+          "H": 0.5543445906921951,
+          "D": 0.27231033502190244,
+          "A": 0.17334507428590296
+        },
+        "ifHome": 0,
+        "ifDraw": 0,
+        "ifAway": 0,
+        "swing": 0,
+        "rootFor": "H"
+      },
+      {
+        "id": "2026-11-01:LAG:ATX",
+        "date": "2026-11-01",
+        "home": "LAG",
+        "away": "ATX",
+        "probs": {
+          "H": 0.49024499686379536,
+          "D": 0.280985119929488,
+          "A": 0.2287698832067172
         },
         "ifHome": 0,
         "ifDraw": 0,
@@ -794,9 +857,57 @@
         "home": "POR",
         "away": "HOU",
         "probs": {
-          "H": 0.40431893960603615,
-          "D": 0.2967962129826258,
-          "A": 0.298884847411338
+          "H": 0.4032058423070516,
+          "D": 0.2990104925092684,
+          "A": 0.2977836651836796
+        },
+        "ifHome": 0,
+        "ifDraw": 0,
+        "ifAway": 0,
+        "swing": 0,
+        "rootFor": "H"
+      },
+      {
+        "id": "2026-11-01:SJ:RSL",
+        "date": "2026-11-01",
+        "home": "SJ",
+        "away": "RSL",
+        "probs": {
+          "H": 0.4758927603009423,
+          "D": 0.2811275006308235,
+          "A": 0.24297973906823347
+        },
+        "ifHome": 0,
+        "ifDraw": 0,
+        "ifAway": 0,
+        "swing": 0,
+        "rootFor": "H"
+      },
+      {
+        "id": "2026-11-01:SKC:DAL",
+        "date": "2026-11-01",
+        "home": "SKC",
+        "away": "DAL",
+        "probs": {
+          "H": 0.2122776844085161,
+          "D": 0.2418689822438219,
+          "A": 0.5458533333476618
+        },
+        "ifHome": 0,
+        "ifDraw": 0,
+        "ifAway": 0,
+        "swing": 0,
+        "rootFor": "H"
+      },
+      {
+        "id": "2026-11-01:STL:SD",
+        "date": "2026-11-01",
+        "home": "STL",
+        "away": "SD",
+        "probs": {
+          "H": 0.5644494569513441,
+          "D": 0.23276461864255826,
+          "A": 0.20278592440609805
         },
         "ifHome": 0,
         "ifDraw": 0,
@@ -810,9 +921,9 @@
         "home": "VAN",
         "away": "SEA",
         "probs": {
-          "H": 0.5896677298045453,
-          "D": 0.27089682717967817,
-          "A": 0.13943544301577676
+          "H": 0.588576525742604,
+          "D": 0.2729703281895841,
+          "A": 0.13845314606781176
         },
         "ifHome": 0,
         "ifDraw": 0,
@@ -826,9 +937,9 @@
         "home": "ATX",
         "away": "POR",
         "probs": {
-          "H": 0.3582736602981645,
-          "D": 0.2680464420319781,
-          "A": 0.37367989766985665
+          "H": 0.36897115380437556,
+          "D": 0.2721469441639475,
+          "A": 0.35888190203167636
         },
         "ifHome": 0,
         "ifDraw": 0,
@@ -842,9 +953,9 @@
         "home": "DAL",
         "away": "COL",
         "probs": {
-          "H": 0.49057175361028205,
-          "D": 0.28205292744109883,
-          "A": 0.2273753189486204
+          "H": 0.4751664424746995,
+          "D": 0.29031937239039046,
+          "A": 0.2345141851349102
         },
         "ifHome": 0,
         "ifDraw": 0,
@@ -858,9 +969,9 @@
         "home": "HOU",
         "away": "STL",
         "probs": {
-          "H": 0.39171695798291273,
-          "D": 0.3173355348288213,
-          "A": 0.29094750718826706
+          "H": 0.3871849872154948,
+          "D": 0.3171205952172794,
+          "A": 0.2956944175672263
         },
         "ifHome": 0,
         "ifDraw": 0,
@@ -874,9 +985,9 @@
         "home": "MIN",
         "away": "SJ",
         "probs": {
-          "H": 0.3743396901789141,
-          "D": 0.28263449804955115,
-          "A": 0.343025811771535
+          "H": 0.37799741348457877,
+          "D": 0.28418944123293755,
+          "A": 0.33781314528248324
         },
         "ifHome": 0,
         "ifDraw": 0,
@@ -890,9 +1001,9 @@
         "home": "MTL",
         "away": "VAN",
         "probs": {
-          "H": 0.14418003811776836,
-          "D": 0.24549975638980834,
-          "A": 0.6103202054924237
+          "H": 0.14331658738709108,
+          "D": 0.24737621559795483,
+          "A": 0.609307197014954
         },
         "ifHome": 0,
         "ifDraw": 0,
@@ -906,9 +1017,9 @@
         "home": "RSL",
         "away": "LAG",
         "probs": {
-          "H": 0.4759533264312661,
-          "D": 0.27956782409832287,
-          "A": 0.2444788494704114
+          "H": 0.4966352928976497,
+          "D": 0.279059860831003,
+          "A": 0.22430484627134725
         },
         "ifHome": 0,
         "ifDraw": 0,
@@ -922,9 +1033,9 @@
         "home": "SD",
         "away": "SKC",
         "probs": {
-          "H": 0.672466096983484,
-          "D": 0.1914369390098135,
-          "A": 0.13609696400670246
+          "H": 0.6756484563439366,
+          "D": 0.18819175338033858,
+          "A": 0.13615979027572436
         },
         "ifHome": 0,
         "ifDraw": 0,
@@ -938,9 +1049,9 @@
         "home": "SEA",
         "away": "LAFC",
         "probs": {
-          "H": 0.32719192582996737,
-          "D": 0.34935332260837143,
-          "A": 0.3234547515616617
+          "H": 0.3259072106789741,
+          "D": 0.351942535314191,
+          "A": 0.3221502540068354
         },
         "ifHome": 0,
         "ifDraw": 0,
@@ -952,79 +1063,79 @@
   },
   "schedule": {
     "ATX": {
-      "remaining": 1,
+      "remaining": 2,
       "home": 1,
-      "expectedPoints": 1.3428674229264717
+      "expectedPoints": 2.346355175126714
     },
     "COL": {
-      "remaining": 1,
-      "home": 0,
-      "expectedPoints": 0.9641788842869601
+      "remaining": 2,
+      "home": 1,
+      "expectedPoints": 2.474856868622651
     },
     "DAL": {
-      "remaining": 1,
+      "remaining": 2,
       "home": 1,
-      "expectedPoints": 1.753768188271945
+      "expectedPoints": 3.5952476821012964
     },
     "HOU": {
       "remaining": 2,
       "home": 1,
-      "expectedPoints": 2.685937163994199
+      "expectedPoints": 2.6710370449240712
     },
     "LAFC": {
       "remaining": 2,
       "home": 1,
-      "expectedPoints": 3.2562326785548317
+      "expectedPoints": 3.253737404433185
     },
     "LAG": {
-      "remaining": 1,
-      "home": 0,
-      "expectedPoints": 1.013004372509557
+      "remaining": 2,
+      "home": 1,
+      "expectedPoints": 2.703694510165919
     },
     "MIN": {
       "remaining": 2,
       "home": 1,
-      "expectedPoints": 2.198884307190007
+      "expectedPoints": 2.210527239566285
     },
     "POR": {
       "remaining": 2,
       "home": 1,
-      "expectedPoints": 2.8988391668422824
+      "expectedPoints": 2.8574206696894002
     },
     "RSL": {
-      "remaining": 1,
+      "remaining": 2,
       "home": 1,
-      "expectedPoints": 1.707427803392121
+      "expectedPoints": 2.7790324573594765
     },
     "SD": {
-      "remaining": 1,
+      "remaining": 2,
       "home": 1,
-      "expectedPoints": 2.2088352299602656
+      "expectedPoints": 3.0562595142730005
     },
     "SEA": {
       "remaining": 2,
       "home": 1,
-      "expectedPoints": 2.020132256325282
+      "expectedPoints": 2.017993933744133
     },
     "SJ": {
-      "remaining": 1,
-      "home": 0,
-      "expectedPoints": 1.3117119333641563
+      "remaining": 2,
+      "home": 1,
+      "expectedPoints": 3.0064346586140376
     },
     "SKC": {
-      "remaining": 1,
-      "home": 0,
-      "expectedPoints": 0.5997278310299209
+      "remaining": 2,
+      "home": 1,
+      "expectedPoints": 1.475373159676882
     },
     "STL": {
-      "remaining": 1,
-      "home": 0,
-      "expectedPoints": 1.1901780563936226
+      "remaining": 2,
+      "home": 1,
+      "expectedPoints": 3.130316837415549
     },
     "VAN": {
       "remaining": 2,
       "home": 1,
-      "expectedPoints": 4.116360389460394
+      "expectedPoints": 4.113997712060213
     }
   },
   "explanation": "This forecast uses current MLS standings, each team’s season-long scoring and defending record, the remaining schedule, and an assumed home-field advantage. It simulates every remaining match involving a Western Conference team 50,000 times, then counts how often Austin finishes in each position. Teams share the same result when they play each other. The percentages are estimates from a simple statistical model—not guarantees or calibrated betting odds."

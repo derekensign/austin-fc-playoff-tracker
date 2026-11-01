@@ -44,9 +44,9 @@
   },
   "version": "2.3.0",
   "latestRefresh": {
-    "asOf": "2026-10-31",
+    "asOf": "2026-11-01",
     "iterations": 50000,
-    "seed": 20261031,
+    "seed": 20261101,
     "validation": "passed",
     "tieAudit": {
       "austinAnyTiePct": 0,

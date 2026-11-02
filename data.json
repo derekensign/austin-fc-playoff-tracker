@@ -1,11 +1,11 @@
 {
   "asOf": "2026-11-01",
   "calibration": {
-    "drawRho": -0.2377,
+    "drawRho": -0.234,
     "modelDrawsCorrected": 129,
-    "modelDrawsUncorrected": 106.7,
+    "modelDrawsUncorrected": 107,
     "observedDraws": 129,
-    "observedGames": 490
+    "observedGames": 492
   },
   "fixtures": [
     {
@@ -114,14 +114,14 @@
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.2377, fitted so the model reproduces the season's 129 draws in 490 matches (uncorrected Poisson would produce 106.7).",
+    "Low-score correction rho = -0.234, fitted so the model reproduces the season's 129 draws in 492 matches (uncorrected Poisson would produce 107).",
     "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-11-01:LAFC:MIN -> 2026-11-02; 2026-11-01:POR:HOU -> 2026-11-02"
   ],
   "recentForm": {
     "ATL": {
-      "description": "New York City 2–2, Cincinnati 1–3, Montréal 3–0, Inter Miami 1–3, Chicago 2–3, New York City 1–2",
-      "ga": 13,
-      "gf": 10,
+      "description": "Cincinnati 1–3, Montréal 3–0, Inter Miami 1–3, Chicago 2–3, New York City 1–2, Toronto 3–1",
+      "ga": 12,
+      "gf": 11,
       "gp": 6
     },
     "ATX": {
@@ -215,9 +215,9 @@
       "gp": 6
     },
     "NSH": {
-      "description": "Toronto 2–0, Austin FC 4–1, Sporting KC 4–0, San Jose 1–1, Montréal 2–0, Philadelphia 0–0",
-      "ga": 2,
-      "gf": 13,
+      "description": "Austin FC 4–1, Sporting KC 4–0, San Jose 1–1, Montréal 2–0, Philadelphia 0–0, Red Bull New York 3–2",
+      "ga": 4,
+      "gf": 14,
       "gp": 6
     },
     "NYC": {
@@ -245,9 +245,9 @@
       "gp": 6
     },
     "RBNY": {
-      "description": "St. Louis 0–3, San Diego 4–1, D.C. United 1–2, Toronto 0–2, Inter Miami 2–0, New England 2–3",
+      "description": "San Diego 4–1, D.C. United 1–2, Toronto 0–2, Inter Miami 2–0, New England 2–3, Nashville 2–3",
       "ga": 11,
-      "gf": 9,
+      "gf": 11,
       "gp": 6
     },
     "RSL": {
@@ -287,9 +287,9 @@
       "gp": 6
     },
     "TOR": {
-      "description": "Nashville 0–2, Montréal 2–1, Orlando 3–3, Red Bull New York 2–0, Columbus 2–4, D.C. United 2–1",
-      "ga": 11,
-      "gf": 11,
+      "description": "Montréal 2–1, Orlando 3–3, Red Bull New York 2–0, Columbus 2–4, D.C. United 2–1, Atlanta 1–3",
+      "ga": 12,
+      "gf": 12,
       "gp": 6
     },
     "VAN": {
@@ -398,16 +398,16 @@
   "teams": [
     {
       "conference": "East",
-      "currentRank": 14,
+      "currentRank": 13,
       "draws": 6,
-      "ga": 56,
-      "gf": 40,
-      "gp": 32,
+      "ga": 57,
+      "gf": 43,
+      "gp": 33,
       "id": "ATL",
       "losses": 18,
       "name": "Atlanta",
-      "pts": 30,
-      "wins": 8
+      "pts": 33,
+      "wins": 9
     },
     {
       "conference": "West",
@@ -502,7 +502,7 @@
     },
     {
       "conference": "East",
-      "currentRank": 13,
+      "currentRank": 14,
       "draws": 12,
       "ga": 60,
       "gf": 39,
@@ -608,14 +608,14 @@
       "conference": "East",
       "currentRank": 1,
       "draws": 8,
-      "ga": 23,
-      "gf": 66,
-      "gp": 32,
+      "ga": 25,
+      "gf": 69,
+      "gp": 33,
       "id": "NSH",
       "losses": 3,
       "name": "Nashville",
-      "pts": 71,
-      "wins": 21
+      "pts": 74,
+      "wins": 22
     },
     {
       "conference": "East",
@@ -673,11 +673,11 @@
       "conference": "East",
       "currentRank": 10,
       "draws": 6,
-      "ga": 59,
-      "gf": 43,
-      "gp": 32,
+      "ga": 62,
+      "gf": 45,
+      "gp": 33,
       "id": "RBNY",
-      "losses": 15,
+      "losses": 16,
       "name": "Red Bull New York",
       "pts": 39,
       "wins": 11
@@ -764,11 +764,11 @@
       "conference": "East",
       "currentRank": 12,
       "draws": 12,
-      "ga": 60,
-      "gf": 50,
-      "gp": 32,
+      "ga": 63,
+      "gf": 51,
+      "gp": 33,
       "id": "TOR",
-      "losses": 11,
+      "losses": 12,
       "name": "Toronto",
       "pts": 39,
       "wins": 9

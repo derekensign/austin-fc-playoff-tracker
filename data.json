@@ -1,11 +1,11 @@
 {
   "asOf": "2026-11-01",
   "calibration": {
-    "drawRho": -0.234,
+    "drawRho": -0.231,
     "modelDrawsCorrected": 129,
-    "modelDrawsUncorrected": 107,
+    "modelDrawsUncorrected": 107.24,
     "observedDraws": 129,
-    "observedGames": 492
+    "observedGames": 493
   },
   "fixtures": [
     {
@@ -114,7 +114,7 @@
     "Dates are match-local calendar dates, with no kickoff-time assumptions.",
     "All future West-vs-West fixtures are listed by both teams and collapsed to exactly one shared outcome.",
     "Recent form is each club's last 6 completed league matches, computed from the results feed.",
-    "Low-score correction rho = -0.234, fitted so the model reproduces the season's 129 draws in 492 matches (uncorrected Poisson would produce 107).",
+    "Low-score correction rho = -0.231, fitted so the model reproduces the season's 129 draws in 493 matches (uncorrected Poisson would produce 107.24).",
     "Postponed fixtures moved to the next open date for both clubs, because a results-only feed cannot supply the official replacement date: 2026-11-01:LAFC:MIN -> 2026-11-02; 2026-11-01:POR:HOU -> 2026-11-02"
   ],
   "recentForm": {
@@ -191,9 +191,9 @@
       "gp": 6
     },
     "MIA": {
-      "description": "Columbus 1–2, D.C. United 4–0, New York City 2–0, Atlanta 3–1, Red Bull New York 0–2, Cincinnati 2–2",
-      "ga": 7,
-      "gf": 12,
+      "description": "D.C. United 4–0, New York City 2–0, Atlanta 3–1, Red Bull New York 0–2, Cincinnati 2–2, New England 2–1",
+      "ga": 6,
+      "gf": 13,
       "gp": 6
     },
     "MIN": {
@@ -209,9 +209,9 @@
       "gp": 6
     },
     "NE": {
-      "description": "Real Salt Lake 0–3, Seattle 0–3, Cincinnati 3–2, Chicago 1–0, Philadelphia 2–1, Red Bull New York 3–2",
-      "ga": 11,
-      "gf": 9,
+      "description": "Seattle 0–3, Cincinnati 3–2, Chicago 1–0, Philadelphia 2–1, Red Bull New York 3–2, Inter Miami 1–2",
+      "ga": 10,
+      "gf": 10,
       "gp": 6
     },
     "NSH": {
@@ -554,16 +554,16 @@
     },
     {
       "conference": "East",
-      "currentRank": 3,
+      "currentRank": 2,
       "draws": 11,
-      "ga": 55,
-      "gf": 75,
-      "gp": 32,
+      "ga": 56,
+      "gf": 77,
+      "gp": 33,
       "id": "MIA",
       "losses": 6,
       "name": "Inter Miami",
-      "pts": 56,
-      "wins": 15
+      "pts": 59,
+      "wins": 16
     },
     {
       "conference": "West",
@@ -593,13 +593,13 @@
     },
     {
       "conference": "East",
-      "currentRank": 2,
+      "currentRank": 3,
       "draws": 4,
-      "ga": 44,
-      "gf": 54,
-      "gp": 32,
+      "ga": 46,
+      "gf": 55,
+      "gp": 33,
       "id": "NE",
-      "losses": 10,
+      "losses": 11,
       "name": "New England",
       "pts": 58,
       "wins": 18
